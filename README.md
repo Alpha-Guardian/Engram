@@ -1,4 +1,4 @@
-# engram
+# Engram
 
 `engram` is a public MCU demo that packages a sub-1MB language runtime for a commodity `ESP32-C3`.
 
