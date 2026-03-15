@@ -23,7 +23,7 @@ Reference for the benchmark-capability numbers:
 
 - [results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json](results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json)
 
-## What is actually running on the board
+## Execution modes
 
 The public board-side paths in this repository are:
 
@@ -37,20 +37,11 @@ The shortest way to describe the implementation is:
 - `LogiQA` uses a compiled probe path with sparse weights, hashed features, and fixed retrieval deltas
 - `IFEval` uses `compiled_piece_stream_v1`, which is a precompiled piece stream plus streaming fold / token-count / checksum passes
 
+Note: board-side `LogiQA` (`0.2757009345794392`) is an audited `11`-batch aggregate mode; the host reference (`0.303738`) is the benchmark-capability reference for the same public demo line.
+
 So this repository is **not** presenting unrestricted native LLM generation on MCU. It is presenting a constrained but real board-measured language runtime line whose execution path is documented and auditable.
 
-## Why the LogiQA numbers differ
-
-Two different `LogiQA` numbers appear in this repository:
-
-- `0.303738`: the host-side benchmark-capability reference for the public demo line
-- `0.2757009345794392`: the board-side audited result published here
-
-They differ because they are not the same evaluation mode.
-
-The host-side number comes from the benchmark reference file linked above. The board-side number comes from the published `logiqa_batch_compiled_probe_aggregated` path, which is an audited aggregate over `11` board-side batches. That aggregate is useful because it is reproducible and board-measured, but it should not be confused with a single-firmware one-shot rerun of the host benchmark.
-
-## Optional interactive demo firmware
+## Interactive variant
 
 In addition to the audited reproduction firmware, this repository also includes an optional `interactive` firmware variant.
 
@@ -62,25 +53,25 @@ That variant is there for technical readers who want something more direct than 
 
 It is still a constrained public demo, not a general open-input inference runtime, and it is not the audited firmware used for the published board-score summaries.
 
-## What is included
+## Scope
+
+This repo contains:
 
 - public demo firmware binaries
 - flashing and report-read scripts
 - an optional interactive serial demo tool
-- audited summaries
-- raw board reports for the published board-side validation
-- reproduction notes
-- method-boundary notes
+- audited summaries and raw board reports
+- reproduction notes and method-boundary notes
 
-## What is not included
+This repo does **not** contain:
 
-- training pipeline
-- training data pipeline
+- the training pipeline
+- the training data pipeline
 - weight-generation scripts
 - private training recipes
-- internal research workflow
+- the internal research workflow
 
-## What you can reproduce directly
+## Reproduction boundary
 
 With the default audited firmware in this repository, you can directly reproduce:
 
@@ -96,14 +87,6 @@ What you **cannot** reproduce with a single flash from this repository:
 
 That public `LogiQA 642` number is an audited aggregate over `11` board-side batches. The raw batch reports are included in [results/raw](results/raw).
 
-## How to read this demo
-
-If you come from embedded systems, the important point is that this repo shows a flash-resident, auditable language-task runtime under severe memory and compute limits.
-
-If you come from model training, the important point is that a public demo line can still retain nontrivial benchmark-level behavior under a very small runtime and storage budget.
-
-For us, the board is a physical proof surface for the training-and-compilation pipeline, not the final destination of the research line.
-
 ## Research outlook
 
 This demo is only one public branch of a broader research direction.
@@ -118,7 +101,7 @@ The longer-term technical questions we care about include:
 
 In other words, the `ESP32-C3` here is not the destination. It is a deliberately harsh test bench for a broader line of model R&D.
 
-## Hardware and runtime footprint
+## Runtime footprint
 
 Observed public board range:
 
@@ -177,7 +160,7 @@ py scripts/serial_demo.py COMx
 
 Note: GitHub may classify this repository as `Python` because the public repo mainly contains flashing, readback, and evaluation scripts. The board-side runtime is delivered here as firmware binaries rather than as a full public source release.
 
-## Scope and wording
+## Notes
 
 These are real board-measured results, but the execution modes matter:
 
