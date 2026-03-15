@@ -8,16 +8,16 @@ Under the hood, this demo is not a conventional dense on-device LLM stack. The b
 
 ## Quick facts
 
-- board: `ESP32-C3`
-- public artifact: `chip_suite_surface_round2_q4_tgz_expack_rgz.json`
-- artifact size: `732,034 bytes`
-- artifact SHA256: `05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce`
-- benchmark capability for this public demo line:
-  - `LogiQA = 0.303738`
-  - `IFEval = 0.780037`
-- board runtime validation published in this repo:
-  - `LogiQA 642`: `177 / 642`, `0.2757009345794392`, `91779 ms`, `6.995064230379499 samples/s`
-  - `IFEval 541`: `42162` output tokens, `222 ms`, `189918.922 tokens/s`
+| Item | Value |
+|---|---|
+| Target board | `ESP32-C3` |
+| Public artifact | `chip_suite_surface_round2_q4_tgz_expack_rgz.json` |
+| Artifact size | `732,034 bytes` |
+| Artifact SHA256 | `05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce` |
+| Benchmark capability | `LogiQA = 0.303738`, `IFEval = 0.780037` |
+| Board validation | `LogiQA 642 = 177 / 642 = 0.2757009345794392` |
+| Board validation | `IFEval 541 compiled-piece-stream, checksum aligned` |
+| IFEval board throughput | `189,918.922 tokens/s` |
 
 Reference for the benchmark-capability numbers:
 
@@ -174,6 +174,8 @@ py scripts/serial_demo.py COMx
   - audited summaries, benchmark reference, and raw board reports
 - [docs](docs)
   - reproduction notes, audit notes, FAQ, and the HN draft
+
+Note: GitHub may classify this repository as `Python` because the public repo mainly contains flashing, readback, and evaluation scripts. The board-side runtime is delivered here as firmware binaries rather than as a full public source release.
 
 ## Scope and wording
 
