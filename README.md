@@ -1,116 +1,66 @@
 # Engram
 
-`engram` is a public MCU demo that packages a sub-1MB language runtime for a commodity `ESP32-C3`.
+`engram` is a public MCU demo for one very small language runtime line. The point of the repository is not to sell a chip product. The point is to show one concrete, audited example of what our training-and-compilation pipeline can push onto an unusually constrained device.
 
-Engram is not just a compression project. The broader system we are building is a training-and-compilation stack for tiny offline language runtimes that can be specialized for constrained hardware while preserving as much task logic as possible.
+The public artifact in this repo is a `732,034` byte runtime package running on a commodity `ESP32-C3`. The public benchmark-capability reference for the same demo line is `LogiQA = 0.303738` and `IFEval = 0.780037`. The board-side validation published here is narrower and must be read as such: `LogiQA` is reported as a `logiqa_batch_compiled_probe_aggregated` run, while `IFEval` is reported as an `ifeval_compiled_piece_stream_full` run. That difference in execution mode is why the board-side `LogiQA` number (`177 / 642 = 0.2757009345794392`) is not identical to the host-side benchmark reference (`0.303738`).
 
-This repository is meant to do one job well:
+Under the hood, this demo is not a conventional dense on-device LLM stack. The board-side path is closer to a flash-resident, table-driven runtime: packed token weights, hashed lookup tables, fixed probe samples, and streaming fold / checksum passes over precompiled structures. That is why the repo separates **benchmark capability** from **board runtime validation** so explicitly. We want people to see the actual execution boundary rather than guess at it.
 
-- show a real board-measured language-task runtime on a low-cost MCU
-- publish the exact public demo firmware
-- publish audited result files
-- make the public demo reproducible enough for technical readers
+## Quick facts
 
-It is **not** a release of the training pipeline, the private training recipes, or the internal weight-generation workflow.
+- board: `ESP32-C3`
+- public artifact: `chip_suite_surface_round2_q4_tgz_expack_rgz.json`
+- artifact size: `732,034 bytes`
+- artifact SHA256: `05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce`
+- benchmark capability for this public demo line:
+  - `LogiQA = 0.303738`
+  - `IFEval = 0.780037`
+- board runtime validation published in this repo:
+  - `LogiQA 642`: `177 / 642`, `0.2757009345794392`, `91779 ms`, `6.995064230379499 samples/s`
+  - `IFEval 541`: `42162` output tokens, `222 ms`, `189918.922 tokens/s`
 
-## Why this repository exists
-
-Most small-model or edge-model demos stop at one of these stages:
-
-- benchmark-only claims with no board evidence
-- board evidence with no reproducible artifact
-- firmware drops with no audit trail
-
-This repository is intended to close that gap for one public demo line from `engram`.
-
-## What Engram builds
-
-Engram's core direction is:
-
-- train task-specific tiny language runtimes
-- compile them into deployable edge artifacts
-- ship them onto constrained offline hardware
-- study how much usable language-task logic can survive under extreme parameter and memory pressure
-
-The public repository here is one deployment demo from that system, not the full internal training stack.
-
-## What this public demo proves
-
-This repository is meant to show three things clearly:
-
-- Engram can train a very small language-task runtime with meaningful benchmark capability
-- Engram can compile that runtime into a deployable MCU artifact
-- Engram can validate the result on a real `ESP32-C3` with board-measured audit trails
-- Engram can retain nontrivial language-task behavior at a level of logic density that would normally be dismissed as too small to matter
-
-## Why this demo matters
-
-The main point of this repository is model R&D, not a chip product.
-
-We use `ESP32-C3` here because it is a harsh physical constraint:
-
-- very little memory
-- very little compute
-- very little room for waste
-
-If a language-task runtime can survive under those conditions, that says something about the efficiency of the underlying training-and-compilation pipeline.
-
-This is why we use the board as a test bench rather than a product story: the point is to pressure-test model efficiency under unusually harsh physical limits.
-
-## TL;DR
-
-### Public demo model capability
-
-This public demo line corresponds to:
-
-- `LogiQA = 0.303738`
-- `IFEval = 0.780037`
-
-Reference:
+Reference for the benchmark-capability numbers:
 
 - [results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json](results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json)
 
-### Public board runtime validation
+## What is actually running on the board
 
-The exact board-measured validation published in this repository is:
+The public board-side paths in this repository are:
 
-- `ESP32-C3`
-- artifact: `chip_suite_surface_round2_q4_tgz_expack_rgz.json`
-- artifact size: `732,034 bytes`
-- artifact SHA256: `05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce`
+- `LogiQA`: `logiqa_batch_compiled_probe_aggregated`
+- `IFEval`: `ifeval_compiled_piece_stream_full`
 
-Board-side validation results:
+The shortest way to describe the implementation is:
 
-- `LogiQA 642`
-  - mode: `logiqa_batch_compiled_probe_aggregated`
-  - `177 / 642`
-  - accuracy `0.2757009345794392`
-  - total time `91779 ms`
-  - throughput `6.995064230379499 samples/s`
-  - host-path match `642 / 642`
+- the runtime artifact stays flash-resident
+- the board works over packed tables and fixed probe structures
+- `LogiQA` uses a compiled probe path with sparse weights, hashed features, and fixed retrieval deltas
+- `IFEval` uses `compiled_piece_stream_v1`, which is a precompiled piece stream plus streaming fold / token-count / checksum passes
 
-- `IFEval 541`
-  - mode: `ifeval_compiled_piece_stream_full`
-  - encoding: `compiled_piece_stream_v1`
-  - samples `541`
-  - non-empty outputs `541`
-  - output tokens `42162`
-  - total time `222 ms`
-  - throughput `189918.922 tokens/s`
-  - host alignment: `samples_match = true`, `nonempty_match = true`, `output_tokens_match = true`, `checksum_match = true`
+So this repository is **not** presenting unrestricted native LLM generation on MCU. It is presenting a constrained but real board-measured language runtime line whose execution path is documented and auditable.
 
-### Optional interactive demo firmware
+## Why the LogiQA numbers differ
+
+Two different `LogiQA` numbers appear in this repository:
+
+- `0.303738`: the host-side benchmark-capability reference for the public demo line
+- `0.2757009345794392`: the board-side audited result published here
+
+They differ because they are not the same evaluation mode.
+
+The host-side number comes from the benchmark reference file linked above. The board-side number comes from the published `logiqa_batch_compiled_probe_aggregated` path, which is an audited aggregate over `11` board-side batches. That aggregate is useful because it is reproducible and board-measured, but it should not be confused with a single-firmware one-shot rerun of the host benchmark.
+
+## Optional interactive demo firmware
 
 In addition to the audited reproduction firmware, this repository also includes an optional `interactive` firmware variant.
 
-That variant is intended for technical readers who want something more useful than a static report readback:
+That variant is there for technical readers who want something more direct than a static report readback:
 
 - list the fixed public probe samples currently embedded in the firmware
 - inspect a sample by index
 - run the current public GPU-only or linear+GPU decision path for that sample over serial
 
-It is still a constrained public demo, not a general open-input inference runtime.
-It is also not the audited firmware used for the published board-score summaries.
+It is still a constrained public demo, not a general open-input inference runtime, and it is not the audited firmware used for the published board-score summaries.
 
 ## What is included
 
@@ -132,7 +82,7 @@ It is also not the audited firmware used for the published board-score summaries
 
 ## What you can reproduce directly
 
-With the single public firmware in this repository, you can directly reproduce:
+With the default audited firmware in this repository, you can directly reproduce:
 
 - the current public `IFEval 541` board-report path
 - the board report format
@@ -146,7 +96,15 @@ What you **cannot** reproduce with a single flash from this repository:
 
 That public `LogiQA 642` number is an audited aggregate over `11` board-side batches. The raw batch reports are included in [results/raw](results/raw).
 
-## Technical outlook
+## How to read this demo
+
+If you come from embedded systems, the important point is that this repo shows a flash-resident, auditable language-task runtime under severe memory and compute limits.
+
+If you come from model training, the important point is that a public demo line can still retain nontrivial benchmark-level behavior under a very small runtime and storage budget.
+
+For us, the board is a physical proof surface for the training-and-compilation pipeline, not the final destination of the research line.
+
+## Research outlook
 
 This demo is only one public branch of a broader research direction.
 
