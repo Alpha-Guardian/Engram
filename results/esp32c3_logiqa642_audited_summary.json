@@ -1,0 +1,124 @@
+{
+  "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+  "evaluation_mode": "logiqa_batch_compiled_probe_aggregated",
+  "logiqa_compiled_probe": true,
+  "artifact_runtime_decoded_on_board": false,
+  "total_samples": 642,
+  "total_correct": 177,
+  "accuracy": 0.2757009345794392,
+  "total_ms": 91779,
+  "samples_per_sec": 6.995064230379499,
+  "host_full_match": 642,
+  "batches": [
+    {
+      "run_id": "logiqa-000-064-fda67baa3f0d",
+      "offset": 0,
+      "count": 64,
+      "correct": 20,
+      "host_full_match": 64,
+      "ms": 9291,
+      "pred_prefix": "CCAABBCCABDCABBC",
+      "report_path": "results/raw/esp32c3_logiqa_batch_000_064.json"
+    },
+    {
+      "run_id": "logiqa-064-064-c22b7dea289e",
+      "offset": 64,
+      "count": 64,
+      "correct": 18,
+      "host_full_match": 64,
+      "ms": 7119,
+      "pred_prefix": "ACCCDCAABDDDCDDC",
+      "report_path": "results/raw/esp32c3_logiqa_batch_064_064.json"
+    },
+    {
+      "run_id": "logiqa-128-064-f06dc3093c2e",
+      "offset": 128,
+      "count": 64,
+      "correct": 25,
+      "host_full_match": 64,
+      "ms": 8276,
+      "pred_prefix": "CCCCDBCDCDABAAAA",
+      "report_path": "results/raw/esp32c3_logiqa_batch_128_064.json"
+    },
+    {
+      "run_id": "logiqa-192-064-1791811170c6",
+      "offset": 192,
+      "count": 64,
+      "correct": 8,
+      "host_full_match": 64,
+      "ms": 8412,
+      "pred_prefix": "AADAABAADBBBCCDD",
+      "report_path": "results/raw/esp32c3_logiqa_batch_192_064.json"
+    },
+    {
+      "run_id": "logiqa-256-064-c7089b699a08",
+      "offset": 256,
+      "count": 64,
+      "correct": 23,
+      "host_full_match": 64,
+      "ms": 9595,
+      "pred_prefix": "CABAACBCCDCCDCAA",
+      "report_path": "results/raw/esp32c3_logiqa_batch_256_064.json"
+    },
+    {
+      "run_id": "logiqa-320-064-e168a254881c",
+      "offset": 320,
+      "count": 64,
+      "correct": 19,
+      "host_full_match": 64,
+      "ms": 9936,
+      "pred_prefix": "DDCBBCCACBCBCDBC",
+      "report_path": "results/raw/esp32c3_logiqa_batch_320_064.json"
+    },
+    {
+      "run_id": "logiqa-384-064-e9e0e2d8349a",
+      "offset": 384,
+      "count": 64,
+      "correct": 16,
+      "host_full_match": 64,
+      "ms": 8863,
+      "pred_prefix": "BCAAABABBBBBDBCB",
+      "report_path": "results/raw/esp32c3_logiqa_batch_384_064.json"
+    },
+    {
+      "run_id": "logiqa-448-064-2ef6703ed518",
+      "offset": 448,
+      "count": 64,
+      "correct": 12,
+      "host_full_match": 64,
+      "ms": 10081,
+      "pred_prefix": "BBACBDACADBBCDAC",
+      "report_path": "results/raw/esp32c3_logiqa_batch_448_064.json"
+    },
+    {
+      "run_id": "logiqa-512-064-e8d9e68cb06a",
+      "offset": 512,
+      "count": 64,
+      "correct": 16,
+      "host_full_match": 64,
+      "ms": 10748,
+      "pred_prefix": "CADCBCCBCCCDACDC",
+      "report_path": "results/raw/esp32c3_logiqa_batch_512_064.json"
+    },
+    {
+      "run_id": "logiqa-576-064-eebab36b8b85",
+      "offset": 576,
+      "count": 64,
+      "correct": 20,
+      "host_full_match": 64,
+      "ms": 9223,
+      "pred_prefix": "CACCCAAAAAAAAAAA",
+      "report_path": "results/raw/esp32c3_logiqa_batch_576_064.json"
+    },
+    {
+      "run_id": "logiqa-640-002-cf6fac9ab250",
+      "offset": 640,
+      "count": 2,
+      "correct": 0,
+      "host_full_match": 2,
+      "ms": 235,
+      "pred_prefix": "AB",
+      "report_path": "results/raw/esp32c3_logiqa_batch_640_002.json"
+    }
+  ]
+}

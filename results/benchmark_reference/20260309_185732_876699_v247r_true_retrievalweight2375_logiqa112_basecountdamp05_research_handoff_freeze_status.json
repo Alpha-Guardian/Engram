@@ -1,0 +1,54 @@
+{
+  "tool": "tools/generate_research_handoff_freeze_status.py",
+  "candidate_checkpoint": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+  "candidate_checkpoint_sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9",
+  "source_official_report": "artifacts/reports/20260310_023720_633983_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_cycle1_full_official_dualbench_authoritative_five_bench_report.json",
+  "source_external_dev_report": "artifacts/tmp/three_benchmark_learning_runs/20260310_023046_844764/external_dev_eval_cycle1_logiqa_external_dev/20260310_023321_380866_20260310_023046_844764_cycle1_external_dev_eval_logiqa_external_dev_authoritative_five_bench_report.json",
+  "source_external_blind_report": "artifacts/tmp/three_benchmark_learning_runs/20260310_023046_844764/external_blind_eval_cycle1_logiqa_external_blind/20260310_023457_334513_20260310_023046_844764_cycle1_external_blind_eval_logiqa_external_blind_authoritative_five_bench_report.json",
+  "source_shadow_report": "artifacts/reports/shadow_blind/20260310_023716_649495_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_cycle1_ifbench_shadow_shadow_blind_report.json",
+  "source_full_report": "artifacts/reports/20260310_023046_844764_three_benchmark_learning_cycle_report.json",
+  "source_handoff_report": "artifacts/reports/focused_followup/20260309_185705_620911_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_currentenv_handoff_status.json",
+  "official_clean": {
+    "ifeval": 0.780037,
+    "logiqa": 0.303738
+  },
+  "external_dev": {
+    "logiqa": 0.304598
+  },
+  "external_blind": {
+    "logiqa": 0.425072
+  },
+  "shadow": {
+    "pass": true,
+    "mode": "ifbench_strict_non_regression",
+    "scope": "ifbench_only",
+    "gsm8k_excluded": true,
+    "ifbench_shadow_minus_dev": 0.013699,
+    "dev_dominant_share": 0.068493,
+    "shadow_dominant_share": 0.068493,
+    "dev_meta_pollution_share": 0.0,
+    "shadow_meta_pollution_share": 0.0
+  },
+  "leakage_audit": {
+    "pass": true
+  },
+  "deep_pretrain_audit": {
+    "pass": true
+  },
+  "gate_check": {
+    "external_dev_floor_ok": true,
+    "external_blind_floor_ok": true,
+    "shadow_ok": true,
+    "leakage_ok": true,
+    "deep_audit_ok": true,
+    "structured_exec_ok": true,
+    "research_runtime_ready": true,
+    "research_handoff_ready": true
+  },
+  "overall": {
+    "current_env_research_handoff_pass": true,
+    "promotion_recommended": true,
+    "commercial_note": "not_a_handoff_blocker_under_research_proxy",
+    "freeze_kind": "research_handoff_ready"
+  }
+}
