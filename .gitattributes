@@ -1,0 +1,5 @@
+README.md linguist-documentation
+docs/** linguist-documentation
+results/** linguist-generated
+firmware/** linguist-generated
+sha256sums.txt linguist-generated
