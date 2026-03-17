@@ -1,39 +1,56 @@
 # Audit Notes
 
-The current public acceptance record is:
+The public audit package in this repository now has two parts:
 
-- [results/board_runtime_audit_acceptance.json](../results/board_runtime_audit_acceptance.json)
+- `board proof audit`
+- `scientific surface audit`
 
-## Accepted checks
+## Board proof audit
 
-### LogiQA
+The current public board proof is:
 
-- all `11` raw batch reports match the aggregate summary
-- aggregate `correct / samples / ms / host_match` values match
+- [../results/board_proof/board_runtime_audit_acceptance.json](../results/board_proof/board_runtime_audit_acceptance.json)
+- [../results/board_proof/esp32c3_logiqa642_board_proof_summary.json](../results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
+
+Accepted properties:
+
+- `ESP32-C3` flash-resident board run
 - `evaluation_mode = logiqa_batch_compiled_probe_aggregated`
-- `artifact_runtime_decoded_on_board = false`
+- `compiled_probe_mode = host_full_exact`
+- aggregate result `249 / 642 = 0.3878504672897196`
+- `host_full_match = 642`
+- raw batch reports published under [../results/board_proof/raw](../results/board_proof/raw)
 
-### IFEval
+Important boundary:
 
-- the raw board report matches the aggregate summary
-- the host reference matches on:
-  - `samples`
-  - `nonempty`
-  - `output_tokens`
-  - `checksum`
-- `evaluation_mode = ifeval_compiled_piece_stream_full`
-- `artifact_runtime_decoded_on_board = false`
+- this is a correctness and consistency proof for a fixed-batch compiled line
+- it is not a speed-comparable unrestricted runtime benchmark
 
-## Public wording after audit
+## Scientific surface audit
 
-The most accurate public description is:
+The current research-line evidence is published under:
 
-- `LogiQA`: board-side batch-compiled probe aggregate
-- `IFEval`: board-side compiled piece stream full run
+- [../results/research_line](../results/research_line)
+- [../results/audit](../results/audit)
 
-## Raw files
+That includes:
 
-- [results/raw/esp32c3_ifeval541_compiled_audited_board_report.json](../results/raw/esp32c3_ifeval541_compiled_audited_board_report.json)
-- [results/raw](../results/raw)
+- current scientific surface manifest
+- reference status
+- guard bundle
+- full replay
+- integrity
+- doctor
+- overfit audit
+- hidden-family forensic audit
 
-The per-batch raw `LogiQA` reports are also included in `results/raw`.
+## Current audit conclusion
+
+The strongest honest current conclusion is:
+
+- no obvious external collapse
+- no obvious text-level overlap contamination in the clean holdout path
+- board proof is real and auditable
+- hidden-family generalization remains weak
+
+That last point is not hidden. It is published in the forensic audit.

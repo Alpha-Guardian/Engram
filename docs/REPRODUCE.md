@@ -4,8 +4,8 @@
 
 - Windows
 - Python 3
-- An `ESP32-C3` board
-- A data-capable USB cable
+- an `ESP32-C3` board
+- a data-capable USB cable
 
 Install `esptool`:
 
@@ -13,33 +13,21 @@ Install `esptool`:
 py -m pip install esptool
 ```
 
-Optional, for the interactive sample shell:
-
-```bash
-py -m pip install pyserial
-```
-
 ## 2. Find the serial port
 
-Connect the board and check Device Manager for the serial port, for example:
+Connect the board and identify the serial port in Device Manager, for example:
 
 - `COM3`
 - `COM5`
 
-The commands below use `COM3` as an example.
+The examples below use `COM3`.
 
-## 3. Flash the firmware
+## 3. Flash the published firmware
 
 From the repository root:
 
 ```bash
 py scripts/flash_firmware.py COM3
-```
-
-Optional interactive variant:
-
-```bash
-py scripts/flash_firmware.py COM3 --variant interactive
 ```
 
 Default flash layout:
@@ -49,92 +37,75 @@ Default flash layout:
 - `0xe000` -> `boot_app0.bin`
 - `0x10000` -> `firmware.bin`
 
-## 4. Read the board report
+## 4. Read back the board report
 
 After flashing and reset:
 
 ```bash
-py scripts/read_board_report.py COM3 --expect-mode ifeval_compiled_piece_stream_full --expect-artifact-sha256 05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce
+py scripts/read_board_report.py COM3 --expect-mode logiqa_batch_compiled_probe --expect-artifact-sha256 626a1bfcc0a86585db82130744094ee4512eaaead8b4d9f1dba07175c010719d
 ```
 
-This reads a JSON report back from the board `report` partition.
+This reads JSON from the board `report` partition.
 
-The optional verification flags are recommended for public reproduction because they reduce the chance of accidentally accepting a stale report:
+The expected result for the published default firmware is:
 
-- `--expect-mode`
-- `--expect-artifact-sha256`
+- [../results/board_proof/raw/esp32c3_logiqa_batch_current_surface_runtime_topk_official642_k24_hostfullexact_000_064.json](../results/board_proof/raw/esp32c3_logiqa_batch_current_surface_runtime_topk_official642_k24_hostfullexact_000_064.json)
 
-## 4b. Optional interactive sample shell
+## 5. Verify the main fields
 
-If you flashed the `interactive` variant, you can also open a small serial command shell:
-
-```bash
-py scripts/serial_demo.py COM3
-```
-
-Useful commands:
-
-- `HELP`
-- `INFO`
-- `LIST GPU`
-- `SHOW GPU 0`
-- `RUN GPU 0`
-- `LIST LINEAR`
-- `SHOW LINEAR 0`
-- `RUN LINEAR 0`
-- `REPORT`
-
-This shell does not turn the board into a general open-input inference runtime.
-It exposes a fixed public sample set so technical readers can inspect and rerun the public decision path more directly.
-It is separate from the audited firmware used for the published board-score summaries.
-
-## 5. Check the result fields
-
-Main fields to verify:
+Core fields:
 
 - `artifact_name`
 - `artifact_sha256`
 - `evaluation_mode`
+- `logiqa_compiled_probe`
 - `free_heap_bytes`
 - `min_free_heap_bytes`
 - `artifact_crc32`
 
 Task-specific fields:
 
-### LogiQA
-
 - `linear_gpu_probe_samples`
 - `linear_gpu_probe_correct`
+- `linear_gpu_probe_expected_match`
 - `linear_gpu_probe_host_full_match`
-- `linear_gpu_probe_ms`
+- `linear_gpu_probe_first_scores`
 
-### IFEval
+## 6. Understand the aggregate board proof
 
-- `ifeval_probe_samples`
-- `ifeval_probe_nonempty`
-- `ifeval_probe_output_tokens`
-- `ifeval_probe_ms`
-- `ifeval_probe_checksum`
+The repository publishes the full board proof separately as an audited aggregate:
 
-## 6. Compare with the public audited results
-
-Use these files:
-
-- [results/esp32c3_logiqa642_audited_summary.json](../results/esp32c3_logiqa642_audited_summary.json)
-- [results/esp32c3_ifeval541_compiled_audited_summary.json](../results/esp32c3_ifeval541_compiled_audited_summary.json)
-- [results/board_runtime_audit_acceptance.json](../results/board_runtime_audit_acceptance.json)
+- [../results/board_proof/esp32c3_logiqa642_board_proof_summary.json](../results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
 
 Important scope note:
 
-- the single public firmware in this repository directly reproduces the public `IFEval 541` board report path
-- the public `LogiQA 642` result is an audited aggregate from `11` board-side batches
-- those per-batch raw reports are included in `results/raw`
+- the default firmware reproduces one published fixed batch board report
+- the full `LogiQA 642` board proof is the aggregate over the included `11` raw board batches
+- those raw board reports are published under [../results/board_proof/raw](../results/board_proof/raw)
 
-## 7. File integrity
+## 7. Compare against the current scientific surface
+
+Use:
+
+- [../results/research_line/current_scientific_surface_manifest.json](../results/research_line/current_scientific_surface_manifest.json)
+- [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
+
+This lets you compare:
+
+- board proof line
+- current host-side research capability line
+
+## 8. Verify file integrity
 
 Use `sha256sums.txt` in the repository root to verify:
 
 - documentation files
 - scripts
-- firmware files
+- firmware binaries
 - result JSON files
+
+## 9. Detailed board metrics
+
+For the consolidated hardware, artifact, heap, probe, checksum, and aggregate board-proof metrics, see:
+
+- [BOARD_METRICS.md](BOARD_METRICS.md)

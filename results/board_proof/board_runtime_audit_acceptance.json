@@ -1,0 +1,22 @@
+{
+  "verdict": "accepted_current_surface_board_proof",
+  "target_board": "ESP32-C3",
+  "board_proof_mode": "logiqa_batch_compiled_probe_aggregated",
+  "compiled_probe_mode": "host_full_exact",
+  "scope": "fixed-batch board proof for the current scientific surface; not unrestricted on-device open-input inference",
+  "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+  "artifact_sha256": "626a1bfcc0a86585db82130744094ee4512eaaead8b4d9f1dba07175c010719d",
+  "artifact_size_bytes": 1380771,
+  "firmware_bin_sha256": "67ee8cd7902fd63bbf64058f26252865e70abcb920d8d4f621ebc29663b488a2",
+  "firmware_bin_bytes": 1784352,
+  "sketch_size_bytes": 1784352,
+  "free_heap_bytes": 310024,
+  "min_free_heap_bytes": 306296,
+  "aggregate_total_samples": 642,
+  "aggregate_total_correct": 249,
+  "aggregate_accuracy": 0.3878504672897196,
+  "aggregate_host_full_match": 642,
+  "aggregate_batch_count": 11,
+  "artifact_runtime_decoded_on_board": false,
+  "note": "runtime ms in host_full_exact mode is not a comparable speed benchmark because board execution argmaxes precompiled exact scores"
+}

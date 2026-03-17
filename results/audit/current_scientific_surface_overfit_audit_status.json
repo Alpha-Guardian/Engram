@@ -1,0 +1,245 @@
+{
+  "generated_at": "2026-03-16T17:53:12.231195+00:00",
+  "verdict": "current_scientific_surface_overfit_audit_strengthened",
+  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
+  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "current_summary": {
+    "official_ifeval": 0.780037,
+    "official_logiqa": 0.392523,
+    "official_drift_base_only": 0,
+    "official_drift_candidate_only": 3,
+    "external_dev_logiqa": 0.308908,
+    "external_blind_logiqa": 0.425072,
+    "structured_all_pass": true,
+    "runtime_pass": true,
+    "shadow_pass": true,
+    "research_runtime_ready": true
+  },
+  "holdout2": {
+    "kind": "posthoc_external_logiqa_holdout2",
+    "source_external_blind": "withheld_internal_external_blind_source",
+    "holdout_output": "withheld_internal_external_holdout2_data",
+    "blind_remainder_output": "withheld_internal_external_blind_remainder_data",
+    "holdout_output_sha256": "eb3de71511715783aa0a43f11bdf65ae5d52270f9517c53140eb2c2aa1060050",
+    "blind_remainder_output_sha256": "1f8a07248da2fef78e1b1e76b08f05e31ff6be1418114944f89429e0e51ef2cc",
+    "cleaning": {
+      "vs_official": {
+        "input_count": 694,
+        "kept_count": 694,
+        "removed_exact_count": 0,
+        "removed_near_dup_count": 0,
+        "near_dup_threshold": 0.9
+      },
+      "vs_external_dev": {
+        "input_count": 694,
+        "kept_count": 632,
+        "removed_exact_count": 59,
+        "removed_near_dup_count": 3,
+        "near_dup_threshold": 0.9
+      }
+    },
+    "holdout_count": 150,
+    "blind_remainder_count": 482,
+    "split": {
+      "modulus": 4,
+      "remainder": 1
+    },
+    "overlap_vs_official": {
+      "candidate_count": 150,
+      "reference_count": 642,
+      "exact_overlap_count": 0,
+      "exact_overlap_ratio": 0.0,
+      "near_dup_count": 0,
+      "near_dup_ratio": 0.0,
+      "near_dup_threshold": 0.9
+    },
+    "overlap_vs_external_dev": {
+      "candidate_count": 150,
+      "reference_count": 696,
+      "exact_overlap_count": 0,
+      "exact_overlap_ratio": 0.0,
+      "near_dup_count": 0,
+      "near_dup_ratio": 0.0,
+      "near_dup_threshold": 0.9
+    },
+    "overlap_vs_blind_remainder": {
+      "candidate_count": 150,
+      "reference_count": 482,
+      "exact_overlap_count": 0,
+      "exact_overlap_ratio": 0.0,
+      "near_dup_count": 0,
+      "near_dup_ratio": 0.0,
+      "near_dup_threshold": 0.9
+    },
+    "note": "post-hoc frozen subset; stronger than aggregate blind replay, weaker than a fully unseen sourced dataset"
+  },
+  "hidden_family_holdout": {
+    "generated_at": "2026-03-16T17:48:55.635117+00:00",
+    "kind": "current_scientific_surface_hidden_official_family_holdout",
+    "checkpoint": "withheld_internal_current_scientific_surface_candidate",
+    "checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+    "official_input_data": "withheld_internal_official_logiqa_source",
+    "holdout_output": "withheld_internal_hidden_family_holdout_data",
+    "holdout_output_sha256": "e4a68d881a80fa947e8f146a6d402752d63b92c7b8a544c29a824b1470ed6279",
+    "family_hash_modulus": 4,
+    "family_hash_remainder": 1,
+    "hidden_family_count": 8,
+    "hidden_row_count": 85,
+    "hidden_families": [
+      "AB:D:A",
+      "AD:D:A",
+      "BA:A:B",
+      "CA:B:C",
+      "CD:A:C",
+      "DB:A:D",
+      "DB:B:D",
+      "DC:A:D"
+    ],
+    "top_hidden_indices": [
+      3,
+      4,
+      20,
+      21,
+      27,
+      38,
+      51,
+      63,
+      69,
+      79,
+      85,
+      88,
+      89,
+      92,
+      101,
+      109,
+      122,
+      142,
+      167,
+      176,
+      179,
+      183,
+      184,
+      195,
+      219,
+      220,
+      235,
+      241,
+      258,
+      269,
+      273,
+      276
+    ],
+    "note": "future_guard_only; post-hoc frozen residual-family holdout for subsequent promotions"
+  },
+  "current_evals": {
+    "holdout2": {
+      "checkpoint": "withheld_internal_current_scientific_surface_candidate",
+      "num_samples": 150,
+      "num_correct": 60,
+      "accuracy": 0.4,
+      "predictions_sha256": "958fac8f24d5d962d3b17b4a0ee08e61fc1f4aff1ed8a0758897a3879d9076de"
+    },
+    "blind_remainder": {
+      "checkpoint": "withheld_internal_current_scientific_surface_candidate",
+      "num_samples": 482,
+      "num_correct": 216,
+      "accuracy": 0.448133,
+      "predictions_sha256": "c234da130881e2ad2bd2811afdd6bb8e00fde6668c048542e6b9a3ef01425c04"
+    },
+    "external_dev": {
+      "checkpoint": "withheld_internal_current_scientific_surface_candidate",
+      "num_samples": 696,
+      "num_correct": 215,
+      "accuracy": 0.308908,
+      "predictions_sha256": "d23fc5ffe845832c51091be56dd6bd21cc9f2184c0a8fe77f32d1435b70256cb"
+    }
+  },
+  "comparisons": [
+    {
+      "label": "bcab_prev",
+      "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+      "checkpoint_sha256": "a75a18ec4d88b4e694dfc068228439cd55f9411ffcdc09cab165a94b4866d9e7",
+      "holdout2": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+        "num_samples": 150,
+        "num_correct": 60,
+        "accuracy": 0.4,
+        "predictions_sha256": "958fac8f24d5d962d3b17b4a0ee08e61fc1f4aff1ed8a0758897a3879d9076de"
+      },
+      "blind_remainder": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+        "num_samples": 482,
+        "num_correct": 216,
+        "accuracy": 0.448133,
+        "predictions_sha256": "c234da130881e2ad2bd2811afdd6bb8e00fde6668c048542e6b9a3ef01425c04"
+      },
+      "external_dev": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+        "num_samples": 696,
+        "num_correct": 215,
+        "accuracy": 0.308908,
+        "predictions_sha256": "d23fc5ffe845832c51091be56dd6bd21cc9f2184c0a8fe77f32d1435b70256cb"
+      }
+    },
+    {
+      "label": "baab_prev",
+      "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+      "checkpoint_sha256": "bb5b9c8737e5f0902ca8dbcfa839ecaa21f746fc3c80f1ed116d2dbf1bc652df",
+      "holdout2": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+        "num_samples": 150,
+        "num_correct": 60,
+        "accuracy": 0.4,
+        "predictions_sha256": "958fac8f24d5d962d3b17b4a0ee08e61fc1f4aff1ed8a0758897a3879d9076de"
+      },
+      "blind_remainder": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+        "num_samples": 482,
+        "num_correct": 216,
+        "accuracy": 0.448133,
+        "predictions_sha256": "c234da130881e2ad2bd2811afdd6bb8e00fde6668c048542e6b9a3ef01425c04"
+      },
+      "external_dev": {
+        "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+        "num_samples": 696,
+        "num_correct": 215,
+        "accuracy": 0.308908,
+        "predictions_sha256": "d23fc5ffe845832c51091be56dd6bd21cc9f2184c0a8fe77f32d1435b70256cb"
+      }
+    }
+  ],
+  "stability": {
+    "holdout2": {
+      "current_accuracy": 0.4,
+      "baseline_min_accuracy": 0.4,
+      "baseline_max_accuracy": 0.4,
+      "current_vs_baseline_min_delta": 0.0,
+      "current_vs_baseline_max_delta": 0.0
+    },
+    "blind_remainder": {
+      "current_accuracy": 0.448133,
+      "baseline_min_accuracy": 0.448133,
+      "baseline_max_accuracy": 0.448133,
+      "current_vs_baseline_min_delta": 0.0,
+      "current_vs_baseline_max_delta": 0.0
+    },
+    "external_dev": {
+      "current_accuracy": 0.308908,
+      "baseline_min_accuracy": 0.308908,
+      "baseline_max_accuracy": 0.308908,
+      "current_vs_baseline_min_delta": 0.0,
+      "current_vs_baseline_max_delta": 0.0
+    }
+  },
+  "gate_summary": {
+    "existing_external_non_regression_ok": true,
+    "holdout2_clean_vs_official": true,
+    "holdout2_clean_vs_external_dev": true,
+    "hidden_family_holdout_frozen": true
+  },
+  "overall": {
+    "strengthened_non_overfit_evidence": true,
+    "note": "This reduces overfitting risk; it does not prove absolute non-overfitting."
+  }
+}

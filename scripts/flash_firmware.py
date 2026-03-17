@@ -1,34 +1,40 @@
 from pathlib import Path
 import sys
 
-import esptool
-
 
 ROOT = Path(__file__).resolve().parent
 BIN = ROOT.parent / "firmware"
 
+USAGE = """Usage:
+  py scripts/flash_firmware.py COM3
 
-def parse_args(argv: list[str]) -> tuple[str, str]:
+Flashes the published ESP32-C3 board-proof firmware from the local `firmware/`
+directory. This script expects `esptool` to be installed in the invoking Python
+environment.
+"""
+
+
+def parse_args(argv: list[str]) -> str:
+    for arg in argv[1:]:
+        if arg in {"-h", "--help"}:
+            print(USAGE.strip())
+            raise SystemExit(0)
     port = "COM3"
-    variant = "audited"
-    idx = 1
-    while idx < len(argv):
-        arg = argv[idx]
-        if arg == "--variant" and idx + 1 < len(argv):
-            variant = argv[idx + 1].strip().lower() or "audited"
-            idx += 2
-            continue
+    for arg in argv[1:]:
         if not arg.startswith("--"):
             port = arg
-        idx += 1
-    return port, variant
+    return port
 
 
 def main() -> None:
-    port, variant = parse_args(sys.argv)
-    bin_dir = BIN if variant == "audited" else BIN / variant
-    if not bin_dir.exists():
-        raise SystemExit(f"unknown firmware variant: {variant}")
+    port = parse_args(sys.argv)
+    try:
+        import esptool
+    except ModuleNotFoundError as exc:
+        raise SystemExit(
+            "esptool is not installed in this Python environment. Run "
+            "`py -m pip install esptool` and retry."
+        ) from exc
     esptool.main(
         [
             "--chip",
@@ -43,13 +49,13 @@ def main() -> None:
             "hard-reset",
             "write-flash",
             "0x0",
-            str(bin_dir / "bootloader.bin"),
+            str(BIN / "bootloader.bin"),
             "0x8000",
-            str(bin_dir / "partitions.bin"),
+            str(BIN / "partitions.bin"),
             "0xe000",
-            str(bin_dir / "boot_app0.bin"),
+            str(BIN / "boot_app0.bin"),
             "0x10000",
-            str(bin_dir / "firmware.bin"),
+            str(BIN / "firmware.bin"),
         ]
     )
 

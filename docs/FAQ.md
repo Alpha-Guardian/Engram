@@ -2,111 +2,136 @@
 
 ## Is this an LLM?
 
-The most robust public wording for this repository is:
+Not in the usual public sense.
 
-- `sub-1MB language reasoning runtime`
+The most accurate public wording is:
 
-This repository does not present the demo as unrestricted full native LLM execution on MCU.
+- `offline Tiny Expert board proof`
+- `task-specialized, table-driven edge reasoning runtime`
 
-## Are these numbers actually measured on the board?
+This repo does not present the current board line as unrestricted open-input native LLM inference on MCU.
+
+## Is this just a lookup table?
+
+The runtime is table-driven at execution time. That is intentional.
+
+The technical question here is not “can we hide a big dense model behind a tiny label.” The question is:
+
+- can benchmark-relevant reasoning capability be distilled into a hardware-executable, auditable, flash-resident Tiny Expert under extreme edge constraints?
+
+So yes, runtime execution is structured and table-driven. That is a feature, not a contradiction.
+
+## Are these numbers actually measured on a real board?
 
 Yes.
 
-The board writes its report into a flash `report` partition, and the PC-side script reads that JSON back.
+The published board proof is a real `ESP32-C3` run with raw JSON read back from the board `report` partition.
 
-## Is this demo fully offline?
+## What is the current board-proof result?
 
-Yes, in the sense that the public firmware runs locally on the `ESP32-C3` and the reported board results are read back from the board itself.
+The current public board proof is:
 
-The public repo does **not** require a cloud service, remote API, or host-side online inference service during the published board run.
+- `LogiQA 642 = 249 / 642 = 0.3878504672897196`
+- `host_full_match = 642`
 
-At the same time, the execution mode still matters:
+Source:
 
-- the public `IFEval` path is a compiled piece stream executed on the board
-- the public `LogiQA` board result is an audited aggregate over compiled board-side batches
+- [../results/board_proof/esp32c3_logiqa642_board_proof_summary.json](../results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
 
-So the demo is offline, but it should not be described as unrestricted open-input native LLM generation on the MCU.
+## Why are there two kinds of numbers?
 
-## Why are there two kinds of numbers in this repository?
+Because this repo separates:
 
-Because this repository intentionally separates:
+- `public board proof`
+- `research capability line`
 
-- **benchmark capability**
-- **board runtime validation**
+Current research capability line:
 
-The benchmark-capability wording is used to describe the public demo model line.
+- official `IFEval = 0.780037`
+- official `LogiQA = 0.392523`
+- `external_dev = 0.308908`
+- `external_blind = 0.425072`
 
-The board-runtime-validation wording is used to describe the exact board-measured execution mode and report files included here.
+Current board proof:
 
-For this public demo line, the benchmark-capability reference is:
+- fixed-batch compiled board result `249 / 642 = 0.3878504672897196`
 
-- `IFEval = 0.780037`
-- `LogiQA = 0.303738`
+They are related, but they are not the same layer.
 
-The board-side validation files in this repository are reported separately on purpose.
+## Why is the board number slightly lower than the research line?
 
-## Why does LogiQA have two different numbers?
+Because the board line is a constrained fixed-batch compiled proof, while the research line is the current host-side audited scientific surface.
 
-Because the repository publishes two different layers on purpose:
+The board result proves:
 
-- host-side benchmark capability for the public demo line
-- board-side validation under a narrower execution mode
+- real MCU execution
+- exact fixed-batch host-full alignment
 
-For `LogiQA`, that means:
+The research line proves:
 
-- `0.303738` is the host-side benchmark-capability reference
-- `0.2757009345794392` is the published board-side audited result
+- the broader current official and external capability state
 
-The board-side number comes from `logiqa_batch_compiled_probe_aggregated`, which is an audited aggregate over `11` board-side batches. It should not be read as the same thing as a one-shot rerun of the host benchmark.
+## Is this fully offline?
 
-## Is an OLED required?
+Yes for the published board proof.
+
+The firmware runs locally on `ESP32-C3`. The reported board result is read back from the board itself. No cloud inference service is required for the published board proof.
+
+## Why not just quantize a bigger LLM?
+
+That is a different approach.
+
+This line is not trying to preserve a broad open-domain model. It is trying to distill task capability into:
+
+- smaller memory
+- lower power
+- stricter auditability
+- better deployment stability
+
+## Does this prove general reasoning?
 
 No.
 
-This public demo only requires:
+The current public evidence supports:
 
-- `ESP32-C3`
-- USB
-- Python
-- `esptool`
+- no obvious external collapse
+- a real auditable board proof
 
-## Is there anything interactive in the public repo?
+It does **not** support:
 
-Yes.
+- strong hidden-family generalization
+- proof of broad reasoning transfer
 
-In addition to the audited board-report firmware, the repository also includes an optional `interactive` firmware variant plus a serial helper script.
+## Is this overfit to LogiQA?
 
-That interactive variant lets you:
+The current evidence says:
 
-- list the fixed public sample set embedded in the firmware
-- inspect a sample by index
-- rerun the current public GPU-only or linear+GPU path for that sample
+- no obvious text-level leakage
+- no obvious external collapse on `external_dev` and `external_blind`
+- clean `holdout2 = 0.400000`
+- `blind_remainder = 0.448133`
 
-It is still a constrained demo, not a general free-form inference shell.
+But the hidden-family forensic audit remains weak:
 
-## What actually runs on the board?
+- hidden-family holdout `0 / 85`
 
-The shortest accurate description is:
+So the strongest honest statement is:
 
-- a flash-resident, table-driven runtime
-- packed token-weight and lookup structures
-- fixed probe samples and compiled execution paths
-- streaming fold / token-count / checksum style passes for the published `IFEval` board mode
+- no obvious external overfit collapse
+- but hidden-family generalization is still not strong
 
-This is why the repo keeps saying **benchmark capability** and **board runtime validation** separately. The point is to be explicit about the execution boundary rather than blur it.
+## Why is hidden-family performance still weak?
 
-## Why is IFEval so fast?
+Because current gains are much stronger on the visible residual surface than on frozen hidden logical families.
 
-Because the public IFEval mode is:
+This is precisely why the repository publishes the forensic audit instead of hiding it.
 
-- `compiled_piece_stream_v1`
+## Why is auditability such a big deal here?
 
-This is not a conventional autoregressive token-generation speed number.
+For many edge deployments:
 
-## Why is LogiQA reported in batches?
+- being inspectable matters more than being broadly eloquent
+- deterministic failure analysis matters more than open-ended generation
+- constrained offline execution matters more than a bigger generic model
 
-Because the public LogiQA mode is:
-
-- `logiqa_batch_compiled_probe_aggregated`
-
-That means the `642` official samples are aggregated from `11` board-side batches.
+That is why this repo emphasizes trust and boundary disclosure so heavily.

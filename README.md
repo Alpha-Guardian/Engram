@@ -1,188 +1,155 @@
 # Engram
 
-`engram` is a public MCU demo for one very small language runtime line. The point of the repository is not to sell a chip product. The point is to show one concrete, audited example of what our training-and-compilation pipeline can push onto an unusually constrained device.
+Engram is an offline Tiny Expert board proof for extreme edge constraints.
 
-The public artifact in this repo is a `732,034` byte runtime package running on a commodity `ESP32-C3`. The public benchmark-capability reference for the same demo line is `LogiQA = 0.303738` and `IFEval = 0.780037`. The board-side validation published here is narrower and must be read as such: `LogiQA` is reported as a `logiqa_batch_compiled_probe_aggregated` run, while `IFEval` is reported as an `ifeval_compiled_piece_stream_full` run. That difference in execution mode is why the board-side `LogiQA` number (`177 / 642 = 0.2757009345794392`) is not identical to the host-side benchmark reference (`0.303738`).
+This repository is not a cloud-LLM replacement and not a public release of the full training stack. It is a task-specialized, table-driven, auditable edge reasoning line that shows how benchmark capability can be crystallized into a very small, flash-resident runtime on a commodity `ESP32-C3`.
 
-Under the hood, this demo is not a conventional dense on-device LLM stack. The board-side path is closer to a flash-resident, table-driven runtime: packed token weights, hashed lookup tables, fixed probe samples, and streaming fold / checksum passes over precompiled structures. That is why the repo separates **benchmark capability** from **board runtime validation** so explicitly. We want people to see the actual execution boundary rather than guess at it.
+The repo now publishes two layers on purpose:
+
+- `Public board proof`: a real `ESP32-C3` fixed-batch compiled run for `LogiQA 642`
+- `Research capability line`: the current audited host-side scientific surface with official, external, runtime, and overfitting status
 
 ## Quick facts
 
 | Item | Value |
 |---|---|
 | Target board | `ESP32-C3` |
-| Public artifact | `chip_suite_surface_round2_q4_tgz_expack_rgz.json` |
-| Artifact size | `732,034 bytes` |
-| Artifact SHA256 | `05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce` |
-| Benchmark capability | `LogiQA = 0.303738`, `IFEval = 0.780037` |
-| Board validation | `LogiQA 642 = 177 / 642 = 0.2757009345794392` |
-| Board validation | `IFEval 541 compiled-piece-stream, checksum aligned` |
-| IFEval board throughput | `189,918.922 tokens/s` |
+| Public board proof mode | `logiqa_batch_compiled_probe_aggregated` |
+| Compiled probe mode | `host_full_exact` |
+| Public board proof | `249 / 642 = 0.3878504672897196` |
+| Board proof host alignment | `host_full_match = 642 / 642` |
+| Runtime artifact | `chip_suite_surface_round2_q4_tgz_expack_rgz.json` |
+| Artifact size | `1,380,771 bytes` |
+| Default firmware size | `1,784,352 bytes` |
+| Research line | official `IFEval = 0.780037`, official `LogiQA = 0.392523` |
+| External guard | `external_dev = 0.308908`, `external_blind = 0.425072` |
+| Trust boundary | clean `holdout2 = 0.400000`, hidden-family `0 / 85` |
 
-Reference for the benchmark-capability numbers:
+## Why this matters
 
-- [results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json](results/benchmark_reference/20260309_185732_876699_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_freeze_status.json)
+Many edge deployments do not need a general cloud assistant. They need a tiny, deterministic, offline decision system that fits severe memory and power budgets and can still be audited when something goes wrong.
 
-## Execution modes
+This repository is a public proof of that direction:
 
-The public board-side paths in this repository are:
+- `Offline`: no cloud inference is required for the published board proof
+- `Table-driven`: the runtime is flash-resident and structured, not a dense open-input LLM stack
+- `Auditable`: board reports, benchmark references, integrity checks, and overfitting evidence are all published
+- `Edge-constrained`: the target is a commodity `ESP32-C3`, not a GPU server
 
-- `LogiQA`: `logiqa_batch_compiled_probe_aggregated`
-- `IFEval`: `ifeval_compiled_piece_stream_full`
+## What this repo proves
 
-The shortest way to describe the implementation is:
+### 1. Public board proof
 
-- the runtime artifact stays flash-resident
-- the board works over packed tables and fixed probe structures
-- `LogiQA` uses a compiled probe path with sparse weights, hashed features, and fixed retrieval deltas
-- `IFEval` uses `compiled_piece_stream_v1`, which is a precompiled piece stream plus streaming fold / token-count / checksum passes
+The board proof in this repository is a real `ESP32-C3` execution line.
 
-Note: board-side `LogiQA` (`0.2757009345794392`) is an audited `11`-batch aggregate mode; the host reference (`0.303738`) is the benchmark-capability reference for the same public demo line.
+- Board summary: [results/board_proof/esp32c3_logiqa642_board_proof_summary.json](results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
+- Board acceptance: [results/board_proof/board_runtime_audit_acceptance.json](results/board_proof/board_runtime_audit_acceptance.json)
+- Raw board batches: [results/board_proof/raw](results/board_proof/raw)
 
-So this repository is **not** presenting unrestricted native LLM generation on MCU. It is presenting a constrained but real board-measured language runtime line whose execution path is documented and auditable.
+The published board result is:
 
-## Interactive variant
+- `LogiQA 642 = 249 / 642 = 0.3878504672897196`
+- `host_full_match = 642`
 
-In addition to the audited reproduction firmware, this repository also includes an optional `interactive` firmware variant.
+That means the board-side compiled path exactly reproduces the host full decisions for the published fixed batches.
 
-That variant is there for technical readers who want something more direct than a static report readback:
+### 2. Research capability line
 
-- list the fixed public probe samples currently embedded in the firmware
-- inspect a sample by index
-- run the current public GPU-only or linear+GPU decision path for that sample over serial
+The current audited host-side scientific surface is published separately:
 
-It is still a constrained public demo, not a general open-input inference runtime, and it is not the audited firmware used for the published board-score summaries.
+- [results/research_line/current_scientific_surface_manifest.json](results/research_line/current_scientific_surface_manifest.json)
+- [results/research_line/current_scientific_surface_reference_status.json](results/research_line/current_scientific_surface_reference_status.json)
+- [results/research_line/current_scientific_surface_guard_bundle_status.json](results/research_line/current_scientific_surface_guard_bundle_status.json)
 
-## Scope
+Current reference metrics:
 
-This repo contains:
+- official `IFEval = 0.780037`
+- official `LogiQA = 0.392523`
+- `external_dev = 0.308908`
+- `external_blind = 0.425072`
 
-- public demo firmware binaries
-- flashing and report-read scripts
-- an optional interactive serial demo tool
-- audited summaries and raw board reports
-- reproduction notes and method-boundary notes
+### 3. Trust and audit layer
 
-This repo does **not** contain:
+The repository also ships the public evidence layer for:
 
-- the training pipeline
-- the training data pipeline
-- weight-generation scripts
-- private training recipes
-- the internal research workflow
+- replay and integrity
+- runtime and shadow gates
+- overlap and external non-regression
+- post-hoc clean holdout audit
+- hidden-family forensic audit
 
-## Reproduction boundary
+See:
 
-With the default audited firmware in this repository, you can directly reproduce:
+- [docs/TRUST_AND_AUDIT.md](docs/TRUST_AND_AUDIT.md)
+- [results/audit/current_scientific_surface_overfit_audit_status.json](results/audit/current_scientific_surface_overfit_audit_status.json)
+- [results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json](results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json)
 
-- the current public `IFEval 541` board-report path
-- the board report format
-- heap and artifact-access measurements
-- artifact identity checks through `artifact_sha256`
-- the optional interactive sample browser and fixed-sample command shell, if you flash the `interactive` variant
+## Hard boundaries
 
-What you **cannot** reproduce with a single flash from this repository:
+This repository does **not** claim:
 
-- the full `LogiQA 642` score as a one-shot single-firmware run
+- unrestricted open-input native LLM inference on `ESP32-C3`
+- public release of the full training pipeline
+- public release of the full materialization and candidate-generation workflow
+- proof of general reasoning beyond the audited task surface
 
-That public `LogiQA 642` number is an audited aggregate over `11` board-side batches. The raw batch reports are included in [results/raw](results/raw).
+The current board line is:
 
-## Research outlook
+- a fixed-batch compiled board proof
+- aligned to host full decisions
+- auditable through raw board reports and published summaries
 
-This demo is only one public branch of a broader research direction.
-
-The longer-term technical questions we care about include:
-
-- how far language-task capability can be pushed by increasing logic density rather than only scaling parameter count
-- how much semantic structure can be preserved per unit of parameter budget
-- how tiny offline language runtimes can become reusable building blocks for hardware-constrained language systems
-- how domain-specific semantic understanding can be compiled into hardware-executable runtimes under very different memory and compute budgets
-- how lessons from highly compressed runtimes can feed back into future high-efficiency large-model training and inference architectures
-
-In other words, the `ESP32-C3` here is not the destination. It is a deliberately harsh test bench for a broader line of model R&D.
-
-## Runtime footprint
-
-Observed public board range:
-
-- `Sketch Size`: `1,080,208 bytes ~ 1,259,376 bytes`
-- `Free Heap`: `309,892 bytes ~ 310,816 bytes`
-- `Min Free Heap`: `306,760 bytes ~ 309,464 bytes`
-- `artifact CRC board time`: `435 ms ~ 473 ms`
+That boundary matters. The point of this repository is to show a real, reproducible, edge-constrained Tiny Expert line without pretending it is a general-purpose on-device chatbot.
 
 ## Quick start
 
-See [docs/REPRODUCE.md](docs/REPRODUCE.md) for the full guide.
+See [docs/REPRODUCE.md](docs/REPRODUCE.md) for the full walkthrough.
 
-Short version:
+Shortest path:
 
-1. Prepare an `ESP32-C3` board on Windows.
-2. Install `Python 3`.
-3. Install `esptool`.
-4. Optional, for the interactive shell: install `pyserial`.
-5. Flash the board:
+1. Flash the published firmware:
 
 ```bash
-py scripts/flash_firmware.py COMx
+py scripts/flash_firmware.py COM3
 ```
 
-For the optional interactive variant:
+2. Read the board report back:
 
 ```bash
-py scripts/flash_firmware.py COMx --variant interactive
+py scripts/read_board_report.py COM3 --expect-mode logiqa_batch_compiled_probe --expect-artifact-sha256 626a1bfcc0a86585db82130744094ee4512eaaead8b4d9f1dba07175c010719d
 ```
 
-6. Read back the board report with validation:
+3. Compare the returned JSON against:
 
-```bash
-py scripts/read_board_report.py COMx --expect-mode ifeval_compiled_piece_stream_full --expect-artifact-sha256 05bd39e2b73d0c15e18e867e2a01c3a51f474e4a590bd5f3838427a2dadadfce
-```
+- [results/board_proof/raw/esp32c3_logiqa_batch_current_surface_runtime_topk_official642_k24_hostfullexact_000_064.json](results/board_proof/raw/esp32c3_logiqa_batch_current_surface_runtime_topk_official642_k24_hostfullexact_000_064.json)
+- [results/board_proof/esp32c3_logiqa642_board_proof_summary.json](results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
 
-7. Compare the returned JSON against the audited files in [results](results).
+Important scope note:
 
-For the optional interactive shell:
-
-```bash
-py -m pip install pyserial
-py scripts/serial_demo.py COMx
-```
+- the default firmware reproduces a published fixed batch board report
+- the full `642` score is the audited aggregate over the included `11` board-side raw reports
 
 ## Repository layout
 
 - [firmware](firmware)
-  - public demo firmware binaries, including `interactive`
-- [scripts](scripts)
-  - flashing, board-report readback, and interactive serial scripts
-- [results](results)
-  - audited summaries, benchmark reference, and raw board reports
+  - the published `ESP32-C3` board-proof binaries
+- [results/board_proof](results/board_proof)
+  - the current board-proof summary, acceptance, and raw batch reports
+- [results/research_line](results/research_line)
+  - the current scientific surface manifest and replay status
+- [results/audit](results/audit)
+  - the current overfitting and hidden-family forensic evidence
 - [docs](docs)
-  - reproduction notes, audit notes, FAQ, and the HN draft
+  - method boundary, audit notes, capability framing, and reproduction notes
+- [scripts](scripts)
+  - flashing and report readback helpers
 
-Note: GitHub may classify this repository as `Python` because the public repo mainly contains flashing, readback, and evaluation scripts. The board-side runtime is delivered here as firmware binaries rather than as a full public source release.
+## Further reading
 
-## Notes
-
-These are real board-measured results, but the execution modes matter:
-
-- `LogiQA` is published here as a `batch-compiled probe aggregate`
-- `IFEval` is published here as a `compiled piece stream full run`
-
-This repository demonstrates:
-
-- a working language-task runtime on `ESP32-C3`
-- board-measured readback from flash
-- auditable alignment between board output and host-side references
-- a clean separation between benchmark-capability claims and board-runtime claims
-- a minimal fixed-sample interactive shell for technical inspection
-
-This repository does **not** claim:
-
-- unrestricted native LLM generation on MCU
-- direct one-shot execution of a general runtime artifact as-is on the board
-- single-firmware one-shot reproduction of the full `LogiQA 642` aggregate
-
-For precise wording and audit boundaries:
-
+- [docs/WHY_TINY_EXPERTS.md](docs/WHY_TINY_EXPERTS.md)
+- [docs/CAPABILITY_MATRIX.md](docs/CAPABILITY_MATRIX.md)
+- [docs/BOARD_METRICS.md](docs/BOARD_METRICS.md)
+- [docs/TRUST_AND_AUDIT.md](docs/TRUST_AND_AUDIT.md)
+- [docs/RESEARCH_LINE.md](docs/RESEARCH_LINE.md)
 - [docs/METHOD.md](docs/METHOD.md)
-- [docs/AUDIT.md](docs/AUDIT.md)
 - [docs/FAQ.md](docs/FAQ.md)

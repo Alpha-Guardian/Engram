@@ -1,0 +1,71 @@
+{
+  "tool": "tools/run_current_scientific_surface_guard_bundle.py",
+  "generated_at": "2026-03-17T01:00:33.137075+08:00",
+  "verdict": "current_scientific_surface_guard_bundle_aligned",
+  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
+  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "canonical_config": "withheld_internal_current_scientific_surface_config",
+  "canonical_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
+  "reference_status": "results/research_line/current_scientific_surface_reference_status.json",
+  "latest_receipt_only_full_cycle_report": "withheld_internal_receipt_report::20260317_002945_161581_three_benchmark_learning_cycle_report.json",
+  "latest_receipt_only_full_cycle_report_sha256": "3f5e44832d38842d94c64e0b0f5ebbfde3722f07bc559fa9907451d508d81b60",
+  "child_output_tags": {
+    "official": "20260317_current_scientific_surface_guard_bundle_dcbd_official",
+    "external_dev": "20260317_current_scientific_surface_guard_bundle_dcbd_external_dev",
+    "external_blind": "20260317_current_scientific_surface_guard_bundle_dcbd_external_blind",
+    "acceptance": "20260317_current_scientific_surface_guard_bundle_dcbd_acceptance",
+    "shadow": "20260317_current_scientific_surface_guard_bundle_dcbd_shadow"
+  },
+  "reports": {
+    "official": "withheld_internal_followup_report::20260317_005140_993520_20260317_current_scientific_surface_guard_bundle_dcbd_official_authoritative_five_bench_report.json",
+    "official_sha256": "add097af439868d848fd3de2390e54917f833f61243b494ee9d8b707883a696c",
+    "external_dev": "withheld_internal_followup_report::20260317_005255_552137_20260317_current_scientific_surface_guard_bundle_dcbd_external_dev_authoritative_five_bench_report.json",
+    "external_dev_sha256": "40c5a357f67a4e9d8fb318b8ceab554bc7f585aa403a00da27e19dbdd6a6ab1d",
+    "external_blind": "withheld_internal_followup_report::20260317_005406_804620_20260317_current_scientific_surface_guard_bundle_dcbd_external_blind_authoritative_five_bench_report.json",
+    "external_blind_sha256": "092283950229d10c5eed52ba749bfdb22e06673062b6693039d05e00f58b0a9b",
+    "acceptance": "withheld_internal_acceptance_report::20260316_165543_158082_20260317_current_scientific_surface_guard_bundle_dcbd_acceptance_chip_acceptance_status.json",
+    "acceptance_sha256": "8ddceabf065271b5cdaabb4c05162916e82516cd9f948bc9b55eadaccde0ae33",
+    "shadow": "withheld_internal_shadow_report::20260317_005543_401297_20260317_current_scientific_surface_guard_bundle_dcbd_shadow_shadow_blind_report.json",
+    "shadow_sha256": "8307a3c30c22ca39823297775edf7f50162801cce0a54c24cbf711991b7c1f97"
+  },
+  "metrics": {
+    "official_ifeval": 0.780037,
+    "official_logiqa": 0.392523,
+    "external_dev_logiqa": 0.308908,
+    "external_blind_logiqa": 0.425072,
+    "structured_exec_pass": true,
+    "runtime_pass": true,
+    "research_runtime_ready": true,
+    "shadow_pass": true
+  },
+  "expected": {
+    "official_ifeval": 0.780037,
+    "official_logiqa": 0.392523,
+    "external_dev_logiqa": 0.308908,
+    "external_blind_logiqa": 0.425072,
+    "research_runtime_ready": true,
+    "structured_exec_ok": true,
+    "shadow_ok": true
+  },
+  "alignment": {
+    "official_ifeval_match": true,
+    "official_logiqa_match": true,
+    "external_dev_logiqa_match": true,
+    "external_blind_logiqa_match": true,
+    "research_runtime_ready_match": true,
+    "structured_exec_pass_match": true,
+    "shadow_pass_match": true,
+    "receipt_passed": true,
+    "official_aligned": true,
+    "external_aligned": true,
+    "acceptance_aligned": true,
+    "shadow_aligned": true
+  },
+  "overall": {
+    "bundle_pass": true,
+    "research_handoff_ready": false,
+    "promotion_recommended": false,
+    "note": "bundle_pass means the default wrappers reproduce the current scientific surface reference stack; it does not upgrade freeze policy"
+  }
+}

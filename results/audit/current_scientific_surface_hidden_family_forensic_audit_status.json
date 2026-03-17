@@ -1,0 +1,606 @@
+{
+  "generated_at": "2026-03-16T17:49:29.499065+00:00",
+  "verdict": "current_scientific_surface_hidden_family_forensic_audit_strengthened",
+  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
+  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "freeze_checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+  "freeze_checkpoint_sha256": "600dfdf59ab727fabbb7a962e09abba776ce670d13d22aeb064ee997cbda6693",
+  "hidden_holdout": {
+    "input_path": "withheld_internal_hidden_family_holdout_data",
+    "input_sha256": "e4a68d881a80fa947e8f146a6d402752d63b92c7b8a544c29a824b1470ed6279",
+    "meta_path": "results/audit/current_scientific_surface_hidden_official_family_holdout.json",
+    "row_count": 85,
+    "family_count": 8
+  },
+  "current_eval": {
+    "checkpoint": "withheld_internal_current_scientific_surface_candidate",
+    "checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+    "num_samples": 85,
+    "num_correct": 0,
+    "accuracy": 0.0
+  },
+  "freeze_eval": {
+    "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+    "checkpoint_sha256": "600dfdf59ab727fabbb7a962e09abba776ce670d13d22aeb064ee997cbda6693",
+    "num_samples": 85,
+    "num_correct": 0,
+    "accuracy": 0.0
+  },
+  "comparison_evals": [
+    {
+      "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+      "checkpoint_sha256": "600dfdf59ab727fabbb7a962e09abba776ce670d13d22aeb064ee997cbda6693",
+      "num_samples": 85,
+      "num_correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+      "checkpoint_sha256": "a75a18ec4d88b4e694dfc068228439cd55f9411ffcdc09cab165a94b4866d9e7",
+      "num_samples": 85,
+      "num_correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+      "checkpoint_sha256": "bb5b9c8737e5f0902ca8dbcfa839ecaa21f746fc3c80f1ed116d2dbf1bc652df",
+      "num_samples": 85,
+      "num_correct": 0,
+      "accuracy": 0.0
+    }
+  ],
+  "family_breakdown": [
+    {
+      "freeze_family": "AB:D:A",
+      "hidden_row_count": 14,
+      "official_support_count": 14,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "DB:A:D",
+      "hidden_row_count": 13,
+      "official_support_count": 13,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "CA:B:C",
+      "hidden_row_count": 13,
+      "official_support_count": 13,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "DC:A:D",
+      "hidden_row_count": 12,
+      "official_support_count": 12,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "CD:A:C",
+      "hidden_row_count": 12,
+      "official_support_count": 12,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "BA:A:B",
+      "hidden_row_count": 9,
+      "official_support_count": 9,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "DB:B:D",
+      "hidden_row_count": 8,
+      "official_support_count": 8,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    },
+    {
+      "freeze_family": "AD:D:A",
+      "hidden_row_count": 4,
+      "official_support_count": 4,
+      "current_accuracy": 0.0,
+      "freeze_accuracy": 0.0,
+      "current_vs_freeze_delta": 0.0,
+      "comparison_accuracies": [
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_cbdd_bcab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_bcab_baab_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        },
+        {
+          "checkpoint": "withheld_internal_candidate::three_bench_candidate_20260316_trunk_option_latent_v2_official_baab_bddb_support_b1b_routes_positive_surface.json",
+          "accuracy": 0.0
+        }
+      ]
+    }
+  ],
+  "sample_reviews": {
+    "current_only_correct_vs_freeze": [],
+    "freeze_only_correct_vs_current": [],
+    "all_models_wrong": [
+      {
+        "idx": 324,
+        "freeze_family": "AD:D:A",
+        "freeze_family_support_count": 4,
+        "gold": "D",
+        "pred": "A",
+        "current_family": "AD:D:A",
+        "stem_preview": "twenty three.The growth of energy consumption in a region is positively correlated with economic growth, and the difference in growth between the two is usually no more than 15%.In 2003, a statistical report from Zhejiang Province showed th",
+        "options": {
+          "A": "The private economy accounts for a large proportion of Zhejiang's economy, and the growth of some private economy is difficult to be counted.",
+          "B": "In order to leave room for economic development in the region, some local officials underreported the economic growth figures.",
+          "C": "Due to the sharp increase in energy prices, the economic growth of large state-owned enterprises with high energy consumption generally declined.?",
+          "D": "Due to the sharp increase in energy prices, 90% of the newly invested enterprises in Zhejiang are low-energy enterprises."
+        }
+      },
+      {
+        "idx": 362,
+        "freeze_family": "AD:D:A",
+        "freeze_family_support_count": 4,
+        "gold": "D",
+        "pred": "A",
+        "current_family": "AD:D:A",
+        "stem_preview": "The United States plans to establish a radar base in the Czech Republic, and it will form a missile shield with the missile base in Poland to deal with Iranian missile attacks.To this end, the United States and the Czech Republic signed two",
+        "options": {
+          "A": "According to the agreement between the Czech Republic and the United States, the United States has the right to direct and manage its bases in the Czech Republic.",
+          "B": "Most people in the Czech Republic opposed the establishment of an anti-missile radar base by the United States in the Czech Republic.",
+          "C": "Most people in the Czech Republic believe that the establishment of an anti-missile radar base by the United States in the Czech Republic will seriously damage the safety and interests of local people.",
+          "D": "The day the Czech Republic and the United States signed an agreement on radar bases, Russia claimed that Russian missiles were aimed at the base."
+        }
+      },
+      {
+        "idx": 398,
+        "freeze_family": "AD:D:A",
+        "freeze_family_support_count": 4,
+        "gold": "D",
+        "pred": "A",
+        "current_family": "AD:D:A",
+        "stem_preview": "There are seven recruits recruited at a university? F, G, H, I, W, X and Y, one of which is a communications soldier, three are engineering soldiers, and the other three are transport soldiers.The conditions for the assignment of recruits t",
+        "options": {
+          "A": "F, I and X",
+          "B": "G, H and Y",
+          "C": "H and Y",
+          "D": "G"
+        }
+      },
+      {
+        "idx": 565,
+        "freeze_family": "AD:D:A",
+        "freeze_family_support_count": 4,
+        "gold": "D",
+        "pred": "A",
+        "current_family": "AD:D:A",
+        "stem_preview": "For all unethical behaviors, the following two statements hold? First, if they are implemented publicly, they hurt the public's feelings? Second, they will be accompanied by guilt. If the above statement is true, which of the following stat",
+        "options": {
+          "A": "Every publicly guilty actor with guilt is immoral.",
+          "B": "Some unethical behaviors carried out in private will not be accompanied by guilt.",
+          "C": "Unethical behavior is wrong only because of guilt.",
+          "D": "If certain behaviors that hurt public feelings are carried out publicly, they will not be accompanied by guilt."
+        }
+      },
+      {
+        "idx": 142,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "Koreans love sauerkraut and Cuihua loves sauerkraut, so Cuihua is Korean. Which of the following options most clearly shows the absurdity of the above reasoning?",
+        "options": {
+          "A": "All Cretans are lying, John is Cretan, so John is lying.",
+          "B": "Walking animals have legs, and tables have legs, so tables are walking animals.",
+          "C": "Nishimura loves Cuihua.Cuihua loves pickled cabbage.Therefore, Nishimura loves pickled cabbage.",
+          "D": "All gold glitters, so some glitters are gold."
+        }
+      },
+      {
+        "idx": 184,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "David is a senior CEO, he made up his mind to go to a company with the best pay.Huizhong Company and Kangtuo Company intend to hire him.The two companies have the same treatment in other respects, only the salary is slightly different.The c",
+        "options": {
+          "A": "David will go to Cantor because he will get $ 150,000 more in two years.",
+          "B": "David will go to Huizhong Company because he will get more than 50,000 US dollars every year.",
+          "C": "David will go to Cantor because he will spend an extra $ 50,000 per year.",
+          "D": "David will go to Huizhong Company because he will spend an extra $ 70,000 every year."
+        }
+      },
+      {
+        "idx": 273,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "twenty two.Although personnel incentives are important to the company, a research result shows that the personnel department is not so important, because the personnel department does not participate in strategic decision-making meetings, a",
+        "options": {
+          "A": "Although the personnel department does not have the decision-making power to hire senior managers, it has the decision-making power to hire middle-level managers.",
+          "B": "Although the compensation system designed by the personnel department cannot create wealth, it can retain talented people for the company.",
+          "C": "Personnel incentives also include managers of the personnel department, although the performance of the personnel department is difficult to measure.",
+          "D": "The Coca-Cola company's personnel headquarters is one of the company's decision-making teams, which controls the decision-making power of personnel."
+        }
+      },
+      {
+        "idx": 436,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "In the 1940s, more than 7,000 books were published in the United States, of which only over 10 became bestsellers.A New York publisher found that the best-selling book of the year was related to three themes, one related to President Lincol",
+        "options": {
+          "A": "It is believed that the attributes possessed by the whole are also possessed by the parts.",
+          "B": "It is believed that the attributes possessed by parts are also possessed by the whole.",
+          "C": "Ignore other possible causes.",
+          "D": "Treat the result of a phenomenon as the cause of this phenomenon."
+        }
+      },
+      {
+        "idx": 518,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "The People's Bank of China announced that from July 20, 2013, the interest rate control of financial institutions' loans will be fully liberalized.However, only by liberalizing the upper limit of deposit interest rates can we truly realize ",
+        "options": {
+          "A": "With the deepening of reform, sooner or later China will truly realize the marketization of interest rates.",
+          "B": "Only by establishing a deposit insurance system can China truly realize the marketization of interest rates.",
+          "C": "As long as the government voluntarily gives up its own power, market forces can play a role.",
+          "D": "As long as the deposit insurance system is established, financial risks can be effectively avoided."
+        }
+      },
+      {
+        "idx": 531,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "In the novel \"Article 22 Military Regulations\" of the American writer Joseph Heller, Article 22 Military Regulations stipulates that only when a soldier's mental status is abnormal and he applies for suspension of flight, can he be allowed ",
+        "options": {
+          "A": "If a person is mentally abnormal, he will be allowed to stop flying.",
+          "B": "No one can be allowed to stop flying.",
+          "C": "If a person can realize that there is a danger of flying, it shows that he is mentally normal.",
+          "D": "If a person can file an application to stop flying, it shows that his spirit cannot be abnormal."
+        }
+      },
+      {
+        "idx": 593,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "A music producer is recording 7 albums one after another? F, G, H, J, K, L and M, but it is not necessary to record in this order.When arranging the sequence of recording these 7 records, the following conditions must be met? (1) F must be ",
+        "options": {
+          "A": "G, J, K",
+          "B": "G, H, J, K",
+          "C": "G, H, J, L",
+          "D": "G, J, K, L"
+        }
+      },
+      {
+        "idx": 615,
+        "freeze_family": "DB:B:D",
+        "freeze_family_support_count": 8,
+        "gold": "B",
+        "pred": "D",
+        "current_family": "DB:B:D",
+        "stem_preview": "In the book \"Reflexive Life\", Nozick wrote? \"I will not be like Socrates, saying that unreflexive life is not worth it-it is too harsh.But if we Is led by thoughtful reflection, then it is the life we ​​live for ourselves, not others.In thi",
+        "options": {
+          "A": "Nozick thinks that the lives worth living are all through reflection.",
+          "B": "Nozick believes that only life that lives for itself is a complete life.",
+          "C": "Nozick believes that a complete life is a life through reflection.",
+          "D": "Nozick believes that life without reflection is not a complete life."
+        }
+      },
+      {
+        "idx": 51,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "A survey of traffic accidents has found that the incidence of traffic accidents is actually similar in cities where drunk driving is strictly investigated and those who do not.However, most experts believe that strict investigation of drunk",
+        "options": {
+          "A": "Severe investigations of drunk driving have occurred in urban traffic accidents.",
+          "B": "The city that implements strict investigation of drunk driving has not eliminated drunk driving.",
+          "C": "It is more important to improve drivers' traffic safety awareness than strict management.",
+          "D": "In addition to strict investigation of drunk driving, other traffic violations should also be stopped."
+        }
+      },
+      {
+        "idx": 101,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "A company has six general manager assistants F, G, H, I, M and P, and three departments, each of which is in charge of three general manager assistants.Each assistant general manager is in charge of at least one department.The following con",
+        "options": {
+          "A": "Some assistants to the general manager are in charge of the two departments.",
+          "B": "Any department is in charge of F or G.",
+          "C": "M and P are in charge of only one department.",
+          "D": "No department is in charge of F, M and P."
+        }
+      },
+      {
+        "idx": 283,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "There are five volcanic islands E, F, G, H, and I in the east coast of a country.They are arranged in a straight line from north to south, and they are found? (1) F is adjacent to H and is on the north side of H.(2) I and E are adjacent.(3)",
+        "options": {
+          "A": "H is on the southernmost side of the island",
+          "B": "F is on the northernmost side of the island",
+          "C": "E is on the southernmost side of the island",
+          "D": "I is on the northernmost side of the island"
+        }
+      },
+      {
+        "idx": 447,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "There are 6 singers? F, G, L, K, H, M.3 piano accompaniment? X, Y, W.Each piano accompanimentist happened to accompany two of the singers.Known condition information is as follows? (1) If X is F accompaniment, then W is L accompaniment.(2) ",
+        "options": {
+          "A": "X is the accompaniment of G and H; Y is the accompaniment of F and K? W is the accompaniment of L and M.",
+          "B": "X is F and H accompaniment; Y is L and M accompaniment; W is G and K accompaniment.",
+          "C": "X is the accompaniment of G and M; Y is the accompaniment of F and H; w is the accompaniment of L and K.",
+          "D": "X is L, H accompaniment; Y is F, K accompaniment; W is G, M accompaniment."
+        }
+      },
+      {
+        "idx": 496,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "After all the cold dishes at the banquet at one table were served, there were 7 hot dishes.Among them, three Sichuan dishes? K, L, M? three Cantonese dishes? Q, N, P? one Shandong dish? X.Only one hot dish can be served at a time, and the o",
+        "options": {
+          "A": "Q, M, P, L, X, K, N",
+          "B": "Q, M, X, P, K, N, L",
+          "C": "L, P, M, Q, X, K, N",
+          "D": "M, Q, K, L, P, X, N"
+        }
+      },
+      {
+        "idx": 504,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "The article \"Essence of Great Medicine\" comes from the first volume of \"Preparing for Thousands of Gold\" written by Sun Simiao of the Tang Dynasty in China.This article discusses the qualities that a good doctor should have? First, it means",
+        "options": {
+          "A": "People with superb medical skills are good doctors.",
+          "B": "A good doctor should have a noble character.",
+          "C": "No superb medical skills, noble character alone, and not a good doctor.",
+          "D": "Without noble character, you cannot be a good doctor."
+        }
+      },
+      {
+        "idx": 562,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "The bank's credit card regulations stipulate that all transactions conducted with passwords are deemed to be the actions of the cardholder.This means that as long as the password is used when the credit card is stolen, the bank will regard ",
+        "options": {
+          "A": "Relevant experts believe that it is safer to set a credit card without a password, but the expert's words may not be all right.",
+          "B": "When criminals forge credit cards with passwords, they must try to obtain their passwords in order to successfully steal them.",
+          "C": "When the credit card is lost, the password of the credit card can effectively prevent others from swiping the card.",
+          "D": "In the case of piracy, if the credit card is not set with a password, the court usually determines that the card owner is at fault and must bear no loss."
+        }
+      },
+      {
+        "idx": 603,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "The World Health Organization reports that millions of people worldwide die from various medical accidents each year.In hospitals in any country, the probability of death from a medical accident is not less than 0.3%.Therefore, even cancer ",
+        "options": {
+          "A": "What percentage of cancer patients die of medical accidents will eventually die of cancer even if they do not experience a medical accident?",
+          "B": "What are the mortality rates of cancer patients who go to hospital and those who do not go to hospital?",
+          "C": "Is the probability of death from a medical accident declining due to the improvement of hospital management?",
+          "D": "Can patients use their own efforts to reduce the incidence of medical malpractice?"
+        }
+      },
+      {
+        "idx": 620,
+        "freeze_family": "BA:A:B",
+        "freeze_family_support_count": 9,
+        "gold": "A",
+        "pred": "B",
+        "current_family": "BA:A:B",
+        "stem_preview": "The case of Xu Yunhe in Tianjin? Xu Yunhe encountered the old lady over the fence of the center of the road while driving, and the old lady fell down and was injured.Xu picked her up.The old lady insisted that Xu bruised her.After judicial ",
+        "options": {
+          "A": "The judge's reasoning is contrary to common sense? Mrs.Wang was crossing the road guardrail in violation of the regulations.She should be expected to have a car on the motorway, and being frightened usually sees something unexpected.",
+          "B": "The verdict violated traditional morals? like the Nanjing Peng Yu case, it would prevent the public from dare to extend a helping hand to the injured.",
+          "C": "The verdict did not clarify the facts and the evidence was seriously insufficient.It is possible that Mrs.Wang fell first and Xu Cai drove over.",
+          "D": "The judgment reversed the cause and the result."
+        }
+      },
+      {
+        "idx": 21,
+        "freeze_family": "DC:A:D",
+        "freeze_family_support_count": 12,
+        "gold": "A",
+        "pred": "D",
+        "current_family": "DC:A:D",
+        "stem_preview": "In 27.3 years, three canoes were continuously excavated on the Huai River beach in Xinyang County, Henan.Among them, in 2010, the first canoe was discovered under the Huaihe River beach in the Zhangzhuang Formation of Xuzhuang Village, Chen",
+        "options": {
+          "A": "The raw materials of these canoes cannot be transported from the distant Yunnan virgin forest, they can only be obtained locally",
+          "B": "These canoes have been soaked in water for thousands of years and are very heavy",
+          "C": "The place where the Qi Zhou Qiu Jian story takes place is the Chu area, including south of Xuchang, Henan",
+          "D": "The canoe hull is pointed at both ends and is chiseled from a complete log for better preservation"
+        }
+      },
+      {
+        "idx": 63,
+        "freeze_family": "CD:A:C",
+        "freeze_family_support_count": 12,
+        "gold": "A",
+        "pred": "C",
+        "current_family": "CD:A:C",
+        "stem_preview": "The report of the Ministry of Health shows that the cost of health care has indeed increased over the years.It can be seen that the medical conditions enjoyed by each of us have greatly improved. Which of the following raises the most serio",
+        "options": {
+          "A": "The vast majority of health care costs are spent on high-tech intensive care for high-risk patients.",
+          "B": "Without increasing costs, our health conditions may also improve.",
+          "C": "70% of the state's allocation to the health sector is for infrastructure construction.",
+          "D": "The cost of care for elderly chronic diseases is very large."
+        }
+      },
+      {
+        "idx": 92,
+        "freeze_family": "CD:A:C",
+        "freeze_family_support_count": 12,
+        "gold": "A",
+        "pred": "C",
+        "current_family": "CD:A:C",
+        "stem_preview": "Zhang Shan received a higher bonus than Li Si.After learning that Wang Wu's bonus was higher than Miao Xiaoqin, Zhang Shan's bonus was also higher than Miao Xiaoqin. The following assumptions can make the above inference hold, except",
+        "options": {
+          "A": "Wang Wu's bonus is higher than Li Si's.",
+          "B": "Li Si's bonus is higher than Miao Xiaoqin's.",
+          "C": "Li Si's bonus is higher than Wang Wu's.",
+          "D": "Li Si's bonus is as high as Wang Wu's."
+        }
+      }
+    ]
+  },
+  "overall": {
+    "current_hidden_accuracy": 0.0,
+    "freeze_hidden_accuracy": 0.0,
+    "current_vs_freeze_hidden_delta": 0.0,
+    "current_only_correct_count": 0,
+    "freeze_only_correct_count": 0,
+    "all_models_wrong_count": 85,
+    "note": "Hidden-family and long-tail forensic audit; stronger than aggregate blind replay, still weaker than fully new-source unseen evaluation."
+  }
+}
