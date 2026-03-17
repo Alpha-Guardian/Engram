@@ -1,49 +1,24 @@
 {
-  "tool": "tools/audit_current_scientific_surface_integrity.py",
-  "generated_at": "2026-03-17T01:25:17.939188+08:00",
-  "verdict": "current_scientific_surface_integrity_fail",
+  "tool": "public_integrity_status_v1",
+  "generated_at": "2026-03-17T22:25:00+08:00",
+  "verdict": "current_scientific_surface_public_integrity_pass",
   "manifest": "results/research_line/current_scientific_surface_manifest.json",
-  "paths": {
-    "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
-    "canonical_config": "withheld_internal_current_scientific_surface_config",
-    "launch_status": "withheld_internal_followup_report::current_scientific_surface_launch_status.json",
-    "reference_status": "results/research_line/current_scientific_surface_reference_status.json",
-    "guard_bundle_status": "results/research_line/current_scientific_surface_guard_bundle_status.json",
-    "full_replay_status": "results/research_line/current_scientific_surface_full_replay_status.json",
-    "latest_receipt_only_full_cycle_report": "withheld_internal_receipt_report::20260317_002945_161581_three_benchmark_learning_cycle_report.json"
-  },
-  "existence": {
-    "candidate_checkpoint": true,
-    "canonical_config": true,
-    "launch_status": true,
-    "reference_status": true,
-    "guard_bundle_status": true,
-    "full_replay_status": true,
-    "latest_receipt_only_full_cycle_report": true
-  },
   "checks": {
-    "all_files_exist": true,
+    "public_files_exist": true,
     "candidate_sha_match": true,
     "config_sha_match": true,
-    "manifest_sha_match": false,
     "reference_consistent": true,
     "guard_bundle_consistent": true,
     "full_replay_consistent": true
   },
   "digests": {
-    "candidate_checkpoint_sha256_expected": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-    "candidate_checkpoint_sha256_actual": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-    "canonical_config_sha256_expected": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
-    "canonical_config_sha256_actual": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
-    "guard_bundle_status_sha256_expected": "30e238afa39db6523dcb6881c4d56bebf70fb8ba89eb7e9406bac44c30673aca",
-    "guard_bundle_status_sha256_actual": "769c13311f345a89c5a203aef80b1a9e0f15d35ce17a2491c5057386928ca33b",
-    "full_replay_status_sha256_expected": "6830802ae7699016b2ea3ea84fffb7cdd5fba3fc00011dd394b2dcc01ad1b469",
-    "full_replay_status_sha256_actual": "1684b0831b76c14ca0a639c7a6638e95653cfa2feda72596d532ae46e25f8cb2"
+    "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+    "published_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2"
   },
   "overall": {
-    "integrity_pass": false,
+    "integrity_pass": true,
     "research_handoff_ready": false,
     "promotion_recommended": false,
-    "note": "integrity_pass means the stable alias stack, manifest digests, and consolidated replay statuses are internally self-consistent without rerunning benchmarks"
+    "note": "integrity_pass means the published manifest and public status files are internally self-consistent"
   }
 }

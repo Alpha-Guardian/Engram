@@ -1,13 +1,7 @@
 {
-  "tool": "manual_positive_surface_promotion_v1",
-  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
-  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-  "source_official_report": "withheld_internal_followup_report::20260316_232047_761609_20260316_trunk_option_latent_v2_official_dcbd_cbdd_support_b1b_routes_dualbench_postopt_authoritative_five_bench_report.json",
-  "source_external_dev_report": "withheld_internal_followup_report::20260316_232055_132997_20260316_trunk_option_latent_v2_official_dcbd_cbdd_support_b1b_routes_external_dev_postopt_authoritative_five_bench_report.json",
-  "source_external_blind_report": "withheld_internal_followup_report::20260316_232047_752498_20260316_trunk_option_latent_v2_official_dcbd_cbdd_support_b1b_routes_external_blind_postopt_authoritative_five_bench_report.json",
-  "source_shadow_report": "withheld_internal_shadow_report::20260317_000108_594586_20260317_trunk_option_latent_v2_official_dcbd_cbdd_support_b1b_routes_shadow_postopt_r2_shadow_blind_report.json",
-  "source_full_report": "withheld_internal_receipt_report::20260317_002945_161581_three_benchmark_learning_cycle_report.json",
-  "source_handoff_report": "results/research_line/current_scientific_surface_reference_status.json",
+  "tool": "public_reference_status_v1",
+  "published_candidate_id": "current_scientific_surface_candidate",
+  "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "official_clean": {
     "ifeval": 0.780037,
     "logiqa": 0.392523
@@ -39,9 +33,8 @@
     "research_handoff_ready": false
   },
   "overall": {
-    "current_env_research_handoff_pass": false,
     "promotion_recommended": false,
-    "commercial_note": "not_a_handoff_blocker_under_research_proxy",
-    "freeze_kind": "research_handoff_ready"
+    "current_env_research_handoff_pass": false,
+    "commercial_note": "this public line is published as an audited research surface, not as a commercial freeze replacement"
   }
 }

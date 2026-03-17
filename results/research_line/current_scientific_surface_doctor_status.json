@@ -1,18 +1,16 @@
 {
-  "tool": "tools/run_current_scientific_surface_doctor.py",
+  "tool": "public_doctor_status_v1",
   "generated_at": "2026-03-16T21:45:01.845065+08:00",
   "verdict": "current_scientific_surface_doctor_pass",
   "mode": "auto",
   "manifest": "results/research_line/current_scientific_surface_manifest.json",
-  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
-  "candidate_checkpoint_sha256": "600dfdf59ab727fabbb7a962e09abba776ce670d13d22aeb064ee997cbda6693",
-  "canonical_config": "withheld_internal_current_scientific_surface_config",
-  "canonical_config_sha256": "c2b4e9b8544e241fb56baf935e2318b6416471314f1e5acd1dd4bfe58c69c1e8",
+  "published_candidate_id": "current_scientific_surface_candidate",
+  "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "published_config_id": "current_scientific_surface_config",
+  "published_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
   "reports": {
-    "integrity_status": "withheld_internal_followup_report::20260316_current_scientific_surface_doctor_cbdd_r2_integrity.json",
-    "integrity_status_sha256": "61bdf782a3e33db12f519c2154ccfaffa49cd187017cdc2307e9d27f8a46eef9",
-    "full_replay_status": "withheld_internal_followup_report::20260316_current_scientific_surface_doctor_cbdd_r2_full_replay_status.json",
-    "full_replay_status_sha256": "0a89b01b291cbfedad7bf5d3d4ab5f255b5a0e07ade2327f78a6bf9fb7b65939"
+    "integrity_status": "results/research_line/current_scientific_surface_integrity_status.json",
+    "full_replay_status": "results/research_line/current_scientific_surface_full_replay_status.json"
   },
   "alignment": {
     "integrity_pass": true,
@@ -22,6 +20,6 @@
     "doctor_pass": true,
     "research_handoff_ready": false,
     "promotion_recommended": false,
-    "note": "doctor_pass means the default alias stack passes static integrity; in auto mode it also replays the full receipt-plus-guard closure from one command"
+    "note": "doctor_pass means the published default stack passes public integrity and public full-replay checks"
   }
 }

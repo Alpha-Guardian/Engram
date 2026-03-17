@@ -21,7 +21,7 @@ That is the motivation for Engram.
 
 ## What makes this line different
 
-This project is not a simple “shrink a larger transformer” exercise.
+This project is not a simple "shrink a larger transformer" exercise.
 
 The working pattern is:
 

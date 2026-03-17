@@ -1,10 +1,8 @@
 {
   "generated_at": "2026-03-16T17:48:55.635117+00:00",
   "kind": "current_scientific_surface_hidden_official_family_holdout",
-  "checkpoint": "withheld_internal_current_scientific_surface_candidate",
-  "checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-  "official_input_data": "withheld_internal_official_logiqa_source",
-  "holdout_output": "withheld_internal_hidden_family_holdout_data",
+  "published_candidate_id": "current_scientific_surface_candidate",
+  "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "holdout_output_sha256": "e4a68d881a80fa947e8f146a6d402752d63b92c7b8a544c29a824b1470ed6279",
   "family_hash_modulus": 4,
   "family_hash_remainder": 1,
@@ -54,5 +52,5 @@
     273,
     276
   ],
-  "note": "future_guard_only; post-hoc frozen residual-family holdout for subsequent promotions"
+  "note": "Future-only hidden family guard for subsequent promotions. It is stronger than aggregate benchmark replay, but still post-hoc frozen."
 }

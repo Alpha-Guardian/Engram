@@ -4,7 +4,7 @@
   "logiqa_compiled_probe": true,
   "artifact_runtime_decoded_on_board": false,
   "compiled_probe_mode": "host_full_exact",
-  "artifact_path_override": "withheld_internal_board_artifact_build_path",
+  "artifact_path_override": "firmware/firmware.bin (board-proof build embeds the published runtime artifact)",
   "total_samples": 642,
   "total_correct": 249,
   "accuracy": 0.3878504672897196,

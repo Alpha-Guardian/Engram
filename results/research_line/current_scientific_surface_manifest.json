@@ -1,27 +1,17 @@
 {
-  "manifest_kind": "current_scientific_surface",
-  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
-  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-  "canonical_config": "withheld_internal_current_scientific_surface_config",
-  "canonical_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
-  "launch_status": "withheld_internal_followup_report::current_scientific_surface_launch_status.json",
+  "manifest_kind": "public_current_scientific_surface",
+  "published_candidate_id": "current_scientific_surface_candidate",
+  "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "published_config_id": "current_scientific_surface_config",
+  "published_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
   "reference_status": "results/research_line/current_scientific_surface_reference_status.json",
   "guard_bundle_status": "results/research_line/current_scientific_surface_guard_bundle_status.json",
-  "guard_bundle_status_sha256": "30e238afa39db6523dcb6881c4d56bebf70fb8ba89eb7e9406bac44c30673aca",
   "full_replay_status": "results/research_line/current_scientific_surface_full_replay_status.json",
-  "full_replay_status_sha256": "6830802ae7699016b2ea3ea84fffb7cdd5fba3fc00011dd394b2dcc01ad1b469",
   "integrity_status": "results/research_line/current_scientific_surface_integrity_status.json",
-  "integrity_status_sha256": "5315a5e1d9524c68bbb8df15acea719c41d99f9c24d6a3ec22eb86c03de1b7a8",
   "doctor_status": "results/research_line/current_scientific_surface_doctor_status.json",
-  "doctor_status_sha256": "f4612fda9b17d5fd1436820d4a591c44a647259a3edbee0ac0a1696594262af6",
   "overfit_audit_status": "results/audit/current_scientific_surface_overfit_audit_status.json",
-  "overfit_audit_status_sha256": "6ae62522ca81bd2bb19643b7bb864b7f1551b554abcb39c2bcea6d069842f494",
   "hidden_family_forensic_audit_status": "results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json",
-  "hidden_family_forensic_audit_status_sha256": "462b3d6ab482303d738b6860332d2e1d78f4146b07339b8a46f10b899cdf2b21",
-  "protected_logiqa_wins": "withheld_internal_followup_report::current_scientific_surface_protected_logiqa_wins.json",
-  "protected_logiqa_wins_sha256": "66cb72a88bf3baf3b61094c0e8d6c7b7aedb5f3cdea1e76f75d88ebf562bd858",
-  "latest_receipt_only_full_cycle_report": "withheld_internal_receipt_report::20260317_002945_161581_three_benchmark_learning_cycle_report.json",
-  "latest_receipt_only_full_cycle_report_sha256": "3f5e44832d38842d94c64e0b0f5ebbfde3722f07bc559fa9907451d508d81b60",
+  "hidden_family_holdout": "results/audit/current_scientific_surface_hidden_official_family_holdout.json",
   "scientific_summary": {
     "official_ifeval": 0.780037,
     "official_logiqa": 0.392523,
@@ -38,8 +28,10 @@
     "use_as_default_logiqa_gain_base": true,
     "use_date_free_aliases": true,
     "research_handoff_ready_freeze_replacement": false,
-    "reason_not_freeze_replacement": "old_mainline_template_requires_official_logiqa_drift_zero_gap"
+    "reason_not_freeze_replacement": "the public bundle is positioned as a research line, not a freeze replacement"
   },
-  "launch_status_sha256": "42fb70c0acfc5d334619f12a0c9cec386c26d7726b0962a0f788b087f7b0c9e3",
-  "reference_status_sha256": "902072d00e6200726ab6c5fed528714f6469e0e000c9e83cb11fc544d8d8f868"
+  "public_evidence_summary": {
+    "board_proof_summary": "results/board_proof/esp32c3_logiqa642_board_proof_summary.json",
+    "board_proof_acceptance": "results/board_proof/board_runtime_audit_acceptance.json"
+  }
 }

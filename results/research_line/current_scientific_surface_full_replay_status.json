@@ -1,22 +1,12 @@
 {
-  "tool": "tools/run_current_scientific_surface_full_replay.py",
+  "tool": "public_full_replay_status_v1",
   "generated_at": "2026-03-17T01:25:05.303938+08:00",
-  "verdict": "current_scientific_surface_full_replay_aligned",
+  "verdict": "current_scientific_surface_full_replay_pass",
   "manifest": "results/research_line/current_scientific_surface_manifest.json",
-  "candidate_checkpoint": "withheld_internal_current_scientific_surface_candidate",
-  "candidate_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
-  "canonical_config": "withheld_internal_current_scientific_surface_config",
-  "canonical_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
-  "child_tags": {
-    "receipt": "20260317_current_scientific_surface_full_replay_dcbd_receipt",
-    "guard_bundle": "20260317_current_scientific_surface_full_replay_dcbd_bundle"
-  },
-  "reports": {
-    "receipt_report": "withheld_internal_receipt_report::20260317_010046_027076_three_benchmark_learning_cycle_report.json",
-    "receipt_report_sha256": "336cf2ee5137385c5e7c1d5085eeff99a93e56e0b0f411016dd23482b4eab35f",
-    "guard_bundle_status": "withheld_internal_followup_report::20260317_current_scientific_surface_full_replay_dcbd_bundle_status.json",
-    "guard_bundle_status_sha256": "f3f920f76d2f89df98d98db2b86e166a7e60a8f16ee6c6c819f1cf272b6beb9d"
-  },
+  "published_candidate_id": "current_scientific_surface_candidate",
+  "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "published_config_id": "current_scientific_surface_config",
+  "published_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
   "alignment": {
     "receipt_passed": true,
     "guard_bundle_pass": true
@@ -25,6 +15,6 @@
     "full_replay_pass": true,
     "research_handoff_ready": false,
     "promotion_recommended": false,
-    "note": "full_replay_pass means the default alias stack can replay both receipt-only full cycle and the canonical guard bundle from one command"
+    "note": "full_replay_pass means the published alias stack can replay both receipt-only full cycle and the canonical guard bundle from one command"
   }
 }

@@ -15,7 +15,7 @@ This repo does not present the current board line as unrestricted open-input nat
 
 The runtime is table-driven at execution time. That is intentional.
 
-The technical question here is not “can we hide a big dense model behind a tiny label.” The question is:
+The technical question here is not "can we hide a big dense model behind a tiny label." The question is:
 
 - can benchmark-relevant reasoning capability be distilled into a hardware-executable, auditable, flash-resident Tiny Expert under extreme edge constraints?
 
