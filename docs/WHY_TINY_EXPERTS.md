@@ -54,7 +54,7 @@ That is why a Tiny Expert can be more practical than a far larger, far more gene
 
 This repository demonstrates one concrete instance of that idea:
 
-- a current host-side scientific surface with official and external benchmark evidence
+- a current host-side accepted surface with official and external benchmark evidence
 - a real `ESP32-C3` board proof line aligned to fixed-batch host-full decisions
 - a public trust layer that includes replay, integrity, overfitting, and hidden-family forensic evidence
 

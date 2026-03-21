@@ -151,7 +151,7 @@ def main() -> None:
         ("frozen_authoritative_parent", "Frozen authoritative parent", parent_checkpoint, "parent_industrial_v2_eval_public"),
         ("current_no_trunk_ablation", "Current no-trunk ablation", no_trunk_checkpoint, "no_trunk_industrial_v2_eval_public"),
         ("parent_gpu_trained_linear_head_baseline", "Parent trained linear baseline", trained_linear_checkpoint, "trained_linear_industrial_v2_eval_public"),
-        ("current_scientific_surface", "Current promoted scientific surface", current_checkpoint, "current_industrial_v2_eval_public"),
+        ("current_scientific_surface", "Current accepted host surface", current_checkpoint, "current_industrial_v2_eval_public"),
         ("independent_industrial_second_line", "Parent-derived independent industrial second line", independent_checkpoint, "independent_pass8_industrial_v2_eval_public"),
         ("industrial_compromise_subset", "Independent line compromise subset 5+6+8+10", compromise_checkpoint, "independent_compromise_industrial_v2_eval_public"),
         ("industrial_parent_preserving_subset", "Independent line parent-preserving subset 5+8+10+16", parent_preserving_checkpoint, "independent_parent_preserving_industrial_v2_eval_public"),

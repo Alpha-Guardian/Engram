@@ -4,7 +4,7 @@ This page documents the public structure of the current route-gated trunk recurr
 
 ## Current Inventory
 
-The current promoted scientific surface contains:
+The current accepted host surface contains:
 
 - `75` trunk recurrent blocks
 - `72` blocks in `option_latent_v2`

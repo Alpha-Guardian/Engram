@@ -3,7 +3,7 @@
   "target_board": "ESP32-C3",
   "board_proof_mode": "logiqa_batch_compiled_probe_aggregated",
   "compiled_probe_mode": "host_full_exact",
-  "scope": "fixed-batch board proof for the current scientific surface; not unrestricted on-device open-input inference",
+  "scope": "fixed-batch board proof for the current host surface; not unrestricted on-device open-input inference",
   "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
   "artifact_sha256": "626a1bfcc0a86585db82130744094ee4512eaaead8b4d9f1dba07175c010719d",
   "artifact_size_bytes": 1380771,

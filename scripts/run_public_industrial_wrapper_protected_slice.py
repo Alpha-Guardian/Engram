@@ -148,7 +148,7 @@ def main() -> None:
         ("frozen_authoritative_parent", "Frozen authoritative parent", parent_checkpoint, "industrial_wrapper_protected18_parent"),
         ("current_no_trunk_ablation", "Current no-trunk ablation", no_trunk_checkpoint, "industrial_wrapper_protected18_no_trunk"),
         ("parent_gpu_trained_linear_head_baseline", "Parent trained linear baseline", trained_linear_checkpoint, "industrial_wrapper_protected18_trained_linear"),
-        ("current_scientific_surface", "Current promoted scientific surface", current_checkpoint, "industrial_wrapper_protected18_current"),
+        ("current_scientific_surface", "Current accepted host surface", current_checkpoint, "industrial_wrapper_protected18_current"),
     ]
 
     rows = []

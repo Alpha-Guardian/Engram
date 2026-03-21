@@ -35,7 +35,7 @@ Host-side published task families:
 
 ## Current Result
 
-Host-side structured demo under the current scientific surface:
+Host-side structured demo under the current host surface:
 
 - `json_parse_rate = 1.0`
 - `schema_pass_rate = 1.0`

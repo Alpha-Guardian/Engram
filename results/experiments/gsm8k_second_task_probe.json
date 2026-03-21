@@ -18,7 +18,7 @@
     },
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current promoted scientific surface",
+      "label": "Current accepted host surface",
       "official_gsm8k": 0.019712,
       "external_dev_gsm8k": 0.016064,
       "external_blind_gsm8k": 0.024096,

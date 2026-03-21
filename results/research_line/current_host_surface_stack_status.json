@@ -1,25 +1,25 @@
 {
-  "tool": "public_doctor_status_v1",
+  "tool": "public_stack_status_v1",
   "generated_at": "2026-03-16T21:45:01.845065+08:00",
-  "verdict": "current_scientific_surface_doctor_pass",
+  "verdict": "current_host_surface_stack_pass",
   "mode": "auto",
-  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "manifest": "results/research_line/current_host_surface_manifest.json",
   "published_candidate_id": "current_scientific_surface_candidate",
   "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "published_config_id": "current_scientific_surface_config",
   "published_config_sha256": "0fa6e5600aa74ee9246c634b230e1e99e93a560cbbd4e379d1cbafb4ad2611e2",
   "reports": {
-    "integrity_status": "results/research_line/current_scientific_surface_integrity_status.json",
-    "full_replay_status": "results/research_line/current_scientific_surface_full_replay_status.json"
+    "integrity_status": "results/research_line/current_host_surface_integrity_status.json",
+    "full_replay_status": "results/research_line/current_host_surface_full_replay_status.json"
   },
   "alignment": {
     "integrity_pass": true,
     "full_replay_pass": true
   },
   "overall": {
-    "doctor_pass": true,
+    "stack_pass": true,
     "research_handoff_ready": false,
     "promotion_recommended": false,
-    "note": "doctor_pass means the published default stack passes public integrity and public full-replay checks"
+    "note": "stack_pass means the published default stack passes public integrity and public full-replay checks"
   }
 }

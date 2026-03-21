@@ -106,11 +106,11 @@ The repo now publishes two board-side comparators on the same fixed `642`-sample
 | frozen parent | `0.302181` | `194 / 642` | `642 / 642` |
 | parent trained linear baseline | `0.299065` | `192 / 642` | `642 / 642` |
 
-Compared with the current scientific surface:
+Compared with the current host surface:
 
 | Artifact | Accuracy | Delta vs current |
 |---|---:|---:|
-| current scientific surface | `0.387850` | `0.000000` |
+| current host surface | `0.387850` | `0.000000` |
 | frozen parent | `0.302181` | `-0.085670` |
 | parent trained linear baseline | `0.299065` | `-0.088785` |
 

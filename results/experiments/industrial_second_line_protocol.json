@@ -91,7 +91,7 @@
     },
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current promoted scientific surface",
+      "label": "Current accepted host surface",
       "metrics": {
         "dev_accuracy": 0.2,
         "blind_accuracy": 0.375

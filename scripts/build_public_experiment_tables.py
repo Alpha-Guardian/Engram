@@ -300,7 +300,7 @@ def main() -> None:
         ),
         _surface_row(
             surface_id="current_scientific_surface",
-            label="Current promoted scientific surface",
+            label="Current accepted host surface",
             family_scope="current_surface",
             official_ifeval=current_scores["official_ifeval"],
             official_logiqa=current_scores["official_logiqa"],

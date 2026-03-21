@@ -1,6 +1,6 @@
 {
   "ablation_bundle_kind": "public_ablations_v1",
-  "generated_at": "2026-03-21T16:58:02.200960+00:00",
+  "generated_at": "2026-03-21T17:38:07.356478+00:00",
   "exact_no_trunk_ablation": {
     "ablation_surface_id": "current_no_trunk_ablation",
     "parent_equivalence": {

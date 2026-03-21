@@ -80,7 +80,7 @@ def main() -> None:
         "--checkpoint",
         type=Path,
         default=None,
-        help="Path to the source checkpoint. Defaults to the current scientific surface checkpoint in the workspace root.",
+        help="Path to the source checkpoint. Defaults to the current host surface checkpoint in the workspace root.",
     )
     parser.add_argument(
         "--output",

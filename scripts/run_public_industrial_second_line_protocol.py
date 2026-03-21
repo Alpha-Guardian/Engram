@@ -164,7 +164,7 @@ def main() -> None:
         ("frozen_authoritative_parent", "Frozen authoritative parent", parent_checkpoint, "industrial_second_line_protocol_parent"),
         ("current_no_trunk_ablation", "Current no-trunk ablation", no_trunk_checkpoint, "industrial_second_line_protocol_no_trunk"),
         ("parent_gpu_trained_linear_head_baseline", "Parent trained linear baseline", trained_linear_checkpoint, "industrial_second_line_protocol_trained_linear"),
-        ("current_scientific_surface", "Current promoted scientific surface", current_checkpoint, "industrial_second_line_protocol_current"),
+        ("current_scientific_surface", "Current accepted host surface", current_checkpoint, "industrial_second_line_protocol_current"),
         ("industrial_second_line_candidate", "Independent industrial second-line candidate 5+6+8+10", candidate_checkpoint, "industrial_second_line_protocol_candidate"),
     ]
 

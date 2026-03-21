@@ -3,7 +3,7 @@
   "rows": [
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current scientific surface board artifact",
+      "label": "Current host surface board artifact",
       "accuracy": 0.3878504672897196,
       "total_correct": 249,
       "total_samples": 642,
@@ -37,7 +37,7 @@
   ],
   "notes": [
     "All three board artifacts were executed on ESP32-C3 in host_full_exact compiled-probe mode.",
-    "Current scientific surface remains well above the frozen parent and trained linear baseline on the same fixed 642-sample board path.",
+    "Current host surface remains well above the frozen parent and trained linear baseline on the same fixed 642-sample board path.",
     "The board comparator bundle is intentionally narrow: stronger route-heavy PEFT-style baselines do not currently fit the published ESP32-C3 artifact budget."
   ]
 }

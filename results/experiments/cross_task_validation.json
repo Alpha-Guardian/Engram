@@ -1,6 +1,6 @@
 {
   "bundle_kind": "public_cross_task_validation_v1",
-  "generated_at": "2026-03-21T16:58:02.200935+00:00",
+  "generated_at": "2026-03-21T17:38:07.356450+00:00",
   "task": "IFEval",
   "metric": "strict_prompt_accuracy",
   "rows": [
@@ -41,7 +41,7 @@
     },
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current promoted scientific surface",
+      "label": "Current accepted host surface",
       "official_ifeval": 0.780037,
       "delta_vs_parent_ifeval": 0.0,
       "official_logiqa": 0.392523

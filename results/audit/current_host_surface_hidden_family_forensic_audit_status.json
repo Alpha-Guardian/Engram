@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-03-16T17:49:29.499065+00:00",
   "verdict": "current_scientific_surface_hidden_family_forensic_audit_strengthened",
-  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "manifest": "results/research_line/current_host_surface_manifest.json",
   "published_candidate_id": "current_scientific_surface_candidate",
   "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "freeze_surface": {
@@ -10,7 +10,7 @@
   },
   "hidden_holdout": {
     "input_sha256": "e4a68d881a80fa947e8f146a6d402752d63b92c7b8a544c29a824b1470ed6279",
-    "meta_path": "results/audit/current_scientific_surface_hidden_official_family_holdout.json",
+    "meta_path": "results/audit/current_host_surface_hidden_official_family_holdout.json",
     "row_count": 85,
     "family_count": 8
   },

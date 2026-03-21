@@ -41,11 +41,11 @@ def main() -> None:
     mcu_open_input_demo_path = repo_root / "results/open_input_demo/mcu_open_input_demo.json"
     mcu_open_input_taskset_path = repo_root / "results/open_input_demo/mcu_open_input_taskset_v1.jsonl"
     mcu_open_input_board_report_path = repo_root / "results/open_input_demo/mcu_open_input_board_report.json"
-    scientific_manifest_path = repo_root / "results/research_line/current_scientific_surface_manifest.json"
+    scientific_manifest_path = repo_root / "results/research_line/current_host_surface_manifest.json"
     board_summary_path = repo_root / "results/board_proof/esp32c3_logiqa642_board_proof_summary.json"
     board_baseline_comparison_path = repo_root / "results/board_proof/board_baseline_comparison.json"
-    overfit_path = repo_root / "results/audit/current_scientific_surface_overfit_audit_status.json"
-    hidden_family_path = repo_root / "results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json"
+    overfit_path = repo_root / "results/audit/current_host_surface_overfit_audit_status.json"
+    hidden_family_path = repo_root / "results/audit/current_host_surface_hidden_family_forensic_audit_status.json"
 
     required_paths = [
         manifest_path,

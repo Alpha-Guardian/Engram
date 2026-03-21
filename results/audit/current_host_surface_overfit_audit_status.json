@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-03-16T17:53:12.231195+00:00",
   "verdict": "current_scientific_surface_overfit_audit_strengthened",
-  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "manifest": "results/research_line/current_host_surface_manifest.json",
   "published_candidate_id": "current_scientific_surface_candidate",
   "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "current_summary": {
@@ -72,7 +72,7 @@
     "note": "Post-hoc frozen subset; stronger than aggregate blind replay, weaker than a fully unseen sourced dataset."
   },
   "hidden_family_holdout": {
-    "meta_path": "results/audit/current_scientific_surface_hidden_official_family_holdout.json",
+    "meta_path": "results/audit/current_host_surface_hidden_official_family_holdout.json",
     "holdout_output_sha256": "e4a68d881a80fa947e8f146a6d402752d63b92c7b8a544c29a824b1470ed6279",
     "family_hash_modulus": 4,
     "family_hash_remainder": 1,

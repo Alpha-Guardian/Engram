@@ -2,7 +2,7 @@
   "tool": "public_full_replay_status_v1",
   "generated_at": "2026-03-17T01:25:05.303938+08:00",
   "verdict": "current_scientific_surface_full_replay_pass",
-  "manifest": "results/research_line/current_scientific_surface_manifest.json",
+  "manifest": "results/research_line/current_host_surface_manifest.json",
   "published_candidate_id": "current_scientific_surface_candidate",
   "published_candidate_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
   "published_config_id": "current_scientific_surface_config",

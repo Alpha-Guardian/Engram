@@ -1,6 +1,6 @@
 {
   "table_kind": "public_main_table_v1",
-  "generated_at": "2026-03-21T16:58:02.200904+00:00",
+  "generated_at": "2026-03-21T17:38:07.356428+00:00",
   "rows": [
     {
       "surface_id": "frozen_authoritative_parent",
@@ -172,7 +172,7 @@
     },
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current promoted scientific surface",
+      "label": "Current accepted host surface",
       "family_scope": "current_surface",
       "metrics": {
         "official_ifeval": 0.780037,

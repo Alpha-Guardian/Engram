@@ -52,7 +52,7 @@
     },
     {
       "surface_id": "current_scientific_surface",
-      "label": "Current promoted scientific surface",
+      "label": "Current accepted host surface",
       "accuracy": 0.375,
       "checkpoint": {
         "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",

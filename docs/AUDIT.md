@@ -3,7 +3,7 @@
 The public audit package in this repository now has two parts:
 
 - `board proof audit`
-- `scientific surface audit`
+- `host surface audit`
 
 ## Board proof audit
 
@@ -27,7 +27,7 @@ Important boundary:
 - this is a correctness and consistency proof for a fixed-batch compiled line
 - it is not a speed-comparable unrestricted runtime benchmark
 
-## Scientific surface audit
+## Host surface audit
 
 The current research-line evidence is published under:
 
@@ -36,12 +36,12 @@ The current research-line evidence is published under:
 
 That includes:
 
-- current scientific surface manifest
+- current host surface manifest
 - reference status
 - guard bundle
 - full replay
 - integrity
-- doctor
+- stack check
 - overfit audit
 - hidden-family forensic audit
 
