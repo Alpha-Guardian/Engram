@@ -1,8 +1,62 @@
 # Trust And Audit
 
-This repository does not ask readers to trust a single score line. It publishes a layered audit stack.
+This repository does not ask readers to trust a single aggregate score. It publishes a layered audit stack around the current promoted scientific surface and the derived board artifact.
 
-## 1. Overlap and leakage audit
+## 1. Exact Localization Control
+
+The strongest public causal control is the exact no-trunk ablation.
+
+Current result:
+
+- official `IFEval` returns to `0.780037`
+- official `LogiQA` returns to `0.303738`
+- `external_dev` returns to `0.304598`
+- `external_blind` returns to `0.425072`
+
+Interpretation:
+
+- the public gain localizes to the promoted trunk blocks rather than generic checkpoint drift
+
+Source:
+
+- [../results/experiments/ablations.json](../results/experiments/ablations.json)
+
+Additional public controls:
+
+- published-eval route-disabled proxy drops official `LogiQA` to `0.244548`
+- removing parent topology conditions drops official `LogiQA` to `0.280374`
+- reducing all trunk blocks to `depth_steps = 1` yields only `0.323988`
+- target-only diagnostic controls reach only `0.308411`
+- a same-parent trained linear-readout control reaches `0.300623`
+- a same-parent trained BitFit option-bias control reaches `0.266355`
+- a same-parent trained LoRA-style hash-delta control reaches `0.303738`
+- a same-parent trained low-rank adapter baseline reaches `0.303738`
+- a same-parent trainable-budget-matched LoRA-style control reaches `0.303738`
+- a same-parent trainable-budget-matched low-rank adapter control reaches `0.303738`
+- retrieval-only and lexical-only classic baselines reach only `0.291277` and `0.289720`
+- same-parent low-rank adapter-style controls remain at the frozen-parent level
+
+Source:
+
+- [../results/experiments/additional_controls.json](../results/experiments/additional_controls.json)
+
+## 2. Paired Replay Statistics
+
+Aggregate gains are accompanied by question-level paired evidence.
+
+Current public paired replay:
+
+- official `LogiQA` delta `= +0.088785`
+- `66` improved only, `9` harmed only
+- exact McNemar `p = 7.658840702050266e-12`
+- external dev delta `= +0.004310`
+- external blind delta `= 0.000000`
+
+Source:
+
+- [../results/experiments/ablations.json](../results/experiments/ablations.json)
+
+## 3. Overlap And Leakage Audit
 
 Goal:
 
@@ -10,60 +64,35 @@ Goal:
 
 Current evidence:
 
-- no exact overlap was found between the clean blind `holdout2` subset and official `LogiQA`
-- no exact overlap was found between the clean blind `holdout2` subset and `external_dev`
+- no exact overlap was found between clean blind `holdout2` and official `LogiQA`
+- no exact overlap was found between clean blind `holdout2` and `external_dev`
 
 Source:
 
 - [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
 
-## 2. Official drift audit
-
-Goal:
-
-- measure question-level `base_only` and `candidate_only` flips rather than relying only on aggregate accuracy
-
-Current research line:
-
-- official drift `base_only = 0`
-- official drift `candidate_only = 3`
-
-Source:
-
-- [../results/research_line/current_scientific_surface_manifest.json](../results/research_line/current_scientific_surface_manifest.json)
-
-## 3. Protected wins
-
-Goal:
-
-- prevent new routes from winning locally while silently breaking already-earned official wins
-
-This logic is part of the internal route/family gate stack that feeds the current surface. The public repo exposes the resulting current-surface status rather than the full internal route-generation pipeline.
-
-## 4. External non-regression
+## 4. External Non-Regression
 
 Goal:
 
 - reject candidates that improve official `LogiQA` while degrading external distributions
 
-Current research line:
+Current public line:
 
 - `external_dev = 0.308908`
 - `external_blind = 0.425072`
-
-These are part of the public current-surface reference.
 
 Source:
 
 - [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
 
-## 5. Acceptance, runtime, and shadow
+## 5. Runtime, Shadow, And Integrity
 
 Goal:
 
-- ensure the promoted scientific surface is not only accurate, but also runtime-clean and shadow-clean
+- ensure the promoted surface is not only accurate, but also runtime-clean and shadow-clean
 
-Current reference:
+Current public guard status:
 
 - `structured_all_pass = true`
 - `runtime_pass = true`
@@ -76,12 +105,12 @@ Sources:
 - [../results/research_line/current_scientific_surface_integrity_status.json](../results/research_line/current_scientific_surface_integrity_status.json)
 - [../results/research_line/current_scientific_surface_doctor_status.json](../results/research_line/current_scientific_surface_doctor_status.json)
 
-## 6. Clean holdout2 and blind remainder
+## 6. Clean Holdout2 And Blind Remainder
 
 Goal:
 
-- move beyond a single aggregate blind score
-- create a post-hoc clean holdout that is deduplicated against official and `external_dev`
+- move beyond one aggregate blind score
+- publish a post-hoc clean subset deduplicated against official and `external_dev`
 
 Current results:
 
@@ -90,18 +119,18 @@ Current results:
 
 Important boundary:
 
-- this is stronger than a single aggregate blind replay
-- it is still weaker than a fully independent unseen sourced dataset
+- stronger than a single aggregate blind replay
+- weaker than a fully independent unseen sourced dataset
 
 Source:
 
 - [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
 
-## 7. Hidden-family forensic audit
+## 7. Hidden-Family Forensic Audit
 
 Goal:
 
-- test whether improvements generalize beyond the residual families that drove the observed surface gains
+- test whether current gains generalize beyond the visible residual families that drive the public surface gains
 
 Current result:
 
@@ -109,22 +138,23 @@ Current result:
 - current surface: `0 / 85`
 - freeze and nearby prior surfaces: also `0 / 85`
 
-This is the most important boundary in the public repo.
+Interpretation:
 
-It means:
-
-- we do **not** currently see obvious external collapse
-- we also do **not** currently have strong evidence for hidden-family generalization
+- the public line does not show obvious external collapse
+- it also does not yet show strong hidden-family generalization
 
 Source:
 
 - [../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json](../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json)
 
-## Board-proof acceptance
+## 8. Board-Proof Acceptance
 
-The public board-proof line is also audited separately:
+The derived board artifact is audited separately.
 
-- board proof mode: `logiqa_batch_compiled_probe_aggregated`
+Current public board-proof line:
+
+- aggregate board-proof mode: `logiqa_batch_compiled_probe_aggregated`
+- default single-batch board readback mode: `logiqa_batch_compiled_probe`
 - compiled probe mode: `host_full_exact`
 - aggregate board result: `249 / 642 = 0.3878504672897196`
 - `host_full_match = 642`
@@ -134,10 +164,11 @@ Sources:
 - [../results/board_proof/board_runtime_audit_acceptance.json](../results/board_proof/board_runtime_audit_acceptance.json)
 - [../results/board_proof/esp32c3_logiqa642_board_proof_summary.json](../results/board_proof/esp32c3_logiqa642_board_proof_summary.json)
 
-## Bottom line
+## Bottom Line
 
-The strongest honest statement this repository can make today is:
+The strongest honest public statement is:
 
-- there is no obvious text-level leakage or external collapse in the published current surface
-- there is a real, audited `ESP32-C3` board proof aligned to host-full fixed-batch decisions
-- hidden-family generalization remains weak, and that limitation is published rather than hidden
+- the repo contains a real promoted scientific surface with replayable evidence
+- the gain localizes to the promoted trunk blocks under the exact public ablation
+- a real `ESP32-C3` artifact reproduces the published host-full fixed batches
+- hidden-family generalization remains weak and is published rather than hidden

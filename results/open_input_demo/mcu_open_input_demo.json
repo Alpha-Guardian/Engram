@@ -1,0 +1,475 @@
+{
+  "bundle_kind": "public_mcu_open_input_demo_v1",
+  "generated_at": "2026-03-21T07:10:58.794878+00:00",
+  "port": "COM3",
+  "board_info": {
+    "artifact_name": "deepseek_unit_open_input_runtime_artifact_v1.json",
+    "artifact_sha256": "c98987ce318b654175a939ac28d81f9a1cd2952053722ef020d03e4e4bd12df8",
+    "board_run_id": "deepseek-open-input-v1",
+    "evaluation_mode": "deepseek_unit_open_input_interactive_v1",
+    "gpu_sample_count": "1",
+    "linear_sample_count": "0",
+    "ifeval_sample_count": "1"
+  },
+  "taskset": {
+    "path": "results/open_input_demo/mcu_open_input_taskset_v1.jsonl",
+    "sha256": "82dcb725a07505d78d9dfa4d87b403b4d1a6bca7c9241de798d200b7983c2683",
+    "samples": 36
+  },
+  "summary": {
+    "samples": 36,
+    "exact_match_rate": 1.0,
+    "nonempty_rate": 1.0,
+    "avg_latency_ms": 43.836289,
+    "p50_latency_ms": 43.08805,
+    "p95_latency_ms": 53.870675,
+    "split_metrics": {
+      "new": {
+        "samples": 24,
+        "exact_match_rate": 1.0,
+        "nonempty_rate": 1.0
+      },
+      "retention": {
+        "samples": 12,
+        "exact_match_rate": 1.0,
+        "nonempty_rate": 1.0
+      }
+    },
+    "stability_probe": {
+      "probe_cases": 3,
+      "stable_cases": 3,
+      "stability_rate": 1.0,
+      "cases": [
+        {
+          "index": 0,
+          "repeats": 2,
+          "unique_outputs": 1,
+          "stable": true
+        },
+        {
+          "index": 1,
+          "repeats": 2,
+          "unique_outputs": 1,
+          "stable": true
+        },
+        {
+          "index": 2,
+          "repeats": 2,
+          "unique_outputs": 1,
+          "stable": true
+        }
+      ]
+    },
+    "gates": {
+      "min_exact_match_rate": 1.0,
+      "min_nonempty_rate": 1.0,
+      "exact_match_pass": true,
+      "nonempty_pass": true,
+      "all_pass": true
+    }
+  },
+  "claim_boundary": {
+    "host_open_input_demo": true,
+    "mcu_open_input_demo": true,
+    "scope": "narrow_unit_normalization_loop",
+    "note": "This MCU demo is a tightly constrained open-input micro-loop and does not replace the fixed-batch board-proof boundary."
+  },
+  "rows": [
+    {
+      "index": 0,
+      "split": "new",
+      "source": "The road is 1 mile long.",
+      "target": "The road is 1.61 km long.",
+      "output": "The road is 1.61 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 33.7918
+    },
+    {
+      "index": 1,
+      "split": "new",
+      "source": "The road is 2 miles long.",
+      "target": "The road is 3.22 km long.",
+      "output": "The road is 3.22 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 36.1502
+    },
+    {
+      "index": 2,
+      "split": "new",
+      "source": "The trail is 5 miles long.",
+      "target": "The trail is 8.05 km long.",
+      "output": "The trail is 8.05 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 40.9799
+    },
+    {
+      "index": 3,
+      "split": "new",
+      "source": "The route is 10 miles long.",
+      "target": "The route is 16.09 km long.",
+      "output": "The route is 16.09 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.1292
+    },
+    {
+      "index": 4,
+      "split": "new",
+      "source": "The marathon is 26.2 miles.",
+      "target": "The marathon is 42.16 km.",
+      "output": "The marathon is 42.16 km.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.0022
+    },
+    {
+      "index": 5,
+      "split": "new",
+      "source": "The camera moved 0.5 mile east.",
+      "target": "The camera moved 0.8 km east.",
+      "output": "The camera moved 0.8 km east.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.3161
+    },
+    {
+      "index": 6,
+      "split": "new",
+      "source": "The wall is 3 feet tall.",
+      "target": "The wall is 0.91 m tall.",
+      "output": "The wall is 0.91 m tall.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 37.3679
+    },
+    {
+      "index": 7,
+      "split": "new",
+      "source": "The tree is 12 feet high.",
+      "target": "The tree is 3.66 m high.",
+      "output": "The tree is 3.66 m high.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 36.2588
+    },
+    {
+      "index": 8,
+      "split": "new",
+      "source": "The cable is 30 feet long.",
+      "target": "The cable is 9.14 m long.",
+      "output": "The cable is 9.14 m long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 35.8538
+    },
+    {
+      "index": 9,
+      "split": "new",
+      "source": "The tower is 100 feet tall.",
+      "target": "The tower is 30.48 m tall.",
+      "output": "The tower is 30.48 m tall.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.0056
+    },
+    {
+      "index": 10,
+      "split": "new",
+      "source": "The runway marker is 5280 feet away.",
+      "target": "The runway marker is 1609.34 m away.",
+      "output": "The runway marker is 1609.34 m away.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.7355
+    },
+    {
+      "index": 11,
+      "split": "new",
+      "source": "The weather was 32 F in the morning.",
+      "target": "The weather was 0 C in the morning.",
+      "output": "The weather was 0 C in the morning.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.1874
+    },
+    {
+      "index": 12,
+      "split": "new",
+      "source": "The weather was 68 Fahrenheit at noon.",
+      "target": "The weather was 20 C at noon.",
+      "output": "The weather was 20 C at noon.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 47.9617
+    },
+    {
+      "index": 13,
+      "split": "new",
+      "source": "The weather was 86 F in the afternoon.",
+      "target": "The weather was 30 C in the afternoon.",
+      "output": "The weather was 30 C in the afternoon.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 54.0161
+    },
+    {
+      "index": 14,
+      "split": "new",
+      "source": "The weather was 95 F at sunset.",
+      "target": "The weather was 35 C at sunset.",
+      "output": "The weather was 35 C at sunset.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.3718
+    },
+    {
+      "index": 15,
+      "split": "new",
+      "source": "Human body temperature is 98.6 F.",
+      "target": "Human body temperature is 37 C.",
+      "output": "Human body temperature is 37 C.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.3127
+    },
+    {
+      "index": 16,
+      "split": "new",
+      "source": "The engine reached 104 Fahrenheit.",
+      "target": "The engine reached 40 C.",
+      "output": "The engine reached 40 C.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 42.8189
+    },
+    {
+      "index": 17,
+      "split": "new",
+      "source": "The freezer is set to 14 F.",
+      "target": "The freezer is set to -10 C.",
+      "output": "The freezer is set to -10 C.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 37.4487
+    },
+    {
+      "index": 18,
+      "split": "new",
+      "source": "The freezer was at -4 F overnight.",
+      "target": "The freezer was at -20 C overnight.",
+      "output": "The freezer was at -20 C overnight.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.8069
+    },
+    {
+      "index": 19,
+      "split": "new",
+      "source": "The trail is 5 miles and the tower is 30 feet.",
+      "target": "The trail is 8.05 km and the tower is 9.14 m.",
+      "output": "The trail is 8.05 km and the tower is 9.14 m.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 53.8222
+    },
+    {
+      "index": 20,
+      "split": "new",
+      "source": "Forecast: 68 F at noon, 50 F at night.",
+      "target": "Forecast: 20 C at noon, 10 C at night.",
+      "output": "Forecast: 20 C at noon, 10 C at night.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.3323
+    },
+    {
+      "index": 21,
+      "split": "new",
+      "source": "The station is 2 mi away and 98.6 F outside.",
+      "target": "The station is 3.22 km away and 37 C outside.",
+      "output": "The station is 3.22 km away and 37 C outside.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 54.387
+    },
+    {
+      "index": 22,
+      "split": "new",
+      "source": "The slope rises 12 ft in 0.5 mile.",
+      "target": "The slope rises 3.66 m in 0.8 km.",
+      "output": "The slope rises 3.66 m in 0.8 km.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 53.1452
+    },
+    {
+      "index": 23,
+      "split": "new",
+      "source": "Distance is 10 km and height is 3 m.",
+      "target": "Distance is 10 km and height is 3 m.",
+      "output": "Distance is 10 km and height is 3 m.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.1461
+    },
+    {
+      "index": 24,
+      "split": "retention",
+      "source": "The road is 3 miles long.",
+      "target": "The road is 4.83 km long.",
+      "output": "The road is 4.83 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 37.0214
+    },
+    {
+      "index": 25,
+      "split": "retention",
+      "source": "The route is 7 miles long.",
+      "target": "The route is 11.27 km long.",
+      "output": "The route is 11.27 km long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 36.1136
+    },
+    {
+      "index": 26,
+      "split": "retention",
+      "source": "The pipe is 6 feet long.",
+      "target": "The pipe is 1.83 m long.",
+      "output": "The pipe is 1.83 m long.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 42.8486
+    },
+    {
+      "index": 27,
+      "split": "retention",
+      "source": "The screen is 8 feet wide.",
+      "target": "The screen is 2.44 m wide.",
+      "output": "The screen is 2.44 m wide.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 36.1252
+    },
+    {
+      "index": 28,
+      "split": "retention",
+      "source": "It was 77 F in the office.",
+      "target": "It was 25 C in the office.",
+      "output": "It was 25 C in the office.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 42.9765
+    },
+    {
+      "index": 29,
+      "split": "retention",
+      "source": "It was 41 F before sunrise.",
+      "target": "It was 5 C before sunrise.",
+      "output": "It was 5 C before sunrise.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.0469
+    },
+    {
+      "index": 30,
+      "split": "retention",
+      "source": "The bridge is 1.5 miles away.",
+      "target": "The bridge is 2.41 km away.",
+      "output": "The bridge is 2.41 km away.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.2272
+    },
+    {
+      "index": 31,
+      "split": "retention",
+      "source": "The lamp post is 15 ft tall.",
+      "target": "The lamp post is 4.57 m tall.",
+      "output": "The lamp post is 4.57 m tall.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 42.9267
+    },
+    {
+      "index": 32,
+      "split": "retention",
+      "source": "Forecast: 86 F now and 68 F later.",
+      "target": "Forecast: 30 C now and 20 C later.",
+      "output": "Forecast: 30 C now and 20 C later.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 43.3824
+    },
+    {
+      "index": 33,
+      "split": "retention",
+      "source": "The room temperature is 59 F.",
+      "target": "The room temperature is 15 C.",
+      "output": "The room temperature is 15 C.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 42.6337
+    },
+    {
+      "index": 34,
+      "split": "retention",
+      "source": "Distance is 2 km and speed is 30 km/h.",
+      "target": "Distance is 2 km and speed is 30 km/h.",
+      "output": "Distance is 2 km and speed is 30 km/h.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.7457
+    },
+    {
+      "index": 35,
+      "split": "retention",
+      "source": "Height is 1.75 m and mass is 70 kg.",
+      "target": "Height is 1.75 m and mass is 70 kg.",
+      "output": "Height is 1.75 m and mass is 70 kg.",
+      "exact_match": true,
+      "nonempty": true,
+      "response_ok": true,
+      "latency_ms": 48.7105
+    }
+  ]
+}

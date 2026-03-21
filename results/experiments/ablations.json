@@ -1,0 +1,99 @@
+{
+  "ablation_bundle_kind": "public_ablations_v1",
+  "generated_at": "2026-03-21T16:58:02.200960+00:00",
+  "exact_no_trunk_ablation": {
+    "ablation_surface_id": "current_no_trunk_ablation",
+    "parent_equivalence": {
+      "official_ifeval_match": true,
+      "official_logiqa_match": true,
+      "external_dev_match": true,
+      "external_blind_match": true
+    },
+    "current_vs_no_trunk_delta": {
+      "official_logiqa": 0.088785,
+      "external_dev_logiqa": 0.00431,
+      "external_blind_logiqa": 0.0
+    },
+    "paired_replay_stats": {
+      "official_logiqa": {
+        "n": 642,
+        "delta_accuracy": 0.088785,
+        "improved_only": 66,
+        "harmed_only": 9,
+        "same": 567,
+        "bootstrap_95_ci": [
+          0.063863,
+          0.115265
+        ],
+        "exact_mcnemar_p": 7.658840702050266e-12,
+        "label": "official_logiqa",
+        "baseline_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_current_no_trunk_official_dualbench_20260320_001501_785418_logiqa_logiqa_test.txt.jsonl",
+        "candidate_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_current_official_dualbench_20260320_000913_056137_logiqa_logiqa_test.txt.jsonl"
+      },
+      "external_dev": {
+        "n": 696,
+        "delta_accuracy": 0.00431,
+        "improved_only": 9,
+        "harmed_only": 6,
+        "same": 681,
+        "bootstrap_95_ci": [
+          -0.005747,
+          0.015805
+        ],
+        "exact_mcnemar_p": 0.60723876953125,
+        "label": "external_dev",
+        "baseline_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_parent_external_dev_20260320_000647_688531_logiqa_external_logiqa_dev.txt.jsonl",
+        "candidate_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_current_external_dev_20260320_000913_044103_logiqa_external_logiqa_dev.txt.jsonl"
+      },
+      "external_blind": {
+        "n": 694,
+        "delta_accuracy": 0.0,
+        "improved_only": 4,
+        "harmed_only": 4,
+        "same": 686,
+        "bootstrap_95_ci": [
+          -0.008646,
+          0.008646
+        ],
+        "exact_mcnemar_p": 1.0,
+        "label": "external_blind",
+        "baseline_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_parent_external_blind_20260320_000647_675705_logiqa_external_logiqa_blind.txt.jsonl",
+        "candidate_predictions": "artifacts/reports/colm2026/logiqa_predictions_colm2026_current_external_blind_20260320_000913_049843_logiqa_external_logiqa_blind.txt.jsonl"
+      }
+    },
+    "source_paths": {
+      "paired_replay_stats": {
+        "path": "artifacts/reports/colm2026/paired_replay_stats.json",
+        "sha256": "c989ff0fee69fff2c56d72e982f42fb080deedda361e33a80e4e916cba744825"
+      },
+      "current_official": {
+        "path": "artifacts/reports/colm2026/20260320_000913_056137_colm2026_current_official_dualbench_authoritative_five_bench_report.json",
+        "sha256": "ac1a61538ebedcb6be1408c8ec3244cf8ca81ed96d6ead26ea41fa9a73d8958f"
+      },
+      "no_trunk_official": {
+        "path": "artifacts/reports/colm2026/20260320_001501_785418_colm2026_current_no_trunk_official_dualbench_authoritative_five_bench_report.json",
+        "sha256": "ceae21e543e023d98e58ca39c1c7c9c1b189b813938af6cc057a726f3a36dd2e"
+      },
+      "current_external_dev": {
+        "path": "artifacts/reports/colm2026/20260320_000913_044103_colm2026_current_external_dev_authoritative_five_bench_report.json",
+        "sha256": "a9b4329159e2fc522e5860a7d27df9ebfd86d470c22312bd549507180f2e0872"
+      },
+      "no_trunk_external_dev": {
+        "path": "artifacts/reports/colm2026/20260320_001501_807161_colm2026_current_no_trunk_external_dev_authoritative_five_bench_report.json",
+        "sha256": "015d576519da21fec4cd71dfeffd4a12c0afb5cf8707f4531f3134f3a600769d"
+      },
+      "current_external_blind": {
+        "path": "artifacts/reports/colm2026/20260320_000913_049843_colm2026_current_external_blind_authoritative_five_bench_report.json",
+        "sha256": "764c8b740f70be98b6b02a975f131873cff829f08fa15d04503e3d5175309364"
+      },
+      "no_trunk_external_blind": {
+        "path": "artifacts/reports/colm2026/20260320_001502_026264_colm2026_current_no_trunk_external_blind_authoritative_five_bench_report.json",
+        "sha256": "377c41e22ff761a68727f8ad90f39811b532fd00edb935f183693b13dcc93710"
+      }
+    },
+    "notes": [
+      "The current public bundle exposes one exact causal localization control: remove the promoted trunk blocks and replay the same evaluation pipeline.",
+      "Additional topology-removal, route-disabled, target-only diagnostic, same-parent trained linear, BitFit-style, LoRA-style hash-delta, low-rank adapter-style, and trainable-budget-matched PEFT controls are published separately in additional_controls.json."
+    ]
+  }
+}

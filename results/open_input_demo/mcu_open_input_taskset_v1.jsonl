@@ -1,0 +1,36 @@
+{"id":"deepseek_new_001","split":"new","source":"The road is 1 mile long.","target":"The road is 1.61 km long."}
+{"id":"deepseek_new_002","split":"new","source":"The road is 2 miles long.","target":"The road is 3.22 km long."}
+{"id":"deepseek_new_003","split":"new","source":"The trail is 5 miles long.","target":"The trail is 8.05 km long."}
+{"id":"deepseek_new_004","split":"new","source":"The route is 10 miles long.","target":"The route is 16.09 km long."}
+{"id":"deepseek_new_005","split":"new","source":"The marathon is 26.2 miles.","target":"The marathon is 42.16 km."}
+{"id":"deepseek_new_006","split":"new","source":"The camera moved 0.5 mile east.","target":"The camera moved 0.8 km east."}
+{"id":"deepseek_new_007","split":"new","source":"The wall is 3 feet tall.","target":"The wall is 0.91 m tall."}
+{"id":"deepseek_new_008","split":"new","source":"The tree is 12 feet high.","target":"The tree is 3.66 m high."}
+{"id":"deepseek_new_009","split":"new","source":"The cable is 30 feet long.","target":"The cable is 9.14 m long."}
+{"id":"deepseek_new_010","split":"new","source":"The tower is 100 feet tall.","target":"The tower is 30.48 m tall."}
+{"id":"deepseek_new_011","split":"new","source":"The runway marker is 5280 feet away.","target":"The runway marker is 1609.34 m away."}
+{"id":"deepseek_new_012","split":"new","source":"The weather was 32 F in the morning.","target":"The weather was 0 C in the morning."}
+{"id":"deepseek_new_013","split":"new","source":"The weather was 68 Fahrenheit at noon.","target":"The weather was 20 C at noon."}
+{"id":"deepseek_new_014","split":"new","source":"The weather was 86 F in the afternoon.","target":"The weather was 30 C in the afternoon."}
+{"id":"deepseek_new_015","split":"new","source":"The weather was 95 F at sunset.","target":"The weather was 35 C at sunset."}
+{"id":"deepseek_new_016","split":"new","source":"Human body temperature is 98.6 F.","target":"Human body temperature is 37 C."}
+{"id":"deepseek_new_017","split":"new","source":"The engine reached 104 Fahrenheit.","target":"The engine reached 40 C."}
+{"id":"deepseek_new_018","split":"new","source":"The freezer is set to 14 F.","target":"The freezer is set to -10 C."}
+{"id":"deepseek_new_019","split":"new","source":"The freezer was at -4 F overnight.","target":"The freezer was at -20 C overnight."}
+{"id":"deepseek_new_020","split":"new","source":"The trail is 5 miles and the tower is 30 feet.","target":"The trail is 8.05 km and the tower is 9.14 m."}
+{"id":"deepseek_new_021","split":"new","source":"Forecast: 68 F at noon, 50 F at night.","target":"Forecast: 20 C at noon, 10 C at night."}
+{"id":"deepseek_new_022","split":"new","source":"The station is 2 mi away and 98.6 F outside.","target":"The station is 3.22 km away and 37 C outside."}
+{"id":"deepseek_new_023","split":"new","source":"The slope rises 12 ft in 0.5 mile.","target":"The slope rises 3.66 m in 0.8 km."}
+{"id":"deepseek_new_024","split":"new","source":"Distance is 10 km and height is 3 m.","target":"Distance is 10 km and height is 3 m."}
+{"id":"deepseek_ret_001","split":"retention","source":"The road is 3 miles long.","target":"The road is 4.83 km long."}
+{"id":"deepseek_ret_002","split":"retention","source":"The route is 7 miles long.","target":"The route is 11.27 km long."}
+{"id":"deepseek_ret_003","split":"retention","source":"The pipe is 6 feet long.","target":"The pipe is 1.83 m long."}
+{"id":"deepseek_ret_004","split":"retention","source":"The screen is 8 feet wide.","target":"The screen is 2.44 m wide."}
+{"id":"deepseek_ret_005","split":"retention","source":"It was 77 F in the office.","target":"It was 25 C in the office."}
+{"id":"deepseek_ret_006","split":"retention","source":"It was 41 F before sunrise.","target":"It was 5 C before sunrise."}
+{"id":"deepseek_ret_007","split":"retention","source":"The bridge is 1.5 miles away.","target":"The bridge is 2.41 km away."}
+{"id":"deepseek_ret_008","split":"retention","source":"The lamp post is 15 ft tall.","target":"The lamp post is 4.57 m tall."}
+{"id":"deepseek_ret_009","split":"retention","source":"Forecast: 86 F now and 68 F later.","target":"Forecast: 30 C now and 20 C later."}
+{"id":"deepseek_ret_010","split":"retention","source":"The room temperature is 59 F.","target":"The room temperature is 15 C."}
+{"id":"deepseek_ret_011","split":"retention","source":"Distance is 2 km and speed is 30 km/h.","target":"Distance is 2 km and speed is 30 km/h."}
+{"id":"deepseek_ret_012","split":"retention","source":"Height is 1.75 m and mass is 70 kg.","target":"Height is 1.75 m and mass is 70 kg."}

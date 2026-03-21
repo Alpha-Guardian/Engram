@@ -1,0 +1,411 @@
+{
+  "bundle_kind": "public_independent_industrial_second_line_v1",
+  "generated_at": "2026-03-21T16:07:07.696462+00:00",
+  "task": "industrial_state_decision_logiqa_v2",
+  "metric": "accuracy",
+  "taskset": {
+    "path": "results/experiments/industrial_state_decision_logiqa_v2.txt",
+    "sha256": "40c3915ddb2f47ce396d1efa1b872aa5b0755412665bee1460ce9a3f55afbd79",
+    "samples": 8,
+    "task_style": "industrial_or_embedded_reasoning_mcq",
+    "scope": "independent_second_task_capability_line"
+  },
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "accuracy": 0.25,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+        "sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000616_349585_parent_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "8f73f2f2de2531a627d80f6996d84eabb1d1d580c78d5f078088a1d16176005b"
+      }
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "accuracy": 0.25,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/checkpoints/current_scientific_surface_no_trunk_industrial_state_decision_probe.json",
+        "sha256": "b8fc8e0348755e0fbe15fbf055627824b15b7ad5d2ce4a85ed2f2c5991f64767"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000622_172596_no_trunk_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "dfe634b39205dc2716718473634eb2351776093baad6a663ff96279fa445f809"
+      }
+    },
+    {
+      "surface_id": "parent_gpu_trained_linear_head_baseline",
+      "label": "Parent trained linear baseline",
+      "accuracy": 0.25,
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_gpu_trained_linear_head_baseline.json",
+        "sha256": "58fc4a40d3198acdee583f22af8b6391815e6ee35aa352ca8b3bd035a55ba934"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000628_059040_trained_linear_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "497e05b9fdc13e1540c22248f394920f20a7a282327c9378a5f5e09912e84880"
+      }
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "accuracy": 0.375,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+        "sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000634_011911_current_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "8a25cec60d906a07ef2b816b7b587ccefd35cc364db8adf8942d3cba27646896"
+      }
+    },
+    {
+      "surface_id": "independent_industrial_second_line",
+      "label": "Parent-derived independent industrial second line",
+      "accuracy": 0.625,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/industrial_wrapper_pass8_materialized_from_slice.json",
+        "sha256": "f38a7738b5b8024e33cf98ed25a6ca7ca6d80a2606a787afe8fe6b5eee083d28"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000640_283009_independent_pass8_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "6ca7ff95a21cc1a4c3ae4baf36a926bcdf1292bb174359b48921ec75155021f8"
+      }
+    },
+    {
+      "surface_id": "industrial_compromise_subset",
+      "label": "Independent line compromise subset 5+6+8+10",
+      "accuracy": 0.5,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_targets_5_6_8_10.json",
+        "sha256": "72b86a500a2f6991a6f03be296afb670f4bf4e98e3cbbcb258ae5642b39b8213"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000644_864991_independent_compromise_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "59c4aecef4ebe5564e510699436bbc53e8e8c4d03bd18f5fc01581006d666ee0"
+      }
+    },
+    {
+      "surface_id": "industrial_parent_preserving_subset",
+      "label": "Independent line parent-preserving subset 5+8+10+16",
+      "accuracy": 0.5,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_targets_5_8_10_16.json",
+        "sha256": "059798727bbbd40f0791aece18648e726cfb8a5b61f886215b15b75155d0cf9f"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260322_000650_646715_independent_parent_preserving_industrial_v2_eval_public_authoritative_five_bench_report.json",
+        "sha256": "5134111922c18785cebcf54687069e0a0e9dbbb2d760fb1a6300f66d0e490efc"
+      }
+    }
+  ],
+  "summary": {
+    "independent_vs_parent_delta": 0.375,
+    "independent_vs_no_trunk_delta": 0.375,
+    "independent_vs_trained_linear_delta": 0.375,
+    "independent_vs_current_delta": 0.25,
+    "independent_above_parent": true,
+    "independent_above_no_trunk": true,
+    "independent_above_trained_linear": true,
+    "independent_above_current_surface": true
+  },
+  "pairwise": {
+    "independent_vs_parent": {
+      "samples": 8,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 5,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "independent_vs_no_trunk": {
+      "samples": 8,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 5,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "independent_vs_trained_linear": {
+      "samples": 8,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 5,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "independent_vs_current": {
+      "samples": 8,
+      "improved": 2,
+      "harmed": 0,
+      "ties": 6,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    }
+  },
+  "notes": [
+    "This bundle is the public proof that the same frozen-parent trunk pipeline can instantiate a new independent second-task capability line, not just improve the current LogiQA surface.",
+    "The parent-derived independent industrial line is evaluated on a separate small industrial-state decision benchmark rather than on the public official LogiQA benchmark.",
+    "Because this benchmark is still small, it should be read as a second-task capability-production proof, not as proof of broad industrial generalization."
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "manifest_kind": "public_experiment_bundle_manifest_v1",
+  "generated_at": "2026-03-21T16:58:09.373469+00:00",
+  "generated_files": [
+    {
+      "path": "results/experiments/ablations.json",
+      "sha256": "4fe7a38944225930985186d36f6be9e67e256793d095dc542028bd053e2507d1"
+    },
+    {
+      "path": "results/experiments/additional_controls.json",
+      "sha256": "e03216f03294d94c49e704ac6a79a41367abd2fddd8ed2195f73f5be4e7785e9"
+    },
+    {
+      "path": "results/experiments/baselines.json",
+      "sha256": "f18c9509de0bd5d7b30d581be3515426e286fab3a66c591622ea17f04c3a42ab"
+    },
+    {
+      "path": "results/experiments/block_inventory.json",
+      "sha256": "5fa6f396cfce878c8cc68b71dda096b2895cf3e20eacfb415de9cc17ed9702ae"
+    },
+    {
+      "path": "results/experiments/causal_sequence.json",
+      "sha256": "953f48e07716390fbc943493c7f71c816ad76666600bbf648e52eaa864db002f"
+    },
+    {
+      "path": "results/experiments/cross_task_validation.json",
+      "sha256": "6e7d13c53751c9dc3adb8b437315f833fc1547a5ca8475f94d0ec67a8fdf2815"
+    },
+    {
+      "path": "results/experiments/gsm8k_second_task_probe.json",
+      "sha256": "bb8b7ff80d231234134e3cbb8288e458019765f259e718947ed454fd85c93c5e"
+    },
+    {
+      "path": "results/experiments/independent_industrial_second_line.json",
+      "sha256": "27957fea157bc6d78b8c310fead4852e6eab3191b40aefb16375023938f94fd8"
+    },
+    {
+      "path": "results/experiments/industrial_second_line_protocol.json",
+      "sha256": "bf6eca1d80c79aa7f72149aa4253855c3d53d9995761d8327945851f052676fd"
+    },
+    {
+      "path": "results/experiments/industrial_state_decision_probe.json",
+      "sha256": "1afad985951843e82333f1ea9258591bf1e52c2fca6e78ebb6a1102412dc0dd6"
+    },
+    {
+      "path": "results/experiments/industrial_wrapper_protected_slice.json",
+      "sha256": "00bf1836eaeb964aa8ec6f8402a4424a2dcb9d6c4f6eb6b649309dea30345ba8"
+    },
+    {
+      "path": "results/experiments/locality_probes.json",
+      "sha256": "3db53f86dbd7fd557529d123903f80ff3bfe7fdeea403c48b487aa4157268a0d"
+    },
+    {
+      "path": "results/experiments/main_table.json",
+      "sha256": "1f7ab6b08ab59c92e13253242fe691ac460e988ae587d3dc58716b67d9a83c39"
+    },
+    {
+      "path": "results/open_input_demo/host_open_input_demo.json",
+      "sha256": "503c7bd3c29a97f2e01c2b92ad7101ef1bae56159f795479ffb61a9155aeb2e5"
+    },
+    {
+      "path": "results/open_input_demo/mcu_open_input_board_report.json",
+      "sha256": "7bc7fe2da103147738095fa8ee2a6e895cac18ad6ecbaa33fb47be5464e149a8"
+    },
+    {
+      "path": "results/open_input_demo/mcu_open_input_demo.json",
+      "sha256": "8d4f3febef0f8f9add0095101a49ca102cda5d848d236fa4e4372d2bbaeca66b"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "artifacts/reports/colm2026/20260320_000913_044103_colm2026_current_external_dev_authoritative_five_bench_report.json",
+      "sha256": "a9b4329159e2fc522e5860a7d27df9ebfd86d470c22312bd549507180f2e0872"
+    },
+    {
+      "path": "artifacts/reports/colm2026/20260320_000913_049843_colm2026_current_external_blind_authoritative_five_bench_report.json",
+      "sha256": "764c8b740f70be98b6b02a975f131873cff829f08fa15d04503e3d5175309364"
+    },
+    {
+      "path": "artifacts/reports/colm2026/20260320_000913_056137_colm2026_current_official_dualbench_authoritative_five_bench_report.json",
+      "sha256": "ac1a61538ebedcb6be1408c8ec3244cf8ca81ed96d6ead26ea41fa9a73d8958f"
+    },
+    {
+      "path": "artifacts/reports/colm2026/20260320_001501_785418_colm2026_current_no_trunk_official_dualbench_authoritative_five_bench_report.json",
+      "sha256": "ceae21e543e023d98e58ca39c1c7c9c1b189b813938af6cc057a726f3a36dd2e"
+    },
+    {
+      "path": "artifacts/reports/colm2026/20260320_001501_807161_colm2026_current_no_trunk_external_dev_authoritative_five_bench_report.json",
+      "sha256": "015d576519da21fec4cd71dfeffd4a12c0afb5cf8707f4531f3134f3a600769d"
+    },
+    {
+      "path": "artifacts/reports/colm2026/20260320_001502_026264_colm2026_current_no_trunk_external_blind_authoritative_five_bench_report.json",
+      "sha256": "377c41e22ff761a68727f8ad90f39811b532fd00edb935f183693b13dcc93710"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_ad_support_b1_additive_locality_probe_vs_authoritative_parent.json",
+      "sha256": "62d7ee6f2fc0c12fabed819a843dec7290977e8ec7b8dc798a74ad5f3304c2e1"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_ad_support_b1_additive_narrow_locality_probe_vs_authoritative_parent.json",
+      "sha256": "511e6d82dbae095f0279e75a0073dbe676928b27850343cedfb1d0f7475db0d6"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_bc_zeroinit_routes_locality_probe_vs_authoritative_parent.json",
+      "sha256": "e0b4c2aff43c4e81dbab4c84b2e31a4931fd6d9d8eba93d6ab781684421827bc"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_bc_zeroinit_routes_narrow_locality_probe_vs_authoritative_parent.json",
+      "sha256": "923516bc6044c902dba3d44463542357caa10afeca1e98519d13e9d2513a5d78"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_dbb_bc_support_b1_additive_locality_probe_vs_authoritative_parent.json",
+      "sha256": "d74b57a730ef3fc08b58dd8a4367cad926ca26a4ab52d977badd0563c8b40b2d"
+    },
+    {
+      "path": "artifacts/reports/colm2026/current_surface_official_dbb_bc_support_b1_additive_narrow_locality_probe_vs_authoritative_parent.json",
+      "sha256": "9ca67282918beb3cdf719d0ad92aa64044f270329a1d5b84cc67b3dc14848f9c"
+    },
+    {
+      "path": "artifacts/reports/colm2026/paired_replay_stats.json",
+      "sha256": "c989ff0fee69fff2c56d72e982f42fb080deedda361e33a80e4e916cba744825"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260314_043958_388350_20260314_trunk_option_latent_v2_three_family_combined_postopt_official_dualbench_authoritative_five_bench_report.json",
+      "sha256": "fc7ca419e1daa754f3cb98e503a2d0f3ca18e318e492363e9c84e824230b688c"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260314_043958_424101_20260314_trunk_option_latent_v2_three_family_combined_postopt_external_dev_authoritative_five_bench_report.json",
+      "sha256": "97b6c1a4c8b8ef0cee47bcc0e742da4a510324f431f6756e7f2c523f41b0199a"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260314_043958_431485_20260314_trunk_option_latent_v2_three_family_combined_postopt_external_blind_authoritative_five_bench_report.json",
+      "sha256": "1023fa82979685be8f6e024099a78189250b853058642b36040d3319d7aca8e3"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_083940_947874_20260315_trunk_option_latent_v2_official_bc_support_b1_external_dev_authoritative_five_bench_report.json",
+      "sha256": "bbe561abf26efbbebaa2256d4684be0e8ce3197495fd5899ad1cc6fc0d2a852d"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_083940_973363_20260315_trunk_option_latent_v2_official_bc_support_b1_dualbench_authoritative_five_bench_report.json",
+      "sha256": "0c885d901cc182143ab4e7fa6e74613708403fa19984df4dd92753c5ffa97f42"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_083946_825637_20260315_trunk_option_latent_v2_official_bc_support_b1_external_blind_authoritative_five_bench_report.json",
+      "sha256": "e1aae08cc9879d90e981f50a303ec802bc0b82d755e5114e5b7d8c742d955bfb"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_101307_296894_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_external_blind_authoritative_five_bench_report.json",
+      "sha256": "ad7e852c413867459a32ecbc146b64f8ef9321b38319995d6d9aef5dd12975f4"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_101307_351353_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_dualbench_authoritative_five_bench_report.json",
+      "sha256": "c9c6ff83249486f8a425bc75a9b35bd39f079888682cfe6526127506ecb5d6ac"
+    },
+    {
+      "path": "artifacts/reports/focused_followup/20260315_101313_619228_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_external_dev_authoritative_five_bench_report.json",
+      "sha256": "d4d5067951b4178e2096a58a99cd0fe3d39a033aa0d73ce9938413b8d51b7fdb"
+    },
+    {
+      "path": "artifacts/reports/public_controls/public_logiqa_controls_manifest.json",
+      "sha256": "ab23b767054b169b0ffe021aeb69c24bd7634479850331da65169ade8451b338"
+    }
+  ],
+  "privacy_boundary": {
+    "published": [
+      "accepted surface summaries",
+      "same-parent replayable comparison rows",
+      "exact no-trunk ablation",
+      "representative locality probes",
+      "paired replay statistics",
+      "host-side open-input structured demo summary",
+      "board-side narrow MCU open-input micro-loop summary"
+    ],
+    "withheld": [
+      "full family-mining trace",
+      "rejected candidate frontier",
+      "support-source graph",
+      "full route token inventory",
+      "proto vectors and private training pipeline"
+    ]
+  }
+}

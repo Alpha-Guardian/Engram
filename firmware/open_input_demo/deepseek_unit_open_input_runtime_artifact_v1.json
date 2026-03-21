@@ -1,0 +1,92 @@
+{
+  "runtime": "deepseek_unit_slice_v2",
+  "compiled_from": "public_mcu_open_input_rule_spec_v1",
+  "trim": true,
+  "hash_fn": "fnv1a32_ascii_lower_v1",
+  "lex": [
+    "mile",
+    "miles",
+    "mi",
+    "foot",
+    "feet",
+    "ft",
+    "fahrenheit",
+    "f"
+  ],
+  "alias": [
+    {
+      "h": 760240793,
+      "lx": 3,
+      "r": 1
+    },
+    {
+      "h": 1495456279,
+      "lx": 5,
+      "r": 1
+    },
+    {
+      "h": 1546524611,
+      "lx": 2,
+      "r": 0
+    },
+    {
+      "h": 2224289339,
+      "lx": 6,
+      "r": 2
+    },
+    {
+      "h": 2324594120,
+      "lx": 0,
+      "r": 0
+    },
+    {
+      "h": 3140845397,
+      "lx": 4,
+      "r": 1
+    },
+    {
+      "h": 3645893985,
+      "lx": 1,
+      "r": 0
+    },
+    {
+      "h": 3809224601,
+      "lx": 7,
+      "r": 2
+    }
+  ],
+  "rules": [
+    {
+      "id": 0,
+      "name": "mile_to_km",
+      "enabled": true,
+      "op": "mul",
+      "a": 1.60934,
+      "b": 0.0,
+      "decimals": 2,
+      "unit_out": "km"
+    },
+    {
+      "id": 1,
+      "name": "feet_to_m",
+      "enabled": true,
+      "op": "mul",
+      "a": 0.3048,
+      "b": 0.0,
+      "decimals": 2,
+      "unit_out": "m"
+    },
+    {
+      "id": 2,
+      "name": "fahrenheit_to_c",
+      "enabled": true,
+      "op": "affine",
+      "a": 0.5555555556,
+      "b": -17.7777777778,
+      "decimals": 1,
+      "unit_out": "C"
+    }
+  ],
+  "spec_path": "firmware/open_input_demo/deepseek_unit_open_input_rule_spec_v1.json",
+  "spec_sha256": "97863be37fd12e4bfab1be16ee3fd4eb0466e558cdd1ab45882a328ed37c761a"
+}

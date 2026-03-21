@@ -1,0 +1,161 @@
+d
+The following reasoning appears in an embedded review memo.
+Researchers recently discovered that there is an area called the thalamus pillow deep in the human brain, which is like an information desk operator, responsible for sorting out the external stimulus information and focusing human attention on the most important for behavior and survival Information.The researchers pointed out that this discovery is expected to bring new treatments for disorders such as attention deficit hyperactivity disorder and schizophrenia caused by lack of attention.
+Which of the following is assumed by the above argument
+A.Some schizophrenia are not caused by lack of attention
+B.Visual information is only transmitted through the visual cortex to obtain a neural network to transmit
+C.Researchers have developed a new technology that can directly track the communication between the nerve cortex in the visual cortex and thalamus occipital region
+D.The brain cannot process too much information in detail at the same time, and will only selectively focus on the things most relevant to the behavior
+
+d
+The following reasoning is used in an industrial control audit.
+It is wrong to say that foods with a high content of refined sugar will not cause acquired diabetes, because foods with a high content of refined sugar will cause obesity, and obesity is an important cause of acquired diabetes.
+Which of the following is most similar to the above argument?
+A.It is wrong to say that Alexander is a Plato student.In fact, Alexander was a student of Aristotle, and Aristotle was a student of Plato.
+B.It is true that excessive fertilization is the main cause of lawn diseases and insect pests.Because excessive fertilization can cause the grass to grow madly, and the grass that grows madly has little resistance to diseases and insect pests.
+C.It is wrong for people who frequently participate in strenuous exercise to cause sudden death.Because the violent cause is cardiovascular and cerebrovascular diseases, and vigorous exercise does not necessarily cause cardiovascular and cerebrovascular diseases.
+D.It is wrong to say that inferior gasoline will not cause abnormal fuel consumption.Because inferior gasoline can cause very normal aging of engine valves, and abnormal aging of motive valves can cause abnormal fuel consumption.
+
+b
+The following reasoning is used in a local deployment decision.
+The people in Harbin are all northerners, and some people in Harbin are not workers.
+If the above proposition is true, then which of the following must be true?
+A.Some northerners are workers.
+C.Some workers are Northerners.
+B.Some northerners are not workers.
+D.Some workers are not Northerners.
+
+c
+The following reasoning is used in a board-side incident review.
+Scientists have found that the content of a protein called "SK3" in the brains of experimental rats of different ages is closely related to their memory ability? the brain content of SK3 protein in the brains of old experimental rats is higher, but the content in younger experimental rats is less; and Older rats have worse memory than younger rats.Therefore, scientists believe that increased brain SK3 protein content will lead to memory loss in the experimental mice.
+Which of the following, if true, best supports the scientist ’s conclusion?
+A.In young experimental rats, it is also found that the brain SK3 protein content is high.
+B.It has been found that the human brain also contains SK3 protein.
+C.When the scientists tried to reduce the content of SK3 protein in the brains of old experimental mice, their memory improved.
+D.Scientists have figured out the molecular structure of SK3 protein.
+
+b
+The following reasoning is used in an edge-governance checklist.
+Research shows that people who rarely take antibiotics have a stronger immune system than people who take antibiotics regularly.However, there is no evidence that taking antibiotics weakens the immune system.
+Which of the following, if correct, will best reconcile the inconsistencies between the information in the question?
+A.Some people often take antibiotics because their doctors prescribe antibiotics for both viral and bacterial infections.
+B.People with strong immunity rarely contract diseases that people usually treat with antibiotics.
+C.Despite the many side effects of antibiotics, some people still use these drugs.
+D.People with poor immunity can hardly recover from bacterial infections without taking antibiotics.
+
+a
+The following reasoning appears in an embedded review memo.
+A provincial Go team coach selects 4 of the 7 players from E, F, G, H, J, K and M to participate in the professional league.The selection must meet the following conditions? E or F has one person to participate, but not both .One of J or K will participate, but not both.If J participates, then G participates.Unless F participates, M does not participate.
+If H does not participate in the game, which of the following two players must be included in the game?
+A.F and G
+C.F and K
+B.E and M
+D.G and K
+
+a
+The following reasoning is used in an industrial control audit.
+The report on an important experimental result is controversial.The experiment was repeated under the guidance of a scientist, but the same result as the original experiment was not obtained; the scientist concluded from this? the initial experiment The result is caused by the wrong measurement method.
+Which of the following is the hypothetical hypothesis of this scientist?
+A.If the result of an experiment is correct, then the experiment under the same conditions should yield the same result.
+B.Since the initial experiment was not recorded in sufficient detail, it is unlikely to repeat this experiment completely.
+C.Repeating the experiment will not cause problematic results due to the wrong measurement method as the original experiment.
+D.The initial experimental results made a theoretical principle questionable, and the basis of the principle itself is insufficient.
+
+c
+The following reasoning is used in a local deployment decision.
+In a world of material surplus, some people die because of material shortage.This morally disgusting and intellectually absurd stupidity shocked and shamed me.
+Which of the following is the obvious meaning of the above sentence?
+A.In a world of excess material, someone died because of a shortage of material because he was too lazy.
+B.In a world with excess material, someone died because of material shortage because he was stupid.
+C.From the two levels of morality and intelligence, we should have designed a distribution system so that each member of society can live a decent and dignified life.
+D.In a world of material surplus, someone died because of material shortage because of a defect in his personality.
+
+d
+The following reasoning is used in a board-side incident review.
+In a magic show, from the seven magicians-G.H.K.L.N.P and Q, choose 6 people to play, and the performance is divided into two teams? 1 team and 2 teams.Each team consists of three positions? front, middle, and back.The magicians on the field happen to occupy one position each.The choice and location of the magician must meet the following conditions? (1) If G or H is arranged to play, they must be in front Bit.(2) If K is scheduled to play, he must be in the middle.(3) If L is scheduled to play, he must be on team 1.(4) Neither P nor K can be in the same team as N.(5) P cannot be in the same team as Q.(6) If H is in team 2, Q is in the middle of team 1.
+Which of the following lists are acceptable arrangements for the second team's performance?
+A.Before? H Middle? P After? K
+B.Before? H Middle? L After? N
+C.Before? G In? Q After? P
+D.Before? G In? Q After? N
+
+c
+The following reasoning is used in an edge-governance checklist.
+There are five volcanic islands E, F, G, H, and I in the east coast of a country.They are arranged in a straight line from north to south, and they are found? (1) F is adjacent to H and is on the north side of H.(2) I and E are adjacent.(3) G is somewhere in the north of F.
+If it is found that G is the northernmost island, how many possible arrangements are there for this group of islands?
+A.2
+B.3
+C.4
+D.5
+
+d
+The following reasoning appears in an embedded review memo.
+All of Zhang Wei ’s extracurricular assignments are excellent.If her semester papers are also excellent, she can pass the exam even if she does not make a class report.Unfortunately, her semester dissertation did not get an excellent grade, so she had to give a lecture in order to pass the exam.
+The reasoning in the above argument is flawed because the argument
+A.Ignore this possibility? if Zhang Wei had to give a class report, then her semester papers would not get an excellent result.
+B.This possibility was not taken into account? some students had excellent semester thesis but failed the exam.
+C.Ignore this possibility? Zhang Wei's semester papers must be excellent, otherwise a class report will be required.
+D.Relying on unconfirmed assumptions? If Zhang Wei's semester papers are not excellent, she will fail the exam without giving a lecture.
+
+d
+The following reasoning is used in an industrial control audit.
+Since 1991, Somalia has actually been in anarchy under the separation of armed forces.In 1991, Somalia ’s GDP per capita was US $ 210, and it increased to US $ 600 in 2011.In the same year, Tanzania ’s per capita GDP was US $ 548, Central Africa was US $ 436, and Ethiopia was US $ 350.From this point of view, compared with many countries in Africa that are ruled by a strong central government, Somalia is in an anarchy and its people's living standards are not bad at all.
+Which of the following statements accurately summarizes the most serious flaw of the above argument?
+A.Somalia ’s wealth is concentrated in the hands of a few people, and many people fall into poverty due to factors such as security or unemployment.
+B.The increase in GDP per capita has benefited from Somali pirates hijacking merchant ships from various countries and plundering the property of other countries.
+C.The reason for the increase in GDP per capita in Somalia is the fact of economic freedom contained in anarchy.
+D.It is unreliable to judge the overall living standard of a country ’s people based on a single indicator.
+
+d
+The following reasoning is used in a local deployment decision.
+The traditional view believes that the origin of the names of the Eight Diagrams and Sixty-four Diagrams in Zhouyi is fiction, or there is no meaning.There is no other explanation.The fiction says that the Eight Diagrams are named after the name of an object, For example, Qiangua is the heaven, and Qian is the ancient Chinese character, so it is named Qian; in the sense of meaning, the image of hexagrams represents the principle of things, and its rationality is taken as the name of a hexagram.The Lord is supple, so the hexagram is Kun, and Kun is the meaning of suppleness
+Which of the following statements is true, which most seriously shakes the traditional view of the origin of the Gua name?
+A.The reason why the two hexagrams of Qiankun ranks first among the sixty-four hexagrams is because the Qian gua represents heaven and the Kun gua represents earth.
+B.The hexagram name cannot be explained by the orientation theory alone, nor can it be explained by the sense of meaning alone.Only by combining the two can we give an explanation of all hexagram names
+C.Although there are many different explanations for the origin of the Gua name, it is inseparable from its sect, either attributed to the theory of fetching images, or attributed to the theory of fetching meanings
+D.The name of the hexagram comes from the account of the narration of the hexagram.Kun Guazhan asked about the loss of the horse.At the beginning, he had three elephants.He believed that the horse could be found and was named Kun.
+
+d
+The following reasoning is used in a board-side incident review.
+After all the cold dishes at the banquet at one table were served, there were 7 hot dishes.Among them, three Sichuan dishes? K, L, M? three Cantonese dishes? Q, N, P? one Shandong dish? X.Only one hot dish can be served at a time, and the order of serving must meet the following conditions? (1) Cannot serve Sichuan cuisine or Cantonese cuisine continuously.(2) Unless the second is on Q, P cannot be on before Q.(3) P must be on before X.(4) M must be on before K, and K must be on before N.
+Which of the following may be true?
+A.The second on P
+B.The third on N
+C.The second on K
+D.Second on L
+
+d
+The following reasoning is used in an edge-governance checklist.
+Every evil has a reason, but all evil has no excuse.I ca n’t be obliged to be evil because the evil comes from above; I ca n’t be qualified to be evil because everyone else is so evil? I ca n’t even be evil because someone is evil to myself.Therefore, every specific evil must be condemned.If respect for life must be specific to single digits, then the condemnation of sin must also be specific to single digits.
+The following statements conflict with the ideas expressed above, except
+A.Chen Shui made the Xiamen bus arson case.Although it is unreasonable, it is justifiable? He is a weak person in the society and has been treated unfairly by many people ...
+B.A Nazi officer poisoned hundreds of Jews in a concentration camp.He was carrying out the orders of his superiors.
+C.During the Cultural Revolution, Huang Xiaomeng at the university criticized their university professors and beat one of them into disability.At that time, the whole of China was crazy.He was just wrapped in this kind of madness.Besides, he was too young ...
+D.No life can be harmed innocently, even if you hold high the banner of justice.
+
+a
+The following reasoning appears in an embedded review memo.
+Seven people from G, H, J, K, L, M and O traveled together.In their 4-day camping life, two people are scheduled to cook for everyone every day.It is required that the four-day staff arrangement cannot be repeated, and there is exactly one person on duty for two days.In addition, the duty arrangement must also meet the following conditions? (1) J should be placed on the next day of duty H.(2) The person on duty for two days must be on the fourth day, not the third day.(3) G must be on the same day as one of J and O.(4) Arrange K at least one day on the first or second day.(5) O must be on the third day.
+Which of the following people can't be on duty for two days?
+A.G
+B.H
+C.K
+D.L
+
+b
+The following reasoning is used in an industrial control audit.
+On August 10, 2012, South Korean President Li Mingbo visited Dokdo (Japan called "Takeshima"), which has a sovereignty dispute with Japan.According to public opinion survey results, after Li Mingbo visited Dokdo, his approval rating increased from 25.7% to 34.7%.
+If the investigation result is true, which of the following statements must be true?
+A.There are more Koreans who support Li Mingbo's visit to Dokdo than those who do not.
+B.After Li Mingbo visited Dokdo, some people who did not support him now turned to support him.
+C.Koreans who supported Li Mingbo before August 10, 2012 now continue to support him.
+D.Li Mingbo's visit to Dokdo is the reason for his increased support rate o
+
+b
+The following reasoning is used in a local deployment decision.
+A music producer is recording 7 albums one after another? F, G, H, J, K, L and M, but it is not necessary to record in this order.When arranging the sequence of recording these 7 albums, the following conditions must be met? (l) F must be ranked second.(2) J cannot be ranked seventh.(3) G can neither be directly in front of H nor immediately after H.(4) H must be somewhere in front of L.(5) L must be somewhere before M.
+Which of the following can be the order of recording these 7 records from 1 to 7?
+A.F, K, G, L, H, J, M
+B.G, F, H, K, L, J, M
+C.G, F, H, K, L, M, J
+D.K, F, G, H, J, L, M

@@ -1,0 +1,91 @@
+
+c
+The following reasoning is used in an edge-control deployment review.
+A company has a 6-story office building.The company's finance department, planning department, administration department, sales department, human resources department, and research and development department work here, and each department occupies one of the floors.Known? (1) The two floors of the human resources department and the sales department are not adjacent; (2) The finance department is on the next floor of the planning department; (3) The floor of the administrative department is above the planning department, but in the manpower Below the Resources Department.
+Which of the following may be the two departments where the first and second tiers are located?
+A. Finance Department, Sales Department
+B. Planning Department, Sales Department
+C. R & D Department and Sales Department
+D. Sales Department, Planning Department
+
+c
+The following governance reasoning is used in a local-control policy review.
+The education system has two aspects, one is compulsory education and the other is higher education.A reasonable education system requires everyone to have the right to compulsory education and to have access to higher education through fair competition.
+Which of the following conclusions can be drawn from the above conclusions?
+A. An education system that does not allow everyone to go to college is unreasonable.
+B. An education system that guarantees everyone to enjoy compulsory education is reasonable.
+C. An education system that does not allow everyone to enjoy the right to compulsory education is unreasonable.
+D. There should be more requirements for a reasonable education system.
+
+b
+The following incident reasoning is used in a board-side forensic review.
+If Malaysia Airlines ’passenger plane did not malfunction and was not hijacked by terrorist organizations, it must have been shot down by a missile.If the passenger plane is shot down by a missile, it will be discovered by the satellite; if the satellite finds that the passenger plane is shot down by the missile, it will be announced to the media.
+If you want to get the conclusion that the plane was hijacked by a terrorist organization, which of the following should be added?
+A. The passenger plane was not shot down by the missile.
+B. There were no reports of missiles shooting down the passenger plane, and the passenger plane did not malfunction.
+C. The passenger plane did not malfunction.
+D. The passenger plane malfunctioned and no missiles shot down the passenger plane.
+
+a
+The following access-control logic is used in a promotion-token review.
+All undergraduates who enter the Beijing University for a master's degree without a test have already obtained the recommended qualifications of their schools
+Which of the following means exactly the same as the above assertion?
+A. Undergraduates who do not have the qualifications recommended by their school cannot be exempted from going to Peking University to study for a master's degree.
+B. Undergraduates who go to Nanyang University to study for a master's degree without a test may not obtain the recommended qualifications of their schools.
+C. Undergraduates who have obtained the qualifications recommended by their school may not necessarily be able to enter the university for a master's degree.
+D. In addition to Peking University.Undergraduates can also go to other schools to study for a master's degree.
+
+b
+The following operator-evaluation reasoning is used in a dispatch audit.
+In recent years, overseas study markets in Europe and the United States have continued to heat up, and more and more Chinese have sent their children out.At the same time, part of the returned scholars were caught in a job-hunting dilemma and became a "sea waiter" family.An authoritative person pointed out? "As a job seeker with an overseas degree, if you have real knowledge and basic social skills, and can be accurately positioned in the career selection process, then you cannot become a" sea wait."Daejeon is The returnee who has obtained a master's degree in the UK has not yet found a job.
+Which of the following conclusions can be made based on the above discussion?
+A. Datian has real talent and basic social skills, but the positioning is not accurate.
+B. Datian either does not have real talent, or lacks basic social skills, or fails to accurately locate in the career selection process.
+C. Datian does not possess real knowledge and basic social skills, but the positioning is accurate.
+D. Datian does not have real knowledge and basic social skills, and does not have an accurate positioning.
+
+c
+The following capability-certification reasoning is used in an operator screening pass.
+Some college teachers have overseas doctorates, so some overseas doctors have a high level.
+Which of the following can guarantee the correctness of the above statement?
+A. All college teachers have a very high level.
+B. Not all college teachers have a high level.
+C. Some college teachers have a very high level.
+D. All high-level teachers have overseas doctorate degrees.
+
+d
+The following planning objection is used in a cluster-prospect review.
+Ms.Zheng? Hengyuan ’s GDP (gross domestic product) growth rate over the past decade is higher than that of Yiyang, so Hengyuan ’s economic prospects are better than Yiyang.Mr.Hu? I disagree with you.Although the GDP growth rate of Hengyuan City is relatively high, it cannot be inferred that the economic prospects of Hengyuan City will be better.
+Which of the following issues is most related to Mr. Hu's objection?
+A. Is the GDP of Yiyang City greater than that of Hengyuan City?
+B. Is the GDP growth rate of Hengyuan City really higher than that of Angyang City?
+C. A city's GDP has a large value, is the economic outlook necessarily good?
+D. A city's GDP growth rate is high, is the economic outlook necessarily good?
+
+b
+The following health-and-safety reasoning is used in a device-risk review.
+Clinical trials have shown that for people who occasionally consume a certain amount of beef jerky, most brands of beef jerky additives do not cause arterial hardening.Therefore, people can eat beef jerky without worrying about physical health.
+Which of the following most weakens the above argument?
+A. Eating large amounts of beef jerky is not conducive to arterial health.
+B. Arterial health is not equal to physical health.
+C. Meat contains substances harmful to the human body.
+D. People who like to eat beef jerky often like to eat other foods that are harmful to arterial health.
+
+c
+The following matching puzzle is used in a board-selection exercise.
+Prince Lima in Li Na's mind is tall, handsome and doctor.She knew four men, Wang Wei, Wu Gang, Li Qiang, and Liu Dawei, and one of them met all the conditions she required.(1) Among the 4 men, there are 3 tall men, 2 doctors, 1 handsome man; (2) Wang Wei and Li Qiang are not both doctors; (3) Wu Gang is tall; (4) Liu Dawei is not handsome; (5) The handsome person is a doctor.
+Who satisfies all the conditions?
+A. Liu Dawei
+B. Li Qiang
+C. Wu Gang
+D. Wang Wei
+
+a
+The following site-allocation reasoning is used in a summer field-deployment review.
+Three Chinese students Zhang Lin, Zhao Qiang, Li Shan and three foreign students John, Jesse, and Anna went on a summer vacation.Alternative tourist destinations include Xi'an, Hangzhou, Dalian and Zhangjiajie.It is already known that: (1) one and only one of Zhang Lin and Zhao Qiang went to Hangzhou; (2) Li Shan either went to Xi'an or Zhangjiajie; (3) if John went to Hangzhou, then Anna went to Zhangjiajie.
+Which of the following can be concluded?
+A. Anna went to Zhangjiajie.
+B. Zhang Lin went to Dalian.
+C. Li Shan went to Xi'an.
+D. John went to Hangzhou.
+

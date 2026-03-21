@@ -1,0 +1,126 @@
+{
+  "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+  "evaluation_mode": "logiqa_batch_compiled_probe_aggregated",
+  "logiqa_compiled_probe": true,
+  "artifact_runtime_decoded_on_board": false,
+  "compiled_probe_mode": "host_full_exact",
+  "artifact_path_override": "edge_runtime/variants_parent_runtime_topk_official642_k24/chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+  "total_samples": 642,
+  "total_correct": 194,
+  "accuracy": 0.30218068535825543,
+  "total_ms": 0,
+  "samples_per_sec": 0.0,
+  "host_full_match": 642,
+  "batches": [
+    {
+      "run_id": "logiqa-000-064-3d9428c8258d",
+      "offset": 0,
+      "count": 64,
+      "correct": 20,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "CCAABBCCABDCABBC",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_000_064.json"
+    },
+    {
+      "run_id": "logiqa-064-064-60ab2993e04a",
+      "offset": 64,
+      "count": 64,
+      "correct": 22,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "DCDBDCDDDDDDBBDC",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_064_064.json"
+    },
+    {
+      "run_id": "logiqa-128-064-15779b3641ce",
+      "offset": 128,
+      "count": 64,
+      "correct": 26,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "CBCCCBBABDCBAAAA",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_128_064.json"
+    },
+    {
+      "run_id": "logiqa-192-064-3e9b8d6a5a54",
+      "offset": 192,
+      "count": 64,
+      "correct": 10,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "CCDDCDDABBCCBCDB",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_192_064.json"
+    },
+    {
+      "run_id": "logiqa-256-064-f342881aa88a",
+      "offset": 256,
+      "count": 64,
+      "correct": 23,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "BABDBADCCDCBDCCD",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_256_064.json"
+    },
+    {
+      "run_id": "logiqa-320-064-ac1aa3358ea6",
+      "offset": 320,
+      "count": 64,
+      "correct": 17,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "BDCBBCCADBDBBDCB",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_320_064.json"
+    },
+    {
+      "run_id": "logiqa-384-064-a5ee16378cf4",
+      "offset": 384,
+      "count": 64,
+      "correct": 18,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "ACABBABAAABADBCB",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_384_064.json"
+    },
+    {
+      "run_id": "logiqa-448-064-54d2c75a92fd",
+      "offset": 448,
+      "count": 64,
+      "correct": 15,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "DDCCBCACBBBDADAD",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_448_064.json"
+    },
+    {
+      "run_id": "logiqa-512-064-26fd57b3ccef",
+      "offset": 512,
+      "count": 64,
+      "correct": 23,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "DBDDBDBCDDABADBC",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_512_064.json"
+    },
+    {
+      "run_id": "logiqa-576-064-3026f6fe3e9e",
+      "offset": 576,
+      "count": 64,
+      "correct": 20,
+      "host_full_match": 64,
+      "ms": 0,
+      "pred_prefix": "CDACCCDAAAAABBBB",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_576_064.json"
+    },
+    {
+      "run_id": "logiqa-640-002-17d52ac26f27",
+      "offset": 640,
+      "count": 2,
+      "correct": 0,
+      "host_full_match": 2,
+      "ms": 0,
+      "pred_prefix": "DC",
+      "report_path": "results/board_proof/raw/esp32c3_logiqa_batch_parent_runtime_topk_official642_k24_hostfullexact_640_002.json"
+    }
+  ]
+}

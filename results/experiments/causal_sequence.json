@@ -1,0 +1,64 @@
+{
+  "sequence_kind": "public_same_parent_progression_v1",
+  "generated_at": "2026-03-21T16:58:02.292119+00:00",
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "official_logiqa": 0.303738,
+      "delta_vs_parent_logiqa": 0.0,
+      "external_dev_logiqa": 0.304598,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "authoritative_parent"
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "official_logiqa": 0.303738,
+      "delta_vs_parent_logiqa": 0.0,
+      "external_dev_logiqa": 0.304598,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "exact_ablation"
+    },
+    {
+      "surface_id": "three_family_promoted_surface",
+      "label": "Earlier three-family promoted surface",
+      "official_logiqa": 0.308411,
+      "delta_vs_parent_logiqa": 0.004673,
+      "external_dev_logiqa": 0.304598,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "same_parent_context"
+    },
+    {
+      "surface_id": "single_family_official_bc_support_b1",
+      "label": "Single-family official BC surface",
+      "official_logiqa": 0.34891,
+      "delta_vs_parent_logiqa": 0.045172,
+      "external_dev_logiqa": 0.308908,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "same_parent_context"
+    },
+    {
+      "surface_id": "single_family_official_dbb_bc_support_b1",
+      "label": "Single-family official DBB-BC surface",
+      "official_logiqa": 0.353583,
+      "delta_vs_parent_logiqa": 0.049845,
+      "external_dev_logiqa": 0.308908,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "same_parent_context"
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "official_logiqa": 0.392523,
+      "delta_vs_parent_logiqa": 0.088785,
+      "external_dev_logiqa": 0.308908,
+      "external_blind_logiqa": 0.425072,
+      "family_scope": "current_surface"
+    }
+  ],
+  "notes": [
+    "This is a replayable same-parent progression, not a full ordered construction trace over all 75 current-surface blocks.",
+    "It is intended to show public context: frozen parent, exact no-trunk proxy, earlier promoted surfaces, and the current promoted surface."
+  ]
+}

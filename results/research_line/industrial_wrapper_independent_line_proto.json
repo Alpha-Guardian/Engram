@@ -1,0 +1,55 @@
+{
+  "bundle_kind": "research_line_industrial_wrapper_independent_proto_v1",
+  "generated_at": "2026-03-21T14:37:00+00:00",
+  "status": "research_only_not_promoted",
+  "summary": {
+    "line_type": "parent_derived_zero_init_trunk_recurrent_proto",
+    "materialized_block_count": 8,
+    "official_logiqa": 0.283489,
+    "official_ifeval": 0.781885,
+    "protected_slice_accuracy": 0.388889,
+    "light_probe_accuracy": 0.1,
+    "promoted_current_surface_protected_slice_accuracy": 0.333333,
+    "frozen_parent_protected_slice_accuracy": 0.166667,
+    "promotable": false
+  },
+  "artifacts": {
+    "zero_init_spec": "artifacts/reports/public_cross_task/industrial_wrapper_pass8_zero_init_spec.json",
+    "materialized_checkpoint": "artifacts/reports/public_cross_task/industrial_wrapper_pass8_materialized_from_slice.json",
+    "materialized_audit": {
+      "cluster_name": "industrial_wrapper_pass8_zero_init",
+      "global_precheck_pass": true,
+      "block_count": 8,
+      "trunk_train_updates_applied": 11,
+      "matched_sample_ids": [
+        "industrial_wrapper_protected18_000",
+        "industrial_wrapper_protected18_005",
+        "industrial_wrapper_protected18_008",
+        "industrial_wrapper_protected18_011",
+        "industrial_wrapper_protected18_016"
+      ],
+      "pass_target_indices": [
+        0,
+        1,
+        5,
+        6,
+        8,
+        10,
+        11,
+        16
+      ]
+    },
+    "evaluation_reports": {
+      "protected_slice": "artifacts/reports/public_cross_task/20260321_223410_923370_industrial_wrapper_pass8_slice_eval_authoritative_five_bench_report.json",
+      "light_probe": "artifacts/reports/public_cross_task/20260321_223411_328526_industrial_wrapper_pass8_lite_eval_authoritative_five_bench_report.json",
+      "official_logiqa": "artifacts/reports/public_cross_task/20260321_223458_020356_industrial_wrapper_pass8_official_logiqa_eval_fixed_authoritative_five_bench_report.json",
+      "official_ifeval": "artifacts/reports/public_cross_task/20260321_223649_349261_industrial_wrapper_pass8_official_ifeval_eval_fixed_authoritative_five_bench_report.json"
+    }
+  },
+  "interpretation": [
+    "A true parent-derived industrial-wrapper second-line scaffold now exists and can be materialized into non-empty trunk recurrent blocks.",
+    "That prototype improves the curated protected transfer slice beyond the current promoted public surface.",
+    "It does not transfer to the broader light industrial wrapper probe and it regresses official LogiQA below the frozen parent boundary.",
+    "So this line is evidence that the second-task trunk pipeline can be instantiated, but it is not yet an accepted or promotable scientific surface."
+  ]
+}

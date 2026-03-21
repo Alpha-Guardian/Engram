@@ -1,0 +1,514 @@
+{
+  "controls_bundle_kind": "public_additional_controls_v1",
+  "generated_at": "2026-03-21T16:58:02.384010+00:00",
+  "controls": [
+    {
+      "control_id": "current_surface_no_topology_control",
+      "source_surface": "current_scientific_surface",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.280374,
+        "external_dev_logiqa": 0.295977,
+        "external_blind_logiqa": 0.371758,
+        "delta_vs_parent_logiqa": -0.023364,
+        "delta_vs_current_logiqa": -0.112149
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/current_surface_no_topology_control.json",
+        "sha256": "56b9939d0d082b8cd6e1f577662ab839f19d6ab97a94dea5de8d4183cdb1e13e"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170006_896725_current_surface_no_topology_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "b616b24248db1a039b75727336a614090540c79f3a540445413231a1858c50cf"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140127_229532_current_surface_no_topology_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "310314d3a44fc13341f72d0156e050edfe5bbe06de3974576a45934fcb40204f"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140208_591356_current_surface_no_topology_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "d395baed5d09242aaf3bff8b6b080496c18d3925c6a7422a4e8509b1f75d9af5"
+        }
+      },
+      "notes": [
+        "Remove parent_top, parent_second, and parent_margin_max constraints from all current trunk blocks."
+      ]
+    },
+    {
+      "control_id": "current_surface_depth1_control",
+      "source_surface": "current_scientific_surface",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.323988,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.423631,
+        "delta_vs_parent_logiqa": 0.02025,
+        "delta_vs_current_logiqa": -0.068535
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/current_surface_depth1_control.json",
+        "sha256": "830f7638c91590376069f35c0feef62465a8c3f2f26c0a923f7083b3b9dfcc9c"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140250_491259_current_surface_depth1_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "5dd24bbce4657b0e575b77ad6b9ef29c2a4dd8c2f266aadbc98181939a659959"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140329_268611_current_surface_depth1_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "5581eafde74430727dbbf0ec477874cdd4cc878d5123679e48235e4798a101a8"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140410_405510_current_surface_depth1_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "268afe43d4f9365765fb271538895a9061c953462708d0f57073e6560e6ce162"
+        }
+      },
+      "notes": [
+        "Reduce all current trunk blocks to a single recurrent step."
+      ]
+    },
+    {
+      "control_id": "current_surface_route_disabled_published_eval_control",
+      "source_surface": "current_scientific_surface",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.244548,
+        "external_dev_logiqa": 0.261494,
+        "external_blind_logiqa": 0.322767,
+        "delta_vs_parent_logiqa": -0.05919,
+        "delta_vs_current_logiqa": -0.147975
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/current_surface_route_disabled_published_eval_control.json",
+        "sha256": "100b6d1c2a3f439033773dd6f362245371793d0f015922a401962b58fc1fd642"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140453_698805_current_surface_route_disabled_published_eval_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "0948eeaa9cb0f16bc75dadfe6eb4be2c62c1b2194d83e1754b266c2afc1e800d"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140535_322617_current_surface_route_disabled_published_eval_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "50e9dfc47c80155bb415746172a52306e9f17db88302fe025d9c1456b83c16a9"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140621_019326_current_surface_route_disabled_published_eval_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "94c3665a8030ef0b8fd165b8c95e53767af78956c5c42dd66cf2875b525fc07a"
+        }
+      },
+      "notes": [
+        "Replace every trunk block route with the union of token and bigram surfaces observed in the published official, external_dev, and external_blind LogiQA sets.",
+        "The published-eval route union contains 62652 unique tokens and bigrams."
+      ]
+    },
+    {
+      "control_id": "parent_synthetic_gpu_lowrank_bc_control",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_synthetic_gpu_lowrank_bc_control.json",
+        "sha256": "67bbe36766aec70912e9626d5760bfe6175f2112b6429ece71bee95c88cfd722"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140705_576117_parent_synthetic_gpu_lowrank_bc_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "b4a152ca527c96f2de28c8db658dad9a362b2a7cccdbc9fab5f24847fc4c7564"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140742_776582_parent_synthetic_gpu_lowrank_bc_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "12b7b897cde602ef4cc267f8368b1f27b38b53a0c9c2572d1504546b3a38a815"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140822_009979_parent_synthetic_gpu_lowrank_bc_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "5efcc838a0d2bb9c032e3fb1253ec59b86def0dea73cc025b38ea92a603ac4b0"
+        }
+      },
+      "notes": [
+        "Build same-parent low-rank adapter-style clusters for the public BC family using the existing synthetic adapter helper."
+      ]
+    },
+    {
+      "control_id": "parent_synthetic_gpu_lowrank_dbb_bc_control",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_synthetic_gpu_lowrank_dbb_bc_control.json",
+        "sha256": "d33dedf279a2978a08e961450389d900fa6187f1c39044a47d0477a2d83bce9b"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140902_107222_parent_synthetic_gpu_lowrank_dbb_bc_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "94d23f39a2e9929e7b0ab4542875f43486860abd089da7f9a7736c624f4baba0"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_140938_954990_parent_synthetic_gpu_lowrank_dbb_bc_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "c7197b78598c90b5b89f2d22d14625fc6dcbd41a59dc099b8993bdcbe2796a10"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141017_816345_parent_synthetic_gpu_lowrank_dbb_bc_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "68dc57a83491e7c13a015e9f59509dcc8e2a3fc3bb487e5e6683df600f57aa8a"
+        }
+      },
+      "notes": [
+        "Build same-parent low-rank adapter-style clusters for the public DBB-BC family using the existing synthetic adapter helper."
+      ]
+    },
+    {
+      "control_id": "parent_target_diagnostic_bc_control",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.308411,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.004673,
+        "delta_vs_current_logiqa": -0.084112
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_target_diagnostic_bc_control.json",
+        "sha256": "1e7d176f91393c78d0fe16911a1dcfaf7a032cb791de72ddd6bae1c7aa3042cc"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141059_827752_parent_target_diagnostic_bc_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "21f9e843e96dfc668cce321f5bb9b07355e6767ea24be4bff0e2dc333a0cdc4a"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141136_767263_parent_target_diagnostic_bc_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "34d7843e74ce830dc40fb930747ba3127329edfd7a95bb62dd72ab95d98bd75c"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141216_826452_parent_target_diagnostic_bc_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "c64a6cdf91112c59fef1101cf4285ecf3591013b98e34feb149c42b0550d0e83"
+        }
+      },
+      "notes": [
+        "Append three target-only diagnostic option_latent_v2 blocks for the public BC slice without support-derived carriers."
+      ]
+    },
+    {
+      "control_id": "parent_target_diagnostic_dbb_bc_control",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.308411,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.004673,
+        "delta_vs_current_logiqa": -0.084112
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_target_diagnostic_dbb_bc_control.json",
+        "sha256": "5976e980898741a19ee35fef8063f1a0151a5bced9463f1a0cc01ba664ce1cbb"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141256_784568_parent_target_diagnostic_dbb_bc_control_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "7a69e3f1e320105fe75908b8129beb58bba31af499208d4de7b6bf8d6547eba9"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141332_966109_parent_target_diagnostic_dbb_bc_control_external_dev_authoritative_five_bench_report.json",
+          "sha256": "2c9c4d7a5a1d8507f72da707dd06849bb6e054e1aff4f7f11b1bd8abc8e2ce92"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141410_806443_parent_target_diagnostic_dbb_bc_control_external_blind_authoritative_five_bench_report.json",
+          "sha256": "8899e95b946a480331d13475cd274b2f2d591522fc26c208dfd0276f0403e456"
+        }
+      },
+      "notes": [
+        "Append three target-only diagnostic option_latent_v2 blocks for the public DBB-BC slice without support-derived carriers."
+      ]
+    },
+    {
+      "control_id": "parent_gpu_trained_linear_head_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.300623,
+        "external_dev_logiqa": 0.303161,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": -0.003115,
+        "delta_vs_current_logiqa": -0.0919
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_gpu_trained_linear_head_baseline.json",
+        "sha256": "58fc4a40d3198acdee583f22af8b6391815e6ee35aa352ca8b3bd035a55ba934"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141451_084989_parent_gpu_trained_linear_head_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "d79372990078c20fc916aa6ffb676f9dac3cb547455093bdcdac81ee7dfd56c0"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141519_323219_parent_gpu_trained_linear_head_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "75d12820a8e761facaf375253ae0c1f37b360ea5e3e03884462ac1cd766cb8e3"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141549_069472_parent_gpu_trained_linear_head_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "461d5dd66553afafb68bacb71cb14e3abfb0f3d40f3b2771782c02c95b6dbeea"
+        }
+      },
+      "notes": [
+        "Train a same-parent hashed linear LogiQA readout on the public logical_reasoning_mcq slice as a classic trained control."
+      ]
+    },
+    {
+      "control_id": "parent_trained_bitfit_option_bias_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.266355,
+        "external_dev_logiqa": 0.297414,
+        "external_blind_logiqa": 0.412104,
+        "delta_vs_parent_logiqa": -0.037383,
+        "delta_vs_current_logiqa": -0.126168
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_trained_bitfit_option_bias_baseline.json",
+        "sha256": "2562cb2d9367b94a0907bc7f799f3bbc2d960157c78a82cd11ff537abb2a02ec"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141617_461203_parent_trained_bitfit_option_bias_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "4b23e24d808670f91db3da3fa7bfe9f47e6d9ed341250d374c4308f31bb1c1b4"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141655_155616_parent_trained_bitfit_option_bias_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "2c407096b2b427dc9b722f41ac4b601904d27f8eec94c9369921a3b3796b3282"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141733_283776_parent_trained_bitfit_option_bias_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "d771528bbf0727cb9f9dc8b391faf9f42968dda2789bbb0b18e2a9ebf63ef217"
+        }
+      },
+      "notes": [
+        "Train a same-parent BitFit-style option-bias-only baseline on the same public logical_reasoning_mcq slice.",
+        "This control updates only global option bias terms while keeping the frozen parent backbone unchanged."
+      ]
+    },
+    {
+      "control_id": "parent_trained_lora_style_hash_delta_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_trained_lora_style_hash_delta_baseline.json",
+        "sha256": "5eb8fdbada7d65a2330bfe426cc5f4ede1d60e53b1a4d250a2fc78594ba177f5"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141814_143987_parent_trained_lora_style_hash_delta_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "fa0011a1f90074820cb755f95c04918a7ecddcc8b54c8c2ad7a431aa5949a4e0"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141902_530906_parent_trained_lora_style_hash_delta_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "2adbb8df34e3fa4913cdc669a18d5fafe62204749469cf94d781b28c622eed77"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_141953_839847_parent_trained_lora_style_hash_delta_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "25864db835bf790ed24fb9c4981a7f801482c9a21f198b8a459c13690c8863c7"
+        }
+      },
+      "notes": [
+        "Train a same-parent LoRA-style factorized hash-delta baseline (rank=8, hash_dim=4096) on the same public logical_reasoning_mcq slice.",
+        "This is an architecture-constrained LoRA-style comparator for this non-transformer parent rather than a transformer module LoRA run."
+      ]
+    },
+    {
+      "control_id": "parent_trained_lowrank_adapter_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_trained_lowrank_adapter_baseline.json",
+        "sha256": "50778c6a9c892c404817493447956f7405ca1a004ae76e8b1919a6852597e728"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142045_654485_parent_trained_lowrank_adapter_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "9a7bac157392f67f35dab7a51a6d4b789c235f9830825582d05001b5cb044a46"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142132_565781_parent_trained_lowrank_adapter_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "44a56c051f4d33543717da8498fc2bee2f5892276e24e059c944b95f8c545ea6"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142221_359652_parent_trained_lowrank_adapter_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "8adb8f34d05058abb09e1bd1b895dc40e9904a23d1450636d5dc45b561c96e10"
+        }
+      },
+      "notes": [
+        "Train a same-parent low-rank adapter-style LogiQA readout (rank=8, hash_dim=4096) on the same public logical_reasoning_mcq slice.",
+        "This is an architecture-near PEFT-style trained comparator under the frozen parent boundary."
+      ]
+    },
+    {
+      "control_id": "parent_trained_lora_style_hash_delta_budget_matched_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_trained_lora_style_hash_delta_budget_matched_baseline.json",
+        "sha256": "4b97d7f8c17a74a7856ae66536a94216b48811148e31a8ac3d1c33426e897b1b"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170158_623285_parent_trained_lora_style_hash_delta_budget_matched_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "250c4273ba067a43d95567cf53dd9536b2c53fb138ca905314053d07bdb18081"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170245_954481_parent_trained_lora_style_hash_delta_budget_matched_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "60147a3cf9af3a59813686d15ec5e05774a0da356f29b0b5fcb3b593a75452e9"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170342_254307_parent_trained_lora_style_hash_delta_budget_matched_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "479504b431b6babe6f463e1eb794c91dae0df67a6a84bb78f9d4ce0522bc4ef3"
+        }
+      },
+      "notes": [
+        "Train a same-parent LoRA-style factorized hash-delta baseline under a strict matched trainable budget target of 3123 parameters.",
+        "This run uses rank=1 and hash_dim=3123 so the effective delta vector dimensionality is budget-matched to the promoted trunk numeric payload."
+      ]
+    },
+    {
+      "control_id": "parent_trained_lowrank_adapter_budget_matched_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0,
+        "delta_vs_current_logiqa": -0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_trained_lowrank_adapter_budget_matched_baseline.json",
+        "sha256": "88011fb255d50cdf392dc6e1c291b12186cdf018266a536458cee984c1cb7adf"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170433_627550_parent_trained_lowrank_adapter_budget_matched_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "73602ecc9e3c61a195a45294c0b6ddc21fffe6f7ebf46b6589a1fc07130925ae"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170519_346787_parent_trained_lowrank_adapter_budget_matched_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "e428cc41cd27badc094f19b4eca623bb99419570424049957b8f57a8eeefd0ac"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_170607_252518_parent_trained_lowrank_adapter_budget_matched_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "3eafc9db2c4d120192e9792aa2ed07d2f4ae72aa0e52f2f2a4f55fedc7698105"
+        }
+      },
+      "notes": [
+        "Train a same-parent low-rank adapter-style baseline under the same strict matched trainable budget target of 3123 parameters.",
+        "This run uses rank=1, hash_dim=3123, and top_k_per_row=3123 to avoid sparsification-induced budget drift."
+      ]
+    },
+    {
+      "control_id": "parent_retrieval_only_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.291277,
+        "external_dev_logiqa": 0.287356,
+        "external_blind_logiqa": 0.432277,
+        "delta_vs_parent_logiqa": -0.012461,
+        "delta_vs_current_logiqa": -0.101246
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_retrieval_only_baseline.json",
+        "sha256": "e4ff1b7d67826378ca00b1a868c4091a387ca574d11b702324df52bf7668ee89"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142311_969466_parent_retrieval_only_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "6f22ab31e14939ea0afef080eb2a70dcaf89e84a744c1f8af18f7b4cedbfb6ef"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142325_045236_parent_retrieval_only_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "66492c262c15f6cddb1f1d8fdb42fb0e808c3da1e3ac3c24a18bb5a8b4493580"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142340_045116_parent_retrieval_only_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "aac2ee845ef5366ee69c63477b46a2fc33be7c19ddda8aeb1f43a07936ae7c34"
+        }
+      },
+      "notes": [
+        "Classical retrieval-only comparator under the same parent boundary: remove lexical and GPU readouts while keeping exemplar retrieval active."
+      ]
+    },
+    {
+      "control_id": "parent_lexical_only_baseline",
+      "source_surface": "frozen_authoritative_parent",
+      "metrics": {
+        "official_ifeval_inherited": 0.780037,
+        "official_logiqa": 0.28972,
+        "external_dev_logiqa": 0.260057,
+        "external_blind_logiqa": 0.273775,
+        "delta_vs_parent_logiqa": -0.014018,
+        "delta_vs_current_logiqa": -0.102803
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_lexical_only_baseline.json",
+        "sha256": "5b4d1ad596c0e96027a19109cafff0830e64c570c3f8204dc74cdaf5eb10ff1d"
+      },
+      "sources": {
+        "official_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142354_233692_parent_lexical_only_baseline_official_logiqa_authoritative_five_bench_report.json",
+          "sha256": "28c544e8110e1202c9aaaedff520596b3979be375fddd71132002419328d2fd1"
+        },
+        "external_dev_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142357_043433_parent_lexical_only_baseline_external_dev_authoritative_five_bench_report.json",
+          "sha256": "fdeda18a2c722cffdde0db5946200e48e5b9859326125cf3a85d271a57711efb"
+        },
+        "external_blind_logiqa": {
+          "path": "artifacts/reports/public_controls/20260321_142359_894538_parent_lexical_only_baseline_external_blind_authoritative_five_bench_report.json",
+          "sha256": "7fa9bd92739c2f9e20f7d084b3aeb394adbd71d2e3d41e0f5ad3dfb10993d7fb"
+        }
+      },
+      "notes": [
+        "Classical lexical-only comparator under the same parent boundary: disable exemplar retrieval and GPU readout while keeping the frozen token/bigram scorer."
+      ]
+    }
+  ],
+  "notes": [
+    "These are additional LogiQA-local controls beyond the exact no-trunk ablation.",
+    "The adapter-style controls are same-parent low-rank controls; the bundle now also includes trainable-budget-matched PEFT-style controls.",
+    "The topology-removal, depth-one, and published-eval route-disabled controls are current-surface checkpoint edits, not new trained surfaces.",
+    "The target-only diagnostic controls keep parent topology but replace support-derived carriers with target-derived blocks only.",
+    "The public classical comparator bundle includes retrieval-only, lexical-only, trained linear-readout, trained BitFit-style option-bias, trained LoRA-style factorized hash-delta, trained low-rank adapter-style controls, and trainable-budget-matched LoRA-style and adapter-style controls under the same frozen parent boundary."
+  ]
+}

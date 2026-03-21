@@ -1,0 +1,148 @@
+{
+  "probe_bundle_kind": "public_locality_probes_v1",
+  "generated_at": "2026-03-21T16:58:02.383989+00:00",
+  "probes": [
+    {
+      "probe_id": "current_surface_official_ad_support_b1_additive_narrow_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_ad_support_b1_additive",
+      "scope": "narrow",
+      "target_indices": [
+        25,
+        229,
+        496
+      ],
+      "summary": {
+        "selected_count": 11,
+        "triggered_count": 3,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 0,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 4
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_ad_support_b1_additive_narrow_locality_probe_vs_authoritative_parent.json",
+        "sha256": "511e6d82dbae095f0279e75a0073dbe676928b27850343cedfb1d0f7475db0d6"
+      }
+    },
+    {
+      "probe_id": "current_surface_official_ad_support_b1_additive_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_ad_support_b1_additive",
+      "scope": "protected_slice",
+      "target_indices": [
+        25,
+        229,
+        496
+      ],
+      "summary": {
+        "selected_count": 70,
+        "triggered_count": 9,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 6,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 66
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_ad_support_b1_additive_locality_probe_vs_authoritative_parent.json",
+        "sha256": "62d7ee6f2fc0c12fabed819a843dec7290977e8ec7b8dc798a74ad5f3304c2e1"
+      }
+    },
+    {
+      "probe_id": "current_surface_official_bc_zeroinit_routes_narrow_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_bc_zeroinit_routes",
+      "scope": "narrow",
+      "target_indices": [
+        136,
+        427,
+        550
+      ],
+      "summary": {
+        "selected_count": 11,
+        "triggered_count": 3,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 0,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 4
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_bc_zeroinit_routes_narrow_locality_probe_vs_authoritative_parent.json",
+        "sha256": "923516bc6044c902dba3d44463542357caa10afeca1e98519d13e9d2513a5d78"
+      }
+    },
+    {
+      "probe_id": "current_surface_official_bc_zeroinit_routes_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_bc_zeroinit_routes",
+      "scope": "protected_slice",
+      "target_indices": [
+        136,
+        427,
+        550
+      ],
+      "summary": {
+        "selected_count": 70,
+        "triggered_count": 3,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 0,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 66
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_bc_zeroinit_routes_locality_probe_vs_authoritative_parent.json",
+        "sha256": "e0b4c2aff43c4e81dbab4c84b2e31a4931fd6d9d8eba93d6ab781684421827bc"
+      }
+    },
+    {
+      "probe_id": "current_surface_official_dbb_bc_support_b1_additive_narrow_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_dbb_bc_support_b1_additive",
+      "scope": "narrow",
+      "target_indices": [
+        50,
+        78,
+        605
+      ],
+      "summary": {
+        "selected_count": 11,
+        "triggered_count": 3,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 0,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 4
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_dbb_bc_support_b1_additive_narrow_locality_probe_vs_authoritative_parent.json",
+        "sha256": "9ca67282918beb3cdf719d0ad92aa64044f270329a1d5b84cc67b3dc14848f9c"
+      }
+    },
+    {
+      "probe_id": "current_surface_official_dbb_bc_support_b1_additive_locality_probe_vs_authoritative_parent",
+      "family": "trunk_option_latent_v2_official_dbb_bc_support_b1_additive",
+      "scope": "protected_slice",
+      "target_indices": [
+        50,
+        78,
+        605
+      ],
+      "summary": {
+        "selected_count": 70,
+        "triggered_count": 3,
+        "locality_target_fixed_count": 3,
+        "off_target_fire_count": 0,
+        "locality_collateral_flip_count": 0,
+        "changed_prediction_count": 66
+      },
+      "source": {
+        "path": "artifacts/reports/colm2026/current_surface_official_dbb_bc_support_b1_additive_locality_probe_vs_authoritative_parent.json",
+        "sha256": "d74b57a730ef3fc08b58dd8a4367cad926ca26a4ab52d977badd0563c8b40b2d"
+      }
+    }
+  ],
+  "representative_probes": [
+    "current_surface_official_bc_zeroinit_routes_narrow_locality_probe_vs_authoritative_parent",
+    "current_surface_official_dbb_bc_support_b1_additive_narrow_locality_probe_vs_authoritative_parent",
+    "current_surface_official_bc_zeroinit_routes_locality_probe_vs_authoritative_parent",
+    "current_surface_official_dbb_bc_support_b1_additive_locality_probe_vs_authoritative_parent"
+  ],
+  "notes": [
+    "The tightest representative public locality evidence is the BC and DBB-BC pair: both narrow and protected-slice probes show 3 designated targets fixed, zero off-target fires, and zero collateral flips.",
+    "The wider AD family is also published here; its protected-slice probe shows broader off-target firing while still reporting zero locality collateral flips on the selected slice."
+  ]
+}

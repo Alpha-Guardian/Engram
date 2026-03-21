@@ -1,0 +1,346 @@
+{
+  "bundle_kind": "public_industrial_state_decision_probe_v2",
+  "generated_at": "2026-03-21T13:52:08.865545+00:00",
+  "task": "industrial_state_decision_logiqa_lite_v1",
+  "metric": "accuracy",
+  "taskset": {
+    "path": "results/experiments/industrial_state_decision_logiqa_lite_v1.txt",
+    "sha256": "d753a7a047d15d1238accdd1bb824ef1a7dd3d8954cbfb6cb1872d9b63826794",
+    "samples": 10,
+    "task_style": "light_domain_shifted_logiqa_style_mcq",
+    "scope": "industrial_or_embedded_wrapper_reasoning"
+  },
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "industrial_state_decision_accuracy": 0.1,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+        "sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_215137_458685_industrial_state_decision_parent_v2_authoritative_five_bench_report.json",
+        "sha256": "8dedecb9e0aacacc03ee739c51fbaecb410400bf88604302f3635849d0f684ec"
+      }
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "industrial_state_decision_accuracy": 0.1,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/checkpoints/current_scientific_surface_no_trunk_industrial_state_decision_probe.json",
+        "sha256": "b8fc8e0348755e0fbe15fbf055627824b15b7ad5d2ce4a85ed2f2c5991f64767"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_215143_643892_industrial_state_decision_no_trunk_v2_authoritative_five_bench_report.json",
+        "sha256": "32ed726273f98e30406052d2e7accbda26168379e0d4ed2a66f2e1e95e8eae24"
+      }
+    },
+    {
+      "surface_id": "parent_gpu_trained_linear_head_baseline",
+      "label": "Parent trained linear baseline",
+      "industrial_state_decision_accuracy": 0.1,
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_gpu_trained_linear_head_baseline.json",
+        "sha256": "58fc4a40d3198acdee583f22af8b6391815e6ee35aa352ca8b3bd035a55ba934"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_215148_787507_industrial_state_decision_trained_linear_v2_authoritative_five_bench_report.json",
+        "sha256": "b0508c3f931f418198bf386a7bb629302a07f5b89dd35ee949b0a927bd6a64ac"
+      }
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "industrial_state_decision_accuracy": 0.2,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+        "sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_215155_099241_industrial_state_decision_current_v2_authoritative_five_bench_report.json",
+        "sha256": "ab4592230faa78bd95eafc6ee7bee5c7d03efd0b39ee8a223a322bb05a63068b"
+      }
+    }
+  ],
+  "summary": {
+    "current_vs_parent_delta": 0.1,
+    "current_vs_no_trunk_delta": 0.1,
+    "current_vs_trained_linear_delta": 0.1,
+    "current_above_parent": true,
+    "current_above_no_trunk": true,
+    "current_above_trained_linear": true
+  },
+  "pairwise": {
+    "current_vs_parent": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "current_vs_no_trunk": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "current_vs_trained_linear": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    }
+  },
+  "notes": [
+    "This is a lightly domain-shifted second-task probe that wraps current-win reasoning shapes in industrial and embedded review language while preserving a LogiQA-style multiple-choice reasoning surface.",
+    "It is intended to test whether the current promoted surface can retain a positive same-parent signal outside the literal public LogiQA benchmark.",
+    "It is still an exploratory transfer probe, not a claim of broad industrial generalization or a replacement for a full second-task promotion line."
+  ]
+}

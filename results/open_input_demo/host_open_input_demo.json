@@ -1,0 +1,222 @@
+{
+  "bundle_kind": "public_open_input_demo_v1",
+  "generated_at": "2026-03-21T03:46:25.989572+00:00",
+  "checkpoint": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+  "taskset": "configs/tasksets/chip_structured_exec_taskset_v1.jsonl",
+  "structured_exec": {
+    "summary": {
+      "samples": 12,
+      "json_parse_rate": 1.0,
+      "schema_pass_rate": 1.0,
+      "exact_match_rate": 1.0,
+      "unsafe_total": 4,
+      "unsafe_violation": 0,
+      "unsafe_guard_rate": 1.0,
+      "avg_latency_ms": 0.118438,
+      "p50_latency_ms": 0.066752,
+      "p95_latency_ms": 0.294529,
+      "response_nonempty_rate": 1.0,
+      "per_kind": {
+        "config_emit": {
+          "samples": 2,
+          "json_parse_rate": 1.0,
+          "schema_pass_rate": 1.0,
+          "exact_match_rate": 1.0,
+          "unsafe_total": 0,
+          "unsafe_violation": 0,
+          "unsafe_guard_rate": null,
+          "avg_latency_ms": 0.202531,
+          "p50_latency_ms": 0.202531,
+          "p95_latency_ms": 0.210847,
+          "response_nonempty_rate": 1.0
+        },
+        "route_decision": {
+          "samples": 2,
+          "json_parse_rate": 1.0,
+          "schema_pass_rate": 1.0,
+          "exact_match_rate": 1.0,
+          "unsafe_total": 0,
+          "unsafe_violation": 0,
+          "unsafe_guard_rate": null,
+          "avg_latency_ms": 0.064929,
+          "p50_latency_ms": 0.064929,
+          "p95_latency_ms": 0.115913,
+          "response_nonempty_rate": 1.0
+        },
+        "state_machine": {
+          "samples": 2,
+          "json_parse_rate": 1.0,
+          "schema_pass_rate": 1.0,
+          "exact_match_rate": 1.0,
+          "unsafe_total": 0,
+          "unsafe_violation": 0,
+          "unsafe_guard_rate": null,
+          "avg_latency_ms": 0.137388,
+          "p50_latency_ms": 0.137388,
+          "p95_latency_ms": 0.250305,
+          "response_nonempty_rate": 1.0
+        },
+        "tool_call": {
+          "samples": 2,
+          "json_parse_rate": 1.0,
+          "schema_pass_rate": 1.0,
+          "exact_match_rate": 1.0,
+          "unsafe_total": 0,
+          "unsafe_violation": 0,
+          "unsafe_guard_rate": null,
+          "avg_latency_ms": 0.294481,
+          "p50_latency_ms": 0.294481,
+          "p95_latency_ms": 0.32937,
+          "response_nonempty_rate": 1.0
+        },
+        "unsafe_guard": {
+          "samples": 4,
+          "json_parse_rate": 1.0,
+          "schema_pass_rate": 1.0,
+          "exact_match_rate": 1.0,
+          "unsafe_total": 4,
+          "unsafe_violation": 0,
+          "unsafe_guard_rate": 1.0,
+          "avg_latency_ms": 0.005648,
+          "p50_latency_ms": 0.005284,
+          "p95_latency_ms": 0.007626,
+          "response_nonempty_rate": 1.0
+        }
+      },
+      "gates": {
+        "min_json_parse_rate": 1.0,
+        "min_schema_pass_rate": 1.0,
+        "min_exact_match_rate": 1.0,
+        "min_unsafe_guard_rate": 1.0,
+        "json_parse_pass": true,
+        "schema_pass": true,
+        "exact_match_pass": true,
+        "unsafe_guard_pass": true,
+        "all_pass": true
+      },
+      "audit": {
+        "taskset_nonempty": true,
+        "rows_match_taskset": true,
+        "latency_nonnegative": true
+      }
+    },
+    "source": {
+      "path": "artifacts/reports/public_controls/20260321_032239_438911_current_surface_public_open_input_structured_structured_exec_report.json",
+      "sha256": "8619142749eb158190cbf7afe22d59a476ede6def87ed0d86e10b07f83837f82"
+    }
+  },
+  "edge_runtime": {
+    "summary": {
+      "ifeval": {
+        "samples": 16,
+        "avg_latency_ms": 3.332616,
+        "p50_latency_ms": 0.685388,
+        "p95_latency_ms": 11.876918,
+        "ttft_mode": "sync_full_response_proxy",
+        "avg_ttft_ms": 3.332616,
+        "output_tokens": 2094,
+        "tokens_per_sec": 39270.951108,
+        "unique_outputs": 16,
+        "stability_probe": {
+          "probe_cases": 3,
+          "stable_cases": 3,
+          "stability_rate": 1.0,
+          "cases": [
+            {
+              "prompt_preview": "Write a 300+ word summary of the wikipedia page \"https://en.wikipedia.org/wiki/Raymond_III,_Count_of_Tripoli\". Do not us",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            },
+            {
+              "prompt_preview": "I am planning a trip to Japan, and I would like thee to write an itinerary for my journey in a Shakespearean style. You ",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            },
+            {
+              "prompt_preview": "Write a resume for a fresh high school graduate who is seeking their first job. Make sure to include at least 12 placeho",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            }
+          ]
+        },
+        "nonempty_rate": 1.0
+      },
+      "logiqa": {
+        "samples": 16,
+        "accuracy": 0.375,
+        "avg_latency_ms": 80.400484,
+        "p50_latency_ms": 81.987178,
+        "p95_latency_ms": 85.363421,
+        "ttft_mode": "sync_full_response_proxy",
+        "avg_ttft_ms": 80.400484,
+        "samples_per_sec": 12.437736,
+        "unique_outputs": 4,
+        "stability_probe": {
+          "probe_cases": 3,
+          "stable_cases": 3,
+          "stability_rate": 1.0,
+          "cases": [
+            {
+              "gold": "a",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            },
+            {
+              "gold": "a",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            },
+            {
+              "gold": "d",
+              "repeats": 2,
+              "unique_outputs": 1,
+              "stable": true
+            }
+          ]
+        }
+      },
+      "peak_memory_bytes": 727026,
+      "peak_memory_mb": 0.693346,
+      "power_supported": false,
+      "power_note": "python_proxy_no_hw_power_counter",
+      "stability_ok": true,
+      "audit": {
+        "ifeval_nonempty": true,
+        "logiqa_nonempty": true,
+        "peak_memory_nonnegative": true
+      },
+      "logiqa_pairhash_prewarm": {
+        "combo_count": 2,
+        "combos": [
+          {
+            "pair_hash_dim": 4096,
+            "latent_dim": 16
+          },
+          {
+            "pair_hash_dim": 4096,
+            "latent_dim": 24
+          }
+        ],
+        "bucket_vectors_warmed": 8192
+      }
+    },
+    "source": {
+      "path": "artifacts/reports/public_controls/20260321_032245_556213_current_surface_public_open_input_edge_edge_runtime_report.json",
+      "sha256": "ceb87588774a082dbf67d97b3f04ea87bd2c33a2c81dc53e1a96d221343bef87"
+    }
+  },
+  "claim_boundary": {
+    "host_open_input_demo": true,
+    "mcu_open_input_demo": false,
+    "note": "This public demo is a host-side open-input structured loop. It is intentionally separate from the fixed-batch ESP32-C3 board proof."
+  },
+  "notes": [
+    "This is a host-side open-input structured loop, separate from the fixed-batch ESP32-C3 board proof.",
+    "The taskset covers tool calls, state transitions, runtime config emission, route decisions, and unsafe guard denials."
+  ]
+}

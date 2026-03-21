@@ -1,0 +1,57 @@
+{
+  "bundle_kind": "public_gsm8k_second_task_probe_v1",
+  "generated_at": "2026-03-21T12:00:00+00:00",
+  "task": "GSM8K",
+  "metric": "exact_match",
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "official_gsm8k": 0.019712,
+      "external_dev_gsm8k": 0.016064,
+      "external_blind_gsm8k": 0.024096,
+      "sources": {
+        "official": "artifacts/reports/public_cross_task/20260321_195131_431965_public_cross_task_parent_gsm8k_official_authoritative_five_bench_report.json",
+        "external_dev": "artifacts/reports/public_cross_task/20260321_195439_904869_public_cross_task_parent_gsm8k_external_dev_authoritative_five_bench_report.json",
+        "external_blind": "artifacts/reports/public_cross_task/20260321_195440_008910_public_cross_task_parent_gsm8k_external_blind_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "official_gsm8k": 0.019712,
+      "external_dev_gsm8k": 0.016064,
+      "external_blind_gsm8k": 0.024096,
+      "sources": {
+        "official": "artifacts/reports/public_cross_task/20260321_195131_587500_public_cross_task_current_gsm8k_official_authoritative_five_bench_report.json",
+        "external_dev": "artifacts/reports/public_cross_task/20260321_195439_946092_public_cross_task_current_gsm8k_external_dev_authoritative_five_bench_report.json",
+        "external_blind": "artifacts/reports/public_cross_task/20260321_195440_265936_public_cross_task_current_gsm8k_external_blind_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "official_gsm8k": 0.019712,
+      "external_dev_gsm8k": 0.016064,
+      "external_blind_gsm8k": 0.024096,
+      "sources": {
+        "official": "artifacts/reports/public_cross_task/20260321_195131_454818_public_cross_task_current_no_trunk_gsm8k_official_authoritative_five_bench_report.json",
+        "external_dev": "artifacts/reports/public_cross_task/20260321_195440_289870_public_cross_task_current_no_trunk_gsm8k_external_dev_authoritative_five_bench_report.json",
+        "external_blind": "artifacts/reports/public_cross_task/20260321_195440_182059_public_cross_task_current_no_trunk_gsm8k_external_blind_authoritative_five_bench_report.json"
+      }
+    }
+  ],
+  "summary": {
+    "official_delta_current_vs_parent": 0.0,
+    "external_dev_delta_current_vs_parent": 0.0,
+    "external_blind_delta_current_vs_parent": 0.0,
+    "official_delta_current_vs_no_trunk": 0.0,
+    "external_dev_delta_current_vs_no_trunk": 0.0,
+    "external_blind_delta_current_vs_no_trunk": 0.0
+  },
+  "notes": [
+    "This is an exploratory second-task probe under the same frozen-parent comparison boundary.",
+    "No positive GSM8K gain is observed for the current public surface.",
+    "So the current public claim remains bounded to the published LogiQA-centered expert surface plus cross-task non-regression on IFEval."
+  ]
+}

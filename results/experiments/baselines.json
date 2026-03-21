@@ -1,0 +1,217 @@
+{
+  "baseline_bundle_kind": "public_baselines_v1",
+  "generated_at": "2026-03-21T16:58:02.200950+00:00",
+  "authoritative_comparison": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "family_scope": "authoritative_parent",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0
+      },
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+        "sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/20260310_023720_633983_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_cycle1_full_official_dualbench_authoritative_five_bench_report.json",
+          "sha256": "5dac8951e10ac899f810e8d1baeda083ffcc29911b070ea8885d2dd2d701baa9"
+        },
+        "external_dev": {
+          "path": "artifacts/tmp/three_benchmark_learning_runs/20260310_023046_844764/external_dev_eval_cycle1_logiqa_external_dev/20260310_023321_380866_20260310_023046_844764_cycle1_external_dev_eval_logiqa_external_dev_authoritative_five_bench_report.json",
+          "sha256": "ea7447316657c3207bbf5dc8f7bc23356d74664561f4f494896c19f57b36c2e5"
+        },
+        "external_blind": {
+          "path": "artifacts/tmp/three_benchmark_learning_runs/20260310_023046_844764/external_blind_eval_cycle1_logiqa_external_blind/20260310_023457_334513_20260310_023046_844764_cycle1_external_blind_eval_logiqa_external_blind_authoritative_five_bench_report.json",
+          "sha256": "aa4b0ef70626bbbd199da0e28ec26507bf3c3db1e888285d1eaf0531f6356a7d"
+        }
+      },
+      "notes": [
+        "This is the frozen authoritative comparison boundary.",
+        "Same-parent trained linear, BitFit-style, LoRA-style, low-rank adapter-style, and trainable-budget-matched PEFT controls are published separately."
+      ]
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "family_scope": "exact_ablation",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.303738,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.0
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/colm2026/three_bench_candidate_current_scientific_surface_no_trunk_ablation.json",
+        "sha256": "9d3c1917c76262f91fd1c2963127aafa09c527309f879705c587dfc2fefe332a"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/colm2026/20260320_001501_785418_colm2026_current_no_trunk_official_dualbench_authoritative_five_bench_report.json",
+          "sha256": "ceae21e543e023d98e58ca39c1c7c9c1b189b813938af6cc057a726f3a36dd2e"
+        },
+        "external_dev": {
+          "path": "artifacts/reports/colm2026/20260320_001501_807161_colm2026_current_no_trunk_external_dev_authoritative_five_bench_report.json",
+          "sha256": "015d576519da21fec4cd71dfeffd4a12c0afb5cf8707f4531f3134f3a600769d"
+        },
+        "external_blind": {
+          "path": "artifacts/reports/colm2026/20260320_001502_026264_colm2026_current_no_trunk_external_blind_authoritative_five_bench_report.json",
+          "sha256": "377c41e22ff761a68727f8ad90f39811b532fd00edb935f183693b13dcc93710"
+        }
+      },
+      "notes": [
+        "Exact ablation of the current checkpoint with promoted trunk blocks removed.",
+        "On matched replays this collapses back to the frozen authoritative parent."
+      ]
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "family_scope": "current_surface",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.392523,
+        "external_dev_logiqa": 0.308908,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.088785
+      },
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+        "sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/colm2026/20260320_000913_056137_colm2026_current_official_dualbench_authoritative_five_bench_report.json",
+          "sha256": "ac1a61538ebedcb6be1408c8ec3244cf8ca81ed96d6ead26ea41fa9a73d8958f"
+        },
+        "external_dev": {
+          "path": "artifacts/reports/colm2026/20260320_000913_044103_colm2026_current_external_dev_authoritative_five_bench_report.json",
+          "sha256": "a9b4329159e2fc522e5860a7d27df9ebfd86d470c22312bd549507180f2e0872"
+        },
+        "external_blind": {
+          "path": "artifacts/reports/colm2026/20260320_000913_049843_colm2026_current_external_blind_authoritative_five_bench_report.json",
+          "sha256": "764c8b740f70be98b6b02a975f131873cff829f08fa15d04503e3d5175309364"
+        }
+      },
+      "notes": [
+        "Current public host-side promoted surface.",
+        "Published as a research surface, not as a commercial freeze replacement."
+      ]
+    }
+  ],
+  "same_parent_context": [
+    {
+      "surface_id": "three_family_promoted_surface",
+      "label": "Earlier three-family promoted surface",
+      "family_scope": "same_parent_context",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.308411,
+        "external_dev_logiqa": 0.304598,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.004673
+      },
+      "checkpoint": {
+        "path": "artifacts/tmp/trunk_option_latent_v2_three_family_combined_cap128.json",
+        "sha256": "3dfbc3aa44fca166d6fbb9086841f6cdeddf9dbd2d5c2f200c48566b95702dd8"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/focused_followup/20260314_043958_388350_20260314_trunk_option_latent_v2_three_family_combined_postopt_official_dualbench_authoritative_five_bench_report.json",
+          "sha256": "fc7ca419e1daa754f3cb98e503a2d0f3ca18e318e492363e9c84e824230b688c"
+        },
+        "external_dev": {
+          "path": "artifacts/reports/focused_followup/20260314_043958_424101_20260314_trunk_option_latent_v2_three_family_combined_postopt_external_dev_authoritative_five_bench_report.json",
+          "sha256": "97b6c1a4c8b8ef0cee47bcc0e742da4a510324f431f6756e7f2c523f41b0199a"
+        },
+        "external_blind": {
+          "path": "artifacts/reports/focused_followup/20260314_043958_431485_20260314_trunk_option_latent_v2_three_family_combined_postopt_external_blind_authoritative_five_bench_report.json",
+          "sha256": "1023fa82979685be8f6e024099a78189250b853058642b36040d3319d7aca8e3"
+        }
+      },
+      "notes": [
+        "Replayable earlier promoted surface under the same parent boundary.",
+        "Useful as context, not a substitute for external classic baselines."
+      ]
+    },
+    {
+      "surface_id": "single_family_official_bc_support_b1",
+      "label": "Single-family official BC surface",
+      "family_scope": "same_parent_context",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.34891,
+        "external_dev_logiqa": 0.308908,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.045172
+      },
+      "checkpoint": {
+        "path": "artifacts/tmp/trunk_option_latent_v2_official_bc_dbc_support_b1_additive.json",
+        "sha256": "5d3148ea9c182687781d5b2ac664ecebe039e2a4bf0251a7d18f2e8fcac4035c"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/focused_followup/20260315_083940_973363_20260315_trunk_option_latent_v2_official_bc_support_b1_dualbench_authoritative_five_bench_report.json",
+          "sha256": "0c885d901cc182143ab4e7fa6e74613708403fa19984df4dd92753c5ffa97f42"
+        },
+        "external_dev": {
+          "path": "artifacts/reports/focused_followup/20260315_083940_947874_20260315_trunk_option_latent_v2_official_bc_support_b1_external_dev_authoritative_five_bench_report.json",
+          "sha256": "bbe561abf26efbbebaa2256d4684be0e8ce3197495fd5899ad1cc6fc0d2a852d"
+        },
+        "external_blind": {
+          "path": "artifacts/reports/focused_followup/20260315_083946_825637_20260315_trunk_option_latent_v2_official_bc_support_b1_external_blind_authoritative_five_bench_report.json",
+          "sha256": "e1aae08cc9879d90e981f50a303ec802bc0b82d755e5114e5b7d8c742d955bfb"
+        }
+      },
+      "notes": [
+        "Replayable one-family slice under the same frozen parent."
+      ]
+    },
+    {
+      "surface_id": "single_family_official_dbb_bc_support_b1",
+      "label": "Single-family official DBB-BC surface",
+      "family_scope": "same_parent_context",
+      "metrics": {
+        "official_ifeval": 0.780037,
+        "official_logiqa": 0.353583,
+        "external_dev_logiqa": 0.308908,
+        "external_blind_logiqa": 0.425072,
+        "delta_vs_parent_logiqa": 0.049845
+      },
+      "checkpoint": {
+        "path": "artifacts/tmp/trunk_option_latent_v2_official_dbb_bc_support_b1_additive.json",
+        "sha256": "46e6cc331a0197c19504596182f4e3f8bf0b735d55c06b66cb889719433ac593"
+      },
+      "sources": {
+        "official": {
+          "path": "artifacts/reports/focused_followup/20260315_101307_351353_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_dualbench_authoritative_five_bench_report.json",
+          "sha256": "c9c6ff83249486f8a425bc75a9b35bd39f079888682cfe6526127506ecb5d6ac"
+        },
+        "external_dev": {
+          "path": "artifacts/reports/focused_followup/20260315_101313_619228_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_external_dev_authoritative_five_bench_report.json",
+          "sha256": "d4d5067951b4178e2096a58a99cd0fe3d39a033aa0d73ce9938413b8d51b7fdb"
+        },
+        "external_blind": {
+          "path": "artifacts/reports/focused_followup/20260315_101307_296894_20260315_trunk_option_latent_v2_official_dbb_bc_support_b1_external_blind_authoritative_five_bench_report.json",
+          "sha256": "ad7e852c413867459a32ecbc146b64f8ef9321b38319995d6d9aef5dd12975f4"
+        }
+      },
+      "notes": [
+        "Replayable one-family slice under the same frozen parent."
+      ]
+    }
+  ],
+  "comparator_coverage": {
+    "matched_same_parent_classic_peft_baselines": "published_trainable_budget_matched_controls",
+    "same_parent_classic_comparator_bundle": "published_in_additional_controls",
+    "architecture_near_adapter_controls": "published_in_additional_controls",
+    "target_only_diagnostic_controls": "published_in_additional_controls",
+    "public_claim_boundary": "No blanket dominance claim over all nearby PEFT or local-editing methods; the published same-parent comparator bundle now includes retrieval-only, lexical-only, trained linear-readout, trained BitFit-style option-bias, trained LoRA-style factorized hash-delta, trained low-rank adapter-style controls, and trainable-budget-matched LoRA-style and adapter-style controls under the same frozen parent."
+  }
+}

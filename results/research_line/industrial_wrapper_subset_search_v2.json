@@ -1,0 +1,172 @@
+{
+  "bundle_kind": "research_line_industrial_wrapper_subset_search_v2",
+  "generated_at": "2026-03-21T15:15:00+00:00",
+  "status": "research_only_not_promoted",
+  "summary": {
+    "search_space": "grouped_subsets_of_the_8_block_parent_derived_industrial_wrapper_proto",
+    "groups": {
+      "group_a": [
+        0,
+        1,
+        11
+      ],
+      "group_b": [
+        5,
+        6
+      ],
+      "group_c": [
+        8,
+        10
+      ],
+      "group_d": [
+        16
+      ]
+    },
+    "best_light_probe_subset": {
+      "name": "group_b",
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.297508,
+      "official_ifeval": 0.781885
+    },
+    "best_official_logiqa_subset": {
+      "name": "group_cd",
+      "official_logiqa": 0.309969,
+      "light_probe_accuracy": 0.0
+    },
+    "best_parent_preserving_subset": {
+      "name": "group_bcd",
+      "official_logiqa": 0.303738,
+      "light_probe_accuracy": 0.1,
+      "official_ifeval": 0.781885
+    },
+    "best_protected_slice_subset": {
+      "name": "group_abcd",
+      "protected_slice_accuracy": 0.388889,
+      "official_logiqa": 0.283489
+    },
+    "joint_target_found": false
+  },
+  "interpretation": [
+    "Broad industrial-wrapper probe lift and official LogiQA boundary preservation currently separate across different trunk-block groups.",
+    "The group that helps the broader light industrial probe most strongly is not the group that best preserves the official frozen-parent LogiQA boundary.",
+    "A grouped-subset solution that simultaneously improves the light industrial probe and preserves official LogiQA at or above the frozen parent was not found in this search.",
+    "So the independent industrial-wrapper line still needs another optimization pass before it can become a promotable second surface."
+  ],
+  "sets": {
+    "group_a": {
+      "targets": [
+        0,
+        1,
+        11
+      ],
+      "protected_slice_accuracy": 0.277778,
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.283489,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_a.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_224730_173635_group_a_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_224737_267241_group_a_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_224742_911440_group_a_official_logiqa_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_b": {
+      "targets": [
+        5,
+        6
+      ],
+      "protected_slice_accuracy": 0.166667,
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.297508,
+      "official_ifeval": 0.781885,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_b.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_224853_770493_group_b_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_224900_866885_group_b_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_224906_589899_group_b_official_logiqa_eval_r2_authoritative_five_bench_report.json",
+        "official_ifeval": "artifacts/reports/public_cross_task/20260321_225848_707250_group_b_official_ifeval_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_c": {
+      "targets": [
+        8,
+        10
+      ],
+      "protected_slice_accuracy": 0.222222,
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.308411,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_c.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_225019_227963_group_c_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_225026_322610_group_c_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_225030_830673_group_c_official_logiqa_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_d": {
+      "targets": [
+        16
+      ],
+      "protected_slice_accuracy": 0.222222,
+      "light_probe_accuracy": 0.0,
+      "official_logiqa": 0.305296,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_d.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_225144_168876_group_d_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_225151_220713_group_d_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_225156_874007_group_d_official_logiqa_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_bc": {
+      "targets": [
+        5,
+        6,
+        8,
+        10
+      ],
+      "protected_slice_accuracy": 0.222222,
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.302181,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_bc.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_225558_676997_group_bc_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_225605_677236_group_bc_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_225611_224891_group_bc_official_logiqa_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_cd": {
+      "targets": [
+        8,
+        10,
+        16
+      ],
+      "protected_slice_accuracy": 0.277778,
+      "light_probe_accuracy": 0.0,
+      "official_logiqa": 0.309969,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_cd.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_230235_183653_group_cd_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_230242_208440_group_cd_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_230247_855749_group_cd_official_logiqa_eval_r2_authoritative_five_bench_report.json"
+      }
+    },
+    "group_bcd": {
+      "targets": [
+        5,
+        6,
+        8,
+        10,
+        16
+      ],
+      "protected_slice_accuracy": 0.277778,
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.303738,
+      "official_ifeval": 0.781885,
+      "checkpoint": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_group_bcd.json",
+      "reports": {
+        "protected_slice": "artifacts/reports/public_cross_task/20260321_230654_540039_group_bcd_protected_eval_r2_authoritative_five_bench_report.json",
+        "light_probe": "artifacts/reports/public_cross_task/20260321_230701_541955_group_bcd_light_eval_r2_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_230707_120518_group_bcd_official_logiqa_eval_r2_authoritative_five_bench_report.json",
+        "official_ifeval": "artifacts/reports/public_cross_task/20260321_230952_494095_group_bcd_official_ifeval_eval_r2_authoritative_five_bench_report.json"
+      }
+    }
+  }
+}

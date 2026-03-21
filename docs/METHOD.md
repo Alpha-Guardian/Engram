@@ -1,58 +1,155 @@
-# Method Boundary
+# Method Contract
 
-This repository publishes a board-proof line and a research reference line. It does not publish the full internal training and materialization stack.
+This repository publishes the public contract for a constrained capability-promotion regime. It does not publish the private frontier search or full training stack.
 
-## Current public board mode
+## Object Of Study
 
-The published MCU execution path is:
+The public method object is not a single block, not a generic PEFT primitive, and not only a board artifact.
 
-- `evaluation_mode = logiqa_batch_compiled_probe_aggregated`
+The accepted object is:
+
+- a `frozen authoritative parent`
+- a set of `residual-family local repairs`
+- a `route-gated trunk recurrent surface`
+- a `promotion contract` that all accepted repairs must survive
+- a `derived bounded artifact` for the board proof
+
+That coupled object is the unit of evidence in this repo.
+
+See:
+
+- [INNOVATION.md](INNOVATION.md)
+- [FAMILY_AND_ROUTING.md](FAMILY_AND_ROUTING.md)
+- [TRUNK_BLOCKS.md](TRUNK_BLOCKS.md)
+- [PROMOTION_CONTRACT.md](PROMOTION_CONTRACT.md)
+
+## Frozen Parent
+
+All public comparisons are anchored to one frozen authoritative parent.
+
+Why that matters:
+
+- gain is always measured relative to the frozen parent
+- locality probes compare candidate behavior against the frozen parent
+- the exact no-trunk ablation is interpreted as a return to the frozen parent boundary
+- hidden-family forensic results are also evaluated against the frozen parent
+
+The parent row is published in:
+
+- [../results/experiments/main_table.json](../results/experiments/main_table.json)
+
+## Residual Family
+
+In public terms, a residual family is a bounded error slice defined by the combination of:
+
+- the parent competition shape
+- the local repair target pair
+- the route surface that decides where the repair may fire
+
+This repo publishes the accepted family-local repair evidence and representative locality probes. It does not publish the full discovery frontier, rejected candidates, or support-source graph.
+
+## Route Activation
+
+Public route semantics are documented in:
+
+- [FAMILY_AND_ROUTING.md](FAMILY_AND_ROUTING.md)
+
+At a high level:
+
+- question and option token surfaces are converted into a route signature
+- a block is eligible only if its route requirements are satisfied
+- parent-topology conditions must also match before the recurrent repair can fire
+
+The current public inventory shows:
+
+- `75` trunk recurrent blocks
+- median route token count `6`
+- route minimum hits of `2` or `3`
+- a published-eval route-disabled proxy collapses official `LogiQA` to `0.244548`
+
+See:
+
+- [../results/experiments/block_inventory.json](../results/experiments/block_inventory.json)
+
+## Trunk Recurrent Blocks
+
+The current public surface contains:
+
+- `72` blocks in `option_latent_v2`
+- `3` blocks in `pair_score`
+- `11,325` exemplars
+- `8192` GPU hash dim
+
+The repo publishes block-level structure and representative sanitized fields, but not full route tokens, source ids, or latent prototypes.
+
+Public contrastive controls now also show:
+
+- target-only diagnostic blocks reach only `0.308411`
+- a same-parent trained linear-readout control reaches `0.300623`
+- a same-parent trained BitFit option-bias control reaches `0.266355`
+- a same-parent trained LoRA-style hash-delta control reaches `0.303738`
+- a same-parent trained low-rank adapter baseline reaches `0.303738`
+- a same-parent trainable-budget-matched LoRA-style control reaches `0.303738`
+- a same-parent trainable-budget-matched low-rank adapter control reaches `0.303738`
+- architecture-near low-rank adapter controls stay at the frozen-parent level
+
+See:
+
+- [TRUNK_BLOCKS.md](TRUNK_BLOCKS.md)
+- [../results/experiments/block_inventory.json](../results/experiments/block_inventory.json)
+
+## Promotion Contract
+
+A local repair counts only if it survives a coupled acceptance predicate. Publicly visible parts of that predicate include:
+
+- official replay against the frozen parent
+- external non-regression
+- leakage and deep-pretrain audit status
+- runtime and shadow cleanliness
+- overfit and hidden-family boundary disclosure
+
+The public repo also documents a stricter internal scientific contract:
+
+- the formal mainline requires `logiqa + gsm8k + ifbench`
+- external dev and external blind are treated as required multi-route gates, not optional side receipts
+
+See:
+
+- [PROMOTION_CONTRACT.md](PROMOTION_CONTRACT.md)
+- [TRUST_AND_AUDIT.md](TRUST_AND_AUDIT.md)
+
+## Crystallization Boundary
+
+The board proof is a derived artifact, not the whole method claim.
+
+Current public board scope:
+
+- aggregate board-proof summary mode: `evaluation_mode = logiqa_batch_compiled_probe_aggregated`
+- default single-batch board readback mode: `evaluation_mode = logiqa_batch_compiled_probe`
 - `compiled_probe_mode = host_full_exact`
+- fixed published batches only
 
-Meaning:
+So the board proof demonstrates bounded crystallization correctness, not unrestricted open-input reasoning on MCU.
 
-- the official `LogiQA 642` set is represented as `11` fixed board-side batches
-- the board executes a compiled fixed-batch path
-- for the released board proof, the board-side compiled line reproduces host-full final decisions exactly on those published batches
+See:
 
-The aggregate published board result is:
+- [BOARD_METRICS.md](BOARD_METRICS.md)
+- [OPEN_INPUT_ROADMAP.md](OPEN_INPUT_ROADMAP.md)
 
-- `249 / 642 = 0.3878504672897196`
+## Published Versus Withheld
 
-## Runtime shape
+Published here:
 
-The current public runtime should be described as:
+- accepted mechanism contract
+- replayable public evidence
+- representative locality probes
+- exact no-trunk ablation
+- board acceptance and raw readback
 
-- flash-resident
-- table-driven
-- packed artifact structures
-- compiled fixed-batch decision path
+Withheld here:
 
-This is not a public release of unrestricted open-input native inference on `ESP32-C3`.
-
-## Current research capability line
-
-The current scientific surface published in this repository is:
-
-- official `IFEval = 0.780037`
-- official `LogiQA = 0.392523`
-- `external_dev = 0.308908`
-- `external_blind = 0.425072`
-
-That line is host-side and audit-backed. It is related to, but not identical to, the released board proof path.
-
-## What this repository proves
-
-- a current Tiny Expert board line can run on real `ESP32-C3` hardware
-- the released board proof is auditable through raw readback JSON
-- the board proof is aligned to host-full decisions for the published fixed batches
-- the host-side current scientific surface is stronger than the board proof and is separately documented
-
-## What this repository does not prove
-
-- unrestricted general MCU inference
-- a full public training or materialization system
-- broad general reasoning
-- strong hidden-family generalization
-
-The repository is intentionally explicit about those boundaries.
+- full family-mining pipeline
+- rejected frontier
+- support-source graph
+- curriculum construction rules
+- full checkpoint internals needed to reproduce the private training moat

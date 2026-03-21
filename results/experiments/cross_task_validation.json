@@ -1,0 +1,61 @@
+{
+  "bundle_kind": "public_cross_task_validation_v1",
+  "generated_at": "2026-03-21T16:58:02.200935+00:00",
+  "task": "IFEval",
+  "metric": "strict_prompt_accuracy",
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.303738
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.303738
+    },
+    {
+      "surface_id": "three_family_promoted_surface",
+      "label": "Earlier three-family promoted surface",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.308411
+    },
+    {
+      "surface_id": "single_family_official_bc_support_b1",
+      "label": "Single-family official BC surface",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.34891
+    },
+    {
+      "surface_id": "single_family_official_dbb_bc_support_b1",
+      "label": "Single-family official DBB-BC surface",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.353583
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "official_ifeval": 0.780037,
+      "delta_vs_parent_ifeval": 0.0,
+      "official_logiqa": 0.392523
+    }
+  ],
+  "summary": {
+    "parent_ifeval": 0.780037,
+    "current_ifeval": 0.780037,
+    "max_abs_delta_vs_parent_ifeval": 0.0,
+    "all_published_surfaces_match_parent_ifeval": true
+  },
+  "notes": [
+    "This bundle is a second-task non-regression check on the public authoritative IFEval path.",
+    "It shows that the published same-parent progression keeps the parent IFEval score while LogiQA changes.",
+    "It does not establish positive transfer or broad multi-task capability gains beyond the published boundary."
+  ]
+}

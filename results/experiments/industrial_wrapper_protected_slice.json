@@ -1,0 +1,538 @@
+{
+  "bundle_kind": "public_industrial_wrapper_protected_slice_v1",
+  "generated_at": "2026-03-21T14:00:40.903708+00:00",
+  "task": "industrial_wrapper_protected_slice_v1",
+  "metric": "accuracy",
+  "taskset": {
+    "path": "results/experiments/industrial_wrapper_protected_slice_v1.txt",
+    "sha256": "4db37fb53318f2452815e9f28fa64db00c0c6f026acbd53cbbd8eacabff33f4f",
+    "samples": 18,
+    "task_style": "curated_light_domain_shift_slice",
+    "scope": "industrial_or_embedded_wrapper_reasoning"
+  },
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "accuracy": 0.166667,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+        "sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_220002_965648_industrial_wrapper_protected18_parent_authoritative_five_bench_report.json",
+        "sha256": "0e494436ddc3c242b5ab58ccf3655f188b40031d7bb8db8dd3ededbfe77517f6"
+      }
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "accuracy": 0.166667,
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/checkpoints/current_scientific_surface_no_trunk_industrial_state_decision_probe.json",
+        "sha256": "b8fc8e0348755e0fbe15fbf055627824b15b7ad5d2ce4a85ed2f2c5991f64767"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_220009_121737_industrial_wrapper_protected18_no_trunk_authoritative_five_bench_report.json",
+        "sha256": "d5ec112ae74d096f16fbcbe4dca1efb7c4a7346e1c8ddf138b0588746a88703d"
+      }
+    },
+    {
+      "surface_id": "parent_gpu_trained_linear_head_baseline",
+      "label": "Parent trained linear baseline",
+      "accuracy": 0.166667,
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_gpu_trained_linear_head_baseline.json",
+        "sha256": "58fc4a40d3198acdee583f22af8b6391815e6ee35aa352ca8b3bd035a55ba934"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_220016_593163_industrial_wrapper_protected18_trained_linear_authoritative_five_bench_report.json",
+        "sha256": "46b280f61576dd954e3c60e8b89b8d135c3c5d537aa316eb28ba2a102d202aaa"
+      }
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "accuracy": 0.333333,
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+        "sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6"
+      },
+      "source": {
+        "path": "artifacts/reports/public_cross_task/20260321_220024_098904_industrial_wrapper_protected18_current_authoritative_five_bench_report.json",
+        "sha256": "0230222e3982f37ade8c372465abd61965a43ae30a1a271158ab56db03a6292f"
+      }
+    }
+  ],
+  "summary": {
+    "current_vs_parent_delta": 0.166666,
+    "current_vs_no_trunk_delta": 0.166666,
+    "current_vs_trained_linear_delta": 0.166666,
+    "current_above_parent": true,
+    "current_above_no_trunk": true,
+    "current_above_trained_linear": true
+  },
+  "pairwise": {
+    "current_vs_parent": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 1,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "c",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 5,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 8,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 9,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 10,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 11,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 12,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 13,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 14,
+          "gold": "d",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 15,
+          "gold": "a",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 16,
+          "gold": "b",
+          "left_pred": "c",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 17,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "current_vs_no_trunk": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 1,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "c",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 5,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 8,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 9,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 10,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 11,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 12,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 13,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 14,
+          "gold": "d",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 15,
+          "gold": "a",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 16,
+          "gold": "b",
+          "left_pred": "c",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 17,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "current_vs_trained_linear": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 1,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "c",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 5,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 8,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 9,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 10,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 11,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 12,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 13,
+          "gold": "d",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 14,
+          "gold": "d",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 15,
+          "gold": "a",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 16,
+          "gold": "b",
+          "left_pred": "c",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 17,
+          "gold": "b",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    }
+  },
+  "notes": [
+    "This is a curated protected transfer slice built from public current-win reasoning shapes and wrapped in industrial or embedded review language.",
+    "It is intended to show a cleaner route-localized transfer signal than the broader lightly domain-shifted probe.",
+    "Because the slice is curated, it should be interpreted as protected-slice evidence rather than as a broad naturally sampled second-task benchmark."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "comparison_kind": "esp32c3_board_baseline_comparison_v1",
+  "rows": [
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current scientific surface board artifact",
+      "accuracy": 0.3878504672897196,
+      "total_correct": 249,
+      "total_samples": 642,
+      "host_full_match": 642,
+      "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+      "artifact_path_override": "firmware/firmware.bin (board-proof build embeds the published runtime artifact)",
+      "summary_file": "results/board_proof/esp32c3_logiqa642_board_proof_summary.json"
+    },
+    {
+      "surface_id": "frozen_authoritative_parent_runtime_topk",
+      "label": "Frozen parent board artifact",
+      "accuracy": 0.30218068535825543,
+      "total_correct": 194,
+      "total_samples": 642,
+      "host_full_match": 642,
+      "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+      "artifact_path_override": "edge_runtime/variants_parent_runtime_topk_official642_k24/chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+      "summary_file": "results/board_proof/esp32c3_logiqa642_parent_runtime_topk_official642_k24_hostfullexact_summary.json"
+    },
+    {
+      "surface_id": "parent_trained_linear_runtime_topk",
+      "label": "Parent trained linear baseline board artifact",
+      "accuracy": 0.29906542056074764,
+      "total_correct": 192,
+      "total_samples": 642,
+      "host_full_match": 642,
+      "artifact_name": "chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+      "artifact_path_override": "edge_runtime/variants_parent_gpu_trained_linear_head_runtime_topk_official642_k24/chip_suite_surface_round2_q4_tgz_expack_rgz.json",
+      "summary_file": "results/board_proof/esp32c3_logiqa642_parent_gpu_trained_linear_head_runtime_topk_official642_k24_hostfullexact_summary.json"
+    }
+  ],
+  "notes": [
+    "All three board artifacts were executed on ESP32-C3 in host_full_exact compiled-probe mode.",
+    "Current scientific surface remains well above the frozen parent and trained linear baseline on the same fixed 642-sample board path.",
+    "The board comparator bundle is intentionally narrow: stronger route-heavy PEFT-style baselines do not currently fit the published ESP32-C3 artifact budget."
+  ]
+}

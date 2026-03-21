@@ -1,0 +1,839 @@
+{
+  "bundle_kind": "public_industrial_second_line_protocol_v1",
+  "generated_at": "2026-03-21T16:28:00.468776+00:00",
+  "task": "industrial_second_line_protocol",
+  "tasksets": {
+    "train_source": {
+      "path": "results/experiments/industrial_wrapper_protected_slice_v1.txt",
+      "sha256": "4db37fb53318f2452815e9f28fa64db00c0c6f026acbd53cbbd8eacabff33f4f",
+      "samples": 18,
+      "role": "public_train_source_for_the_parent_derived_second_line"
+    },
+    "dev": {
+      "path": "results/experiments/industrial_state_decision_logiqa_lite_v1.txt",
+      "sha256": "d753a7a047d15d1238accdd1bb824ef1a7dd3d8954cbfb6cb1872d9b63826794",
+      "samples": 10,
+      "role": "light_domain_shift_external_dev"
+    },
+    "blind": {
+      "path": "results/experiments/industrial_state_decision_logiqa_v2.txt",
+      "sha256": "40c3915ddb2f47ce396d1efa1b872aa5b0755412665bee1460ce9a3f55afbd79",
+      "samples": 8,
+      "role": "separate_industrial_state_decision_blind_slice"
+    }
+  },
+  "rows": [
+    {
+      "surface_id": "frozen_authoritative_parent",
+      "label": "Frozen authoritative parent",
+      "metrics": {
+        "dev_accuracy": 0.1,
+        "blind_accuracy": 0.25
+      },
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_20260310_v247r_true_retrievalweight2375_logiqa112_basecountdamp05_research_handoff_ready.json",
+        "sha256": "3016c2a5f79ee3e51f335c0c5d6e957d6a63cb33952703c205ce8fded2eee5d9"
+      },
+      "sources": {
+        "dev": {
+          "path": "artifacts/reports/public_cross_task/20260322_002645_367685_industrial_second_line_protocol_parent_dev_authoritative_five_bench_report.json",
+          "sha256": "2988bcb9e6f263ec5e30e75941903a17c79efacafa62958a62709293352e86ab"
+        },
+        "blind": {
+          "path": "artifacts/reports/public_cross_task/20260322_002651_537756_industrial_second_line_protocol_parent_blind_authoritative_five_bench_report.json",
+          "sha256": "9c72cfaabbc07d76a51aff7d61a9273db2d8217bf23bdada5a3eb1543c4d8643"
+        }
+      }
+    },
+    {
+      "surface_id": "current_no_trunk_ablation",
+      "label": "Current no-trunk ablation",
+      "metrics": {
+        "dev_accuracy": 0.1,
+        "blind_accuracy": 0.25
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/checkpoints/current_scientific_surface_no_trunk_industrial_state_decision_probe.json",
+        "sha256": "b8fc8e0348755e0fbe15fbf055627824b15b7ad5d2ce4a85ed2f2c5991f64767"
+      },
+      "sources": {
+        "dev": {
+          "path": "artifacts/reports/public_cross_task/20260322_002656_065049_industrial_second_line_protocol_no_trunk_dev_authoritative_five_bench_report.json",
+          "sha256": "e2d55722a9b18c2d170c83fe9c47f0a420171890e271211dfc902e0907fab381"
+        },
+        "blind": {
+          "path": "artifacts/reports/public_cross_task/20260322_002702_246909_industrial_second_line_protocol_no_trunk_blind_authoritative_five_bench_report.json",
+          "sha256": "3df3a428256260f19c505e7715e6b726b2373665d5cc2d980041908cfc8bb88b"
+        }
+      }
+    },
+    {
+      "surface_id": "parent_gpu_trained_linear_head_baseline",
+      "label": "Parent trained linear baseline",
+      "metrics": {
+        "dev_accuracy": 0.1,
+        "blind_accuracy": 0.25
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_controls/checkpoints/parent_gpu_trained_linear_head_baseline.json",
+        "sha256": "58fc4a40d3198acdee583f22af8b6391815e6ee35aa352ca8b3bd035a55ba934"
+      },
+      "sources": {
+        "dev": {
+          "path": "artifacts/reports/public_cross_task/20260322_002708_133310_industrial_second_line_protocol_trained_linear_dev_authoritative_five_bench_report.json",
+          "sha256": "8c4d4c1e54eb9037d0eb1fcccb9692c47f49e7d1d87a4d97018a64aab2982fa1"
+        },
+        "blind": {
+          "path": "artifacts/reports/public_cross_task/20260322_002714_284263_industrial_second_line_protocol_trained_linear_blind_authoritative_five_bench_report.json",
+          "sha256": "d0d02e66352c92c0aee290d6475ef54c5805064a4a760ae9137d5b996c38541b"
+        }
+      }
+    },
+    {
+      "surface_id": "current_scientific_surface",
+      "label": "Current promoted scientific surface",
+      "metrics": {
+        "dev_accuracy": 0.2,
+        "blind_accuracy": 0.375
+      },
+      "checkpoint": {
+        "path": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+        "sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6"
+      },
+      "sources": {
+        "dev": {
+          "path": "artifacts/reports/public_cross_task/20260322_002720_159009_industrial_second_line_protocol_current_dev_authoritative_five_bench_report.json",
+          "sha256": "9c53bce36c3b6d2d6b71ae5035dfba5e9b7dcf4ab3a0f789ee8fa4bc3ab3d19e"
+        },
+        "blind": {
+          "path": "artifacts/reports/public_cross_task/20260322_002724_946001_industrial_second_line_protocol_current_blind_authoritative_five_bench_report.json",
+          "sha256": "497a99dc38d10f5bb4fce775d031c4e4f0dac5cc5ff33648ba2596f78867dfff"
+        }
+      }
+    },
+    {
+      "surface_id": "industrial_second_line_candidate",
+      "label": "Independent industrial second-line candidate 5+6+8+10",
+      "metrics": {
+        "dev_accuracy": 0.2,
+        "blind_accuracy": 0.5,
+        "official_ifeval": 0.781885
+      },
+      "checkpoint": {
+        "path": "artifacts/reports/public_cross_task/subsets/industrial_wrapper_targets_5_6_8_10.json",
+        "sha256": "72b86a500a2f6991a6f03be296afb670f4bf4e98e3cbbcb258ae5642b39b8213"
+      },
+      "sources": {
+        "dev": {
+          "path": "artifacts/reports/public_cross_task/20260322_002730_977473_industrial_second_line_protocol_candidate_dev_authoritative_five_bench_report.json",
+          "sha256": "2230fb2a8aabce1e224470356ed98356f02cb3397ec99edfcbcfe324206659ed"
+        },
+        "blind": {
+          "path": "artifacts/reports/public_cross_task/20260322_002736_771085_industrial_second_line_protocol_candidate_blind_authoritative_five_bench_report.json",
+          "sha256": "18e4ef79ad8ad977c97476f134092f0f84379deb7cdef3af96ef2c45f9651560"
+        },
+        "ifeval": {
+          "path": "artifacts/reports/public_cross_task/20260322_002742_301953_industrial_second_line_protocol_candidate_ifeval_authoritative_five_bench_report.json",
+          "sha256": "83049d3eeeb351edf31f30a7d46ed2ee5d169a18118b2983cd66219883c9e2bd"
+        }
+      }
+    }
+  ],
+  "external_union": {
+    "samples": 18,
+    "candidate_accuracy": 0.333333,
+    "parent_accuracy": 0.166667,
+    "no_trunk_accuracy": 0.166667,
+    "trained_linear_accuracy": 0.166667,
+    "current_accuracy": 0.277778,
+    "candidate_vs_parent_delta": 0.166666,
+    "candidate_vs_no_trunk_delta": 0.166666,
+    "candidate_vs_trained_linear_delta": 0.166666,
+    "candidate_vs_current_delta": 0.055555
+  },
+  "gates": {
+    "dev_above_parent": true,
+    "dev_above_no_trunk": true,
+    "dev_above_trained_linear": true,
+    "dev_at_least_current": true,
+    "blind_above_parent": true,
+    "blind_above_no_trunk": true,
+    "blind_above_trained_linear": true,
+    "blind_above_current": true,
+    "ifeval_non_regression_vs_parent": true,
+    "all_pass": true
+  },
+  "pairwise": {
+    "dev_candidate_vs_parent": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "dev_candidate_vs_no_trunk": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "dev_candidate_vs_trained_linear": {
+      "samples": 10,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 9,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "dev_candidate_vs_current": {
+      "samples": 10,
+      "improved": 0,
+      "harmed": 0,
+      "ties": 10,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 7,
+          "gold": "b",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 8,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 9,
+          "gold": "a",
+          "left_pred": "c",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        }
+      ]
+    },
+    "blind_candidate_vs_parent": {
+      "samples": 8,
+      "improved": 2,
+      "harmed": 0,
+      "ties": 6,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "blind_candidate_vs_no_trunk": {
+      "samples": 8,
+      "improved": 2,
+      "harmed": 0,
+      "ties": 6,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "blind_candidate_vs_trained_linear": {
+      "samples": 8,
+      "improved": 2,
+      "harmed": 0,
+      "ties": 6,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "a",
+          "right_pred": "d",
+          "left_correct": false,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    },
+    "blind_candidate_vs_current": {
+      "samples": 8,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 7,
+      "rows": [
+        {
+          "index": 0,
+          "gold": "c",
+          "left_pred": "a",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 1,
+          "gold": "c",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 2,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 3,
+          "gold": "a",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 4,
+          "gold": "b",
+          "left_pred": "b",
+          "right_pred": "b",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 5,
+          "gold": "d",
+          "left_pred": "c",
+          "right_pred": "c",
+          "left_correct": false,
+          "right_correct": false
+        },
+        {
+          "index": 6,
+          "gold": "d",
+          "left_pred": "d",
+          "right_pred": "d",
+          "left_correct": true,
+          "right_correct": true
+        },
+        {
+          "index": 7,
+          "gold": "a",
+          "left_pred": "d",
+          "right_pred": "a",
+          "left_correct": false,
+          "right_correct": true
+        }
+      ]
+    }
+  },
+  "aggregate_pairwise": {
+    "external_union_candidate_vs_parent": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15
+    },
+    "external_union_candidate_vs_no_trunk": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15
+    },
+    "external_union_candidate_vs_trained_linear": {
+      "samples": 18,
+      "improved": 3,
+      "harmed": 0,
+      "ties": 15
+    },
+    "external_union_candidate_vs_current": {
+      "samples": 18,
+      "improved": 1,
+      "harmed": 0,
+      "ties": 17
+    }
+  },
+  "notes": [
+    "This protocol freezes the public train source, external dev slice, and blind slice for the parent-derived industrial second-line candidate.",
+    "The goal is not to prove broad generalization but to prove that the same frozen-parent trunk pipeline can repeatedly produce a second-task capability line under a fixed auditable protocol.",
+    "Because the public second-task benchmark is still small, this bundle should be read as capability-production evidence with a bounded public audit surface."
+  ]
+}

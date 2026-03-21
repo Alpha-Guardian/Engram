@@ -1,0 +1,437 @@
+{
+  "inventory_kind": "public_block_inventory_v1",
+  "source_checkpoint": "artifacts/models/candidates/three_bench_candidate_current_scientific_surface.json",
+  "source_checkpoint_sha256": "4707d6a5c56fe7d06e688dd053adc592b0b63ff1bd586619889fb5026cb831d6",
+  "checkpoint_summary": {
+    "logiqa_exemplar_count": 11325,
+    "gpu_logiqa_hash_dim": 8192,
+    "trunk_block_count": 75
+  },
+  "mode_counts": {
+    "option_latent_v2": 72,
+    "pair_score": 3
+  },
+  "route_token_count_summary": {
+    "count": 75,
+    "min": 4,
+    "max": 16,
+    "mean": 6.28,
+    "median": 6.0
+  },
+  "route_token_count_buckets": {
+    "0-4": 7,
+    "13+": 3,
+    "5-8": 62,
+    "9-12": 3
+  },
+  "support_count_summary": {
+    "count": 75,
+    "min": 1,
+    "max": 8,
+    "mean": 3.386667,
+    "median": 3.0
+  },
+  "support_count_buckets": {
+    "0-4": 66,
+    "5-8": 9
+  },
+  "depth_steps_summary": {
+    "count": 75,
+    "min": 3,
+    "max": 3,
+    "mean": 3.0,
+    "median": 3.0
+  },
+  "route_min_hits_distribution": {
+    "2": 15,
+    "3": 60
+  },
+  "route_group_min_matches_distribution": {
+    "0": 75
+  },
+  "top_parent_pairs": [
+    {
+      "key": "B->C",
+      "count": 15
+    },
+    {
+      "key": "C->B",
+      "count": 15
+    },
+    {
+      "key": "D->B",
+      "count": 9
+    },
+    {
+      "key": "C->D",
+      "count": 6
+    },
+    {
+      "key": "D->A",
+      "count": 6
+    },
+    {
+      "key": "D->C",
+      "count": 6
+    },
+    {
+      "key": "A->C",
+      "count": 3
+    },
+    {
+      "key": "A->D",
+      "count": 3
+    },
+    {
+      "key": "A->B",
+      "count": 3
+    },
+    {
+      "key": "C->A",
+      "count": 3
+    },
+    {
+      "key": "B->D",
+      "count": 3
+    },
+    {
+      "key": "B->A",
+      "count": 3
+    }
+  ],
+  "top_mapped_pairs": [
+    {
+      "key": "D->C",
+      "count": 12
+    },
+    {
+      "key": "C->B",
+      "count": 9
+    },
+    {
+      "key": "C->D",
+      "count": 9
+    },
+    {
+      "key": "B->D",
+      "count": 9
+    },
+    {
+      "key": "A->B",
+      "count": 9
+    },
+    {
+      "key": "C->A",
+      "count": 6
+    },
+    {
+      "key": "A->C",
+      "count": 6
+    },
+    {
+      "key": "B->C",
+      "count": 6
+    },
+    {
+      "key": "D->A",
+      "count": 3
+    },
+    {
+      "key": "A->D",
+      "count": 3
+    },
+    {
+      "key": "D->B",
+      "count": 3
+    }
+  ],
+  "representative_blocks": [
+    {
+      "block_name": "trunk_option_latent_v2_cd_zeroinit_routes:585",
+      "mode": "option_latent_v2",
+      "route_token_count": 10,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 8,
+      "train_count": 8,
+      "parent_top": "C",
+      "parent_second": "D",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "D",
+      "mapped_competitor": "C",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_official_bc_zeroinit_routes:550",
+      "mode": "option_latent_v2",
+      "route_token_count": 9,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 8,
+      "train_count": 8,
+      "parent_top": "B",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_official_bc_zeroinit_routes:136",
+      "mode": "option_latent_v2",
+      "route_token_count": 7,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 7,
+      "train_count": 7,
+      "parent_top": "B",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_official_bc_zeroinit_routes:427",
+      "mode": "option_latent_v2",
+      "route_token_count": 7,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 7,
+      "train_count": 7,
+      "parent_top": "B",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_zeroinit_strictdev_routes:314",
+      "mode": "option_latent_v2",
+      "route_token_count": 8,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 7,
+      "train_count": 7,
+      "parent_top": "A",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "A",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_zeroinit_strictdev_routes:383",
+      "mode": "option_latent_v2",
+      "route_token_count": 7,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 7,
+      "train_count": 7,
+      "parent_top": "A",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "A",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_cd_zeroinit_routes:147",
+      "mode": "option_latent_v2",
+      "route_token_count": 9,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 6,
+      "train_count": 6,
+      "parent_top": "C",
+      "parent_second": "D",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "D",
+      "mapped_competitor": "C",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_cd_zeroinit_routes:362",
+      "mode": "option_latent_v2",
+      "route_token_count": 5,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 6,
+      "train_count": 6,
+      "parent_top": "C",
+      "parent_second": "D",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "D",
+      "mapped_competitor": "C",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "trunk_option_latent_v2_zeroinit_strictdev_routes:392",
+      "mode": "option_latent_v2",
+      "route_token_count": 8,
+      "route_group_count": 0,
+      "route_min_hits": 2,
+      "route_group_min_matches": 0,
+      "support_count": 6,
+      "train_count": 6,
+      "parent_top": "A",
+      "parent_second": "C",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "C",
+      "mapped_competitor": "A",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 24
+    },
+    {
+      "block_name": "official_baab_bddb_support_b1b_routes_additive:150",
+      "mode": "pair_score",
+      "route_token_count": 5,
+      "route_group_count": 0,
+      "route_min_hits": 3,
+      "route_group_min_matches": 0,
+      "support_count": 3,
+      "train_count": 0,
+      "parent_top": "B",
+      "parent_second": "A",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "A",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 0
+    },
+    {
+      "block_name": "official_baab_bddb_support_b1b_routes_additive:588",
+      "mode": "pair_score",
+      "route_token_count": 6,
+      "route_group_count": 0,
+      "route_min_hits": 3,
+      "route_group_min_matches": 0,
+      "support_count": 3,
+      "train_count": 0,
+      "parent_top": "B",
+      "parent_second": "A",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "A",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 0
+    },
+    {
+      "block_name": "official_baab_bddb_support_b1b_routes_additive:594",
+      "mode": "pair_score",
+      "route_token_count": 6,
+      "route_group_count": 0,
+      "route_min_hits": 3,
+      "route_group_min_matches": 0,
+      "support_count": 3,
+      "train_count": 0,
+      "parent_top": "B",
+      "parent_second": "A",
+      "parent_margin_max": 3.0,
+      "mapped_gold": "A",
+      "mapped_competitor": "B",
+      "depth_steps": 3,
+      "step_scale": 0.45,
+      "score_scale": 0.3,
+      "evidence_scale": 1.0,
+      "pair_bias_scale": 0.85,
+      "stop_margin": 0.35,
+      "pair_hash_dim": 4096,
+      "latent_dim": 0
+    }
+  ],
+  "sensitive_fields_omitted": [
+    "route_tokens",
+    "route_token_groups",
+    "route_exclude_tokens",
+    "source_ids",
+    "stem_source",
+    "stem_tokens",
+    "gold_proto",
+    "competitor_proto"
+  ],
+  "note": "This inventory publishes checkpoint-level structure and representative block metadata, not the private family-mining or support-tracing assets."
+}

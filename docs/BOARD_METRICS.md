@@ -69,7 +69,8 @@ The same default board report also exposes the GPU-only probe path for the fixed
 
 The published board-proof line uses:
 
-- `evaluation_mode = logiqa_batch_compiled_probe_aggregated`
+- aggregate board-proof summary mode: `evaluation_mode = logiqa_batch_compiled_probe_aggregated`
+- default single-batch board readback mode: `evaluation_mode = logiqa_batch_compiled_probe`
 - `compiled_probe_mode = host_full_exact`
 
 Single-batch metrics from the default board report:
@@ -95,6 +96,27 @@ Aggregate `LogiQA 642` board-proof metrics:
 | `total_correct` | `249` |
 | `accuracy` | `0.3878504672897196` |
 | `host_full_match` | `642` |
+
+## Board Comparator Bundle
+
+The repo now publishes two board-side comparators on the same fixed `642`-sample path:
+
+| Artifact | Accuracy | Correct | Host full match |
+|---|---:|---:|---:|
+| frozen parent | `0.302181` | `194 / 642` | `642 / 642` |
+| parent trained linear baseline | `0.299065` | `192 / 642` | `642 / 642` |
+
+Compared with the current scientific surface:
+
+| Artifact | Accuracy | Delta vs current |
+|---|---:|---:|
+| current scientific surface | `0.387850` | `0.000000` |
+| frozen parent | `0.302181` | `-0.085670` |
+| parent trained linear baseline | `0.299065` | `-0.088785` |
+
+Source:
+
+- [../results/board_proof/board_baseline_comparison.json](../results/board_proof/board_baseline_comparison.json)
 
 ## Why do IFEval and LogiQA look so fast?
 

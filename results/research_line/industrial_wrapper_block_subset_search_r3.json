@@ -1,0 +1,158 @@
+{
+  "bundle_kind": "research_line_industrial_wrapper_block_subset_search_r3",
+  "generated_at": "2026-03-21T15:58:00+00:00",
+  "status": "research_only_not_promoted",
+  "summary": {
+    "search_scope": "all_non_empty_subsets_of_targets_5_6_8_10_16_from_the_independent_industrial_wrapper_proto",
+    "num_subsets_evaluated": 31,
+    "frozen_parent_official_logiqa": 0.303738,
+    "best_light_probe_subset": {
+      "targets": [
+        5,
+        6,
+        8,
+        10
+      ],
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.302181,
+      "official_ifeval": 0.781885
+    },
+    "best_official_logiqa_subset": {
+      "targets": [
+        5,
+        8,
+        10,
+        16
+      ],
+      "light_probe_accuracy": 0.0,
+      "official_logiqa": 0.313084,
+      "official_ifeval": 0.781885
+    },
+    "best_official_logiqa_subset_with_nonzero_light_probe": {
+      "targets": [
+        5,
+        8,
+        10
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.311526,
+      "official_ifeval": 0.781885
+    },
+    "best_parent_matching_subset": {
+      "targets": [
+        5,
+        6,
+        8,
+        10,
+        16
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.303738
+    },
+    "joint_target_found": false,
+    "joint_target_definition": "light_probe_accuracy >= 0.2 and official_logiqa >= frozen_parent_official_logiqa"
+  },
+  "interpretation": [
+    "Target 6 is the main broad-probe-lifting block in this search region, but it tends to lower official LogiQA.",
+    "Targets 5, 8, 10, and 16 help recover or exceed the official frozen-parent LogiQA boundary, but they do not preserve the strongest broad-probe lift.",
+    "No subset in this target region simultaneously reaches the current broad-probe target and preserves official LogiQA at or above the frozen parent.",
+    "This makes the second-task optimization problem more interpretable: broad industrial-wrapper transfer and official LogiQA preservation currently sit on different trunk-block subsets."
+  ],
+  "selected_rows": [
+    {
+      "targets": [
+        6
+      ],
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.294393,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_231251_675305_targets_6_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_231257_826185_targets_6_official_logiqa_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        5
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.306854,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_231134_238157_targets_5_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_231141_432832_targets_5_official_logiqa_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        8
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.306854,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_231402_382702_targets_8_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_231408_843421_targets_8_official_logiqa_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        5,
+        8,
+        10
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.311526,
+      "official_ifeval": 0.781885,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_232853_836143_targets_5_8_10_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_232900_338040_targets_5_8_10_official_logiqa_eval_r3_authoritative_five_bench_report.json",
+        "official_ifeval": "artifacts/reports/public_cross_task/20260321_235632_749230_targets_5_8_10_official_ifeval_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        5,
+        6,
+        8,
+        10
+      ],
+      "light_probe_accuracy": 0.2,
+      "official_logiqa": 0.302181,
+      "official_ifeval": 0.781885,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_233117_978581_targets_5_6_8_10_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_233124_089352_targets_5_6_8_10_official_logiqa_eval_r3_authoritative_five_bench_report.json",
+        "official_ifeval": "artifacts/reports/public_cross_task/20260321_235638_690545_targets_5_6_8_10_official_ifeval_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        5,
+        8,
+        10,
+        16
+      ],
+      "light_probe_accuracy": 0.0,
+      "official_logiqa": 0.313084,
+      "official_ifeval": 0.781885,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_235206_551679_targets_5_8_10_16_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_235212_224073_targets_5_8_10_16_official_logiqa_eval_r3_authoritative_five_bench_report.json",
+        "official_ifeval": "artifacts/reports/public_cross_task/20260321_235644_617710_targets_5_8_10_16_official_ifeval_eval_r3_authoritative_five_bench_report.json"
+      }
+    },
+    {
+      "targets": [
+        5,
+        6,
+        8,
+        10,
+        16
+      ],
+      "light_probe_accuracy": 0.1,
+      "official_logiqa": 0.303738,
+      "reports": {
+        "light_probe": "artifacts/reports/public_cross_task/20260321_235325_954915_targets_5_6_8_10_16_light_eval_r3_authoritative_five_bench_report.json",
+        "official_logiqa": "artifacts/reports/public_cross_task/20260321_235331_545431_targets_5_6_8_10_16_official_logiqa_eval_r3_authoritative_five_bench_report.json"
+      }
+    }
+  ]
+}

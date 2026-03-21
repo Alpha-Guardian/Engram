@@ -1,0 +1,65 @@
+
+c
+A control rack has 6 vertical slots. The power module, planning module, admin module, telemetry module, safety module, and inference module each occupy one slot. It is known that: (1) the safety module and the telemetry module are not in adjacent slots; (2) the power module is immediately above or below the planning module; (3) the admin module is above the planning module but below the safety module.
+Which of the following may be the two modules located in the first and second slots?
+A. Power module, telemetry module
+B. Planning module, telemetry module
+C. Inference module, telemetry module
+D. Telemetry module, planning module
+
+c
+A reliable edge-governance system has two aspects: every command must pass mandatory local safety checks, and any optional remote optimization must be reached only through approved policy. A reasonable governance system therefore requires universal local safety rights and policy-gated remote access.
+Which of the following conclusions can be drawn?
+A.Any governance system that does not let every command use remote optimization is unreasonable.
+B.Any governance system that guarantees local safety checks is already reasonable.
+C.Any governance system that does not let every command receive mandatory local safety checks is unreasonable.
+D.A reasonable governance system has no requirements beyond remote optimization.
+
+b
+If a control packet did not fail internally and was not hijacked by unauthorized firmware, then it must have been blocked by the safety interlock. If the packet was blocked by the safety interlock, it would be detected by the board monitor; if the board monitor detected that event, it would be written to the incident log.
+If you want to conclude that the packet was hijacked by unauthorized firmware, which of the following should be added?
+A.The packet was not blocked by the safety interlock.
+B.There was no incident-log report that the safety interlock blocked the packet, and the packet did not fail internally.
+C.The packet did not fail internally.
+D.The packet failed internally and there was no safety-interlock block.
+
+a
+All commands that enter DEPLOY mode without manual approval have already obtained a signed promotion token from their home controller.
+Which of the following means exactly the same as the statement above?
+A.Commands that do not have a signed promotion token from their home controller cannot enter DEPLOY mode without manual approval.
+B.Commands that enter REVIEW mode without manual approval may still lack a signed promotion token.
+C.Commands that have a signed promotion token may not necessarily enter DEPLOY mode without manual approval.
+D.Besides DEPLOY mode, commands can also enter other modes.
+
+b
+An audit lead pointed out: if an operator has valid calibration knowledge, basic incident-response skills, and can classify the runtime fault correctly, then that operator cannot mis-dispatch a narrow open-input command. Dana has already mis-dispatched such a command.
+Which conclusion can be drawn from the discussion above?
+A.Dana has calibration knowledge and incident-response skills, but classified the fault incorrectly.
+B.Dana either lacks valid calibration knowledge, or lacks basic incident-response skills, or failed to classify the runtime fault correctly.
+C.Dana lacks calibration knowledge and incident-response skills, but classified the fault correctly.
+D.Dana lacks calibration knowledge and incident-response skills and also classified the fault incorrectly.
+
+d
+Researchers recently identified a board-side arbitration unit that acts like an information desk operator: it sorts incoming event streams and focuses system attention on the events most relevant for safe behavior and survival of the device. The researchers argued that this finding could enable new treatments for attention-like failure modes in real-time controllers.
+Which of the following is assumed by the argument above?
+A.Some controller failure modes are not caused by missing arbitration
+B.Visual data is the only event stream that reaches the arbitration unit
+C.The researchers have already built a therapy that directly rewires every controller
+D.The controller cannot process every incoming event in full detail at the same time and must selectively focus on the events most relevant to safe behavior
+
+d
+From a newly discovered maintenance drone, engineers observed a short and wide landing pad, and also noticed that the drone has a relatively small low-light aperture. They therefore speculated that the drone is mainly active during the day, like earlier daytime inspection drones.
+Which of the following, if true, best supports the engineers' speculation?
+A.A short and wide landing pad helps the drone jump between narrow service ledges
+B.There is no strict proportional relationship between machine vision quality and aperture size
+C.The earliest inspection drones separated from warehouse bots a long time ago
+D.Systems dominated by night operations generally have larger low-light apertures
+
+a
+An edge promotion pipeline checks three things before acceptance: same-parent boundary, localized gain, and non-regression. If same-parent boundary fails, the candidate is rejected regardless of every other score. If localized gain is absent, the candidate may not be promoted even when non-regression holds. Non-regression is necessary but not sufficient.
+Which statement is supported?
+A.Passing non-regression alone does not guarantee promotion
+B.Any candidate with localized gain must be promoted
+C.If same-parent boundary passes, non-regression is irrelevant
+D.Failing same-parent boundary can still be accepted with enough gain
+

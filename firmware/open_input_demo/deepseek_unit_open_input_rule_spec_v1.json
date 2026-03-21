@@ -1,0 +1,25 @@
+{
+  "compiled_from": "public_mcu_open_input_rule_spec_v1",
+  "trim_trailing_zeros": true,
+  "rules": [
+    {
+      "name": "mile_to_km",
+      "enabled": true,
+      "factor": 1.60934,
+      "decimals": 2
+    },
+    {
+      "name": "feet_to_m",
+      "enabled": true,
+      "factor": 0.3048,
+      "decimals": 2
+    },
+    {
+      "name": "fahrenheit_to_c",
+      "enabled": true,
+      "scale": 0.5555555556,
+      "offset": -17.7777777778,
+      "decimals": 1
+    }
+  ]
+}
