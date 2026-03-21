@@ -34,9 +34,9 @@ Sources:
 
 Sources:
 
-- [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
-- [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
-- [../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json](../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json)
+- [../results/research_line/current_host_surface_reference_status.json](../results/research_line/current_host_surface_reference_status.json)
+- [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
+- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
 
 ### Board Layer
 
@@ -54,7 +54,7 @@ Source:
 
 The strongest honest claim is:
 
-- a task-specialized promoted surface can be audited and materially improved over its frozen parent
+- a task-specialized accepted surface can be audited and materially improved over its frozen parent
 - that surface can be crystallized into a bounded board artifact
 - the public evidence is meaningful but explicitly bounded
 
