@@ -1,6 +1,6 @@
 # Experiments
 
-This page consolidates the public experiment bundle that supports the current promoted scientific surface.
+This page consolidates the public experiment bundle that supports the current accepted host surface.
 
 ## Main Public Comparison Table
 
@@ -11,7 +11,7 @@ This page consolidates the public experiment bundle that supports the current pr
 | Earlier three-family promoted surface | `0.780037` | `0.308411` | `0.304598` | `0.425072` |
 | Single-family official BC surface | `0.780037` | `0.348910` | `0.308908` | `0.425072` |
 | Single-family official DBB-BC surface | `0.780037` | `0.353583` | `0.308908` | `0.425072` |
-| Current promoted scientific surface | `0.780037` | `0.392523` | `0.308908` | `0.425072` |
+| Current accepted host surface | `0.780037` | `0.392523` | `0.308908` | `0.425072` |
 
 Source:
 
@@ -19,7 +19,7 @@ Source:
 
 Interpretation:
 
-- the current promoted surface improves official `LogiQA` by `+0.088785` over the frozen parent
+- the current accepted host surface improves official `LogiQA` by `+0.088785` over the frozen parent
 - the no-trunk ablation collapses exactly back to the parent boundary
 - replayable same-parent slices improve on the parent but do not subsume the current surface
 
@@ -34,7 +34,7 @@ Result:
 - earlier three-family surface `IFEval = 0.780037`
 - single-family BC surface `IFEval = 0.780037`
 - single-family DBB-BC surface `IFEval = 0.780037`
-- current promoted scientific surface `IFEval = 0.780037`
+- current accepted host surface `IFEval = 0.780037`
 
 Interpretation:
 
@@ -55,7 +55,7 @@ Result on the published 8-sample `industrial_state_decision_logiqa_v2` benchmark
 - frozen parent `0.25`
 - exact no-trunk ablation `0.25`
 - same-parent trained linear baseline `0.25`
-- current promoted scientific surface `0.375`
+- current accepted host surface `0.375`
 - parent-derived independent industrial second line `0.625`
 
 Pairwise independent-line replay:
@@ -69,7 +69,7 @@ Interpretation:
 
 - this is the clearest current public evidence that the same frozen-parent trunk pipeline can instantiate a new second-task capability line rather than only improve the current `LogiQA` surface
 - exact no-trunk and trained linear controls remain at the frozen-parent level on this benchmark
-- the current promoted surface transfers somewhat, but the dedicated parent-derived industrial line is stronger
+- the current accepted host surface transfers somewhat, but the dedicated parent-derived industrial line is stronger
 - because the benchmark is still small, this should be read as second-task capability-production evidence rather than proof of broad industrial generalization
 
 Source:
@@ -113,7 +113,7 @@ Controls under the same protocol:
 - frozen parent: dev `0.1`, blind `0.25`
 - exact no-trunk: dev `0.1`, blind `0.25`
 - trained linear baseline: dev `0.1`, blind `0.25`
-- current promoted surface: dev `0.2`, blind `0.375`
+- current accepted host surface: dev `0.2`, blind `0.375`
 
 Gate result:
 
@@ -148,7 +148,7 @@ Result on the published 10-sample probe:
 - frozen parent `0.1`
 - exact no-trunk ablation `0.1`
 - same-parent trained linear baseline `0.1`
-- current promoted scientific surface `0.2`
+- current accepted host surface `0.2`
 
 Pairwise current-versus-control replay:
 
@@ -176,7 +176,7 @@ Result on the published 18-sample protected slice:
 - frozen parent `0.166667`
 - exact no-trunk ablation `0.166667`
 - same-parent trained linear baseline `0.166667`
-- current promoted scientific surface `0.333333`
+- current accepted host surface `0.333333`
 
 Pairwise current-versus-control replay:
 
@@ -284,8 +284,8 @@ Interpretation:
 - parent topology constraints are necessary, not cosmetic
 - recurrence depth matters for the current surface
 - support-derived families are materially stronger than target-only diagnostic blocks
-- retrieval-only, lexical-only, trained linear, trained BitFit, trained LoRA-style hash-delta, trained low-rank adapter, and trainable-budget-matched PEFT comparators all fail to reach the promoted surface
-- simply attaching same-parent low-rank adapter-style family controls does not reproduce the promoted surface gain
+- retrieval-only, lexical-only, trained linear, trained BitFit, trained LoRA-style hash-delta, trained low-rank adapter, and trainable-budget-matched PEFT comparators all fail to reach the accepted host surface
+- simply attaching same-parent low-rank adapter-style family controls does not reproduce the accepted host-surface gain
 
 Source:
 
@@ -360,8 +360,8 @@ Interpretation:
 
 Sources:
 
-- [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
-- [../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json](../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
+- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
 
 ## Comparator Coverage Boundary
 
@@ -387,7 +387,7 @@ The current public matched-budget protocol uses the promoted trunk numeric paylo
 
 So the current public claim is:
 
-- evidence for a constrained capability-promotion regime
+- evidence for a constrained auditable capability-upgrade workflow
 
 It is not:
 
@@ -420,13 +420,13 @@ The public repo now also includes a narrow board-side comparator bundle on the s
 
 | Board artifact | Accuracy | Correct | Host full match |
 |---|---:|---:|---:|
-| current scientific surface | `0.387850` | `249 / 642` | `642 / 642` |
+| current host surface | `0.387850` | `249 / 642` | `642 / 642` |
 | frozen parent | `0.302181` | `194 / 642` | `642 / 642` |
 | parent trained linear baseline | `0.299065` | `192 / 642` | `642 / 642` |
 
 Interpretation:
 
-- the current scientific surface keeps a clear board-side margin over the frozen parent
+- the current host surface keeps a clear board-side margin over the frozen parent
 - a simple trained same-parent linear baseline also fails on the real board path
 - all three artifacts preserve exact host-full decision alignment on the compiled batches
 
