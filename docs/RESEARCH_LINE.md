@@ -1,6 +1,6 @@
 # Research Line Snapshot
 
-This repository publishes the current promoted scientific surface as a host-side research line, separate from the fixed-batch board proof.
+This repository publishes the current accepted host surface as a host-side research line, separate from the fixed-batch board proof.
 
 ## Current Surface
 
@@ -15,8 +15,8 @@ Current public host-side reference:
 
 Primary files:
 
-- [../results/research_line/current_scientific_surface_manifest.json](../results/research_line/current_scientific_surface_manifest.json)
-- [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
+- [../results/research_line/current_host_surface_manifest.json](../results/research_line/current_host_surface_manifest.json)
+- [../results/research_line/current_host_surface_reference_status.json](../results/research_line/current_host_surface_reference_status.json)
 - [../results/experiments/main_table.json](../results/experiments/main_table.json)
 
 ## Independent Industrial Wrapper Prototype
@@ -36,7 +36,7 @@ Interpretation:
 
 - this line proves the second-task trunk pipeline can be instantiated into a non-empty independent checkpoint
 - it is not promotable yet because it regresses official `LogiQA` below the frozen parent boundary
-- it currently behaves more like a protected-slice specialist than a stable second promoted surface
+- it currently behaves more like a protected-slice specialist than a stable second accepted surface
 
 Source:
 
