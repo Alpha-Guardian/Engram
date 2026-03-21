@@ -1,6 +1,6 @@
 # Trust And Audit
 
-This repository does not ask readers to trust a single aggregate score. It publishes a layered audit stack around the current promoted scientific surface and the derived board artifact.
+This repository does not ask readers to trust a single aggregate score. It publishes a layered audit stack around the current accepted host surface and the derived board artifact.
 
 ## 1. Exact Localization Control
 
@@ -69,7 +69,7 @@ Current evidence:
 
 Source:
 
-- [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
+- [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
 
 ## 4. External Non-Regression
 
@@ -84,13 +84,13 @@ Current public line:
 
 Source:
 
-- [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
+- [../results/research_line/current_host_surface_reference_status.json](../results/research_line/current_host_surface_reference_status.json)
 
 ## 5. Runtime, Shadow, And Integrity
 
 Goal:
 
-- ensure the promoted surface is not only accurate, but also runtime-clean and shadow-clean
+- ensure the accepted host surface is not only accurate, but also runtime-clean and shadow-clean
 
 Current public guard status:
 
@@ -101,9 +101,9 @@ Current public guard status:
 
 Sources:
 
-- [../results/research_line/current_scientific_surface_guard_bundle_status.json](../results/research_line/current_scientific_surface_guard_bundle_status.json)
-- [../results/research_line/current_scientific_surface_integrity_status.json](../results/research_line/current_scientific_surface_integrity_status.json)
-- [../results/research_line/current_scientific_surface_doctor_status.json](../results/research_line/current_scientific_surface_doctor_status.json)
+- [../results/research_line/current_host_surface_guard_bundle_status.json](../results/research_line/current_host_surface_guard_bundle_status.json)
+- [../results/research_line/current_host_surface_integrity_status.json](../results/research_line/current_host_surface_integrity_status.json)
+- [../results/research_line/current_host_surface_stack_status.json](../results/research_line/current_host_surface_stack_status.json)
 
 ## 6. Clean Holdout2 And Blind Remainder
 
@@ -124,7 +124,7 @@ Important boundary:
 
 Source:
 
-- [../results/audit/current_scientific_surface_overfit_audit_status.json](../results/audit/current_scientific_surface_overfit_audit_status.json)
+- [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
 
 ## 7. Hidden-Family Forensic Audit
 
@@ -145,7 +145,7 @@ Interpretation:
 
 Source:
 
-- [../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json](../results/audit/current_scientific_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
 
 ## 8. Board-Proof Acceptance
 
@@ -168,7 +168,7 @@ Sources:
 
 The strongest honest public statement is:
 
-- the repo contains a real promoted scientific surface with replayable evidence
+- the repo contains a real accepted host surface with replayable evidence
 - the gain localizes to the promoted trunk blocks under the exact public ablation
 - a real `ESP32-C3` artifact reproduces the published host-full fixed batches
 - hidden-family generalization remains weak and is published rather than hidden
