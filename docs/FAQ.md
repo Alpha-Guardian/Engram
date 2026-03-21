@@ -34,7 +34,7 @@ The public research line is backed by saved authoritative and external replay re
 
 Because this repo separates:
 
-- `host-side promoted scientific surface`
+- `host-side accepted surface`
 - `derived fixed-batch board proof`
 
 Current host-side line:
@@ -53,7 +53,7 @@ They are related, but they are not the same layer.
 
 ## Why Is The Board Number Slightly Lower?
 
-Because the board artifact is a constrained compiled fixed-batch proof, while the host-side line is the broader current scientific surface.
+Because the board artifact is a constrained compiled fixed-batch proof, while the host-side line is the broader current host surface.
 
 The board result proves:
 
