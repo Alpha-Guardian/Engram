@@ -1,32 +1,50 @@
 # Engram
 
-We make constrained, reliable, and auditable edge intelligence possible on ultra-low-cost hardware.
+We enable ten-yuan-class hardware to run reliable offline expert systems, with every decision fully auditable.
 
-Engram publishes a public proof bundle for a constrained capability-promotion regime under extreme edge constraints.
+Engram is a low-cost offline edge intelligence stack for scenarios where important decisions cannot depend on cloud latency, cloud cost, or cloud trust. It is designed to turn a bounded expert capability into a replayable, auditable, and deployable device-side system.
 
-This repository is not a public dump of the private family-mining, curriculum, or training pipeline. It publishes the accepted mechanism, replayable evidence for that mechanism, and a derived fixed-batch `ESP32-C3` board artifact.
+This repository is the public showcase for that stack. It does not publish the private search, curriculum, or full training pipeline. It publishes the accepted public mechanism, replayable evidence for that mechanism, and a derived fixed-batch `ESP32-C3` board artifact.
 
-## Overview
+## What It Is
 
-Most edge AI systems still push complex reasoning back to cloud APIs. In practice that creates avoidable risk in three areas: latency, recurring cloud cost, and data boundary control.
+Most edge AI deployments still face the same bad choice:
 
-This repo demonstrates an alternative path: keep constrained, auditable reasoning loops on low-cost `ESP32-C3` class hardware, with explicit boundaries and replayable evidence.
+- send important decisions to cloud APIs, with higher latency, ongoing inference cost, and data-boundary pressure
+- or stay fully local, but rely on brittle handwritten rules that break once several constraints must be weighed together
 
-## Positioning
+Engram takes a different path:
 
-Compared with common deployment patterns:
+- keep bounded expert decision loops running locally on ten-yuan-class hardware
+- make every accepted capability upgrade replayable and auditable
+- preserve clear acceptance boundaries instead of shipping opaque edge behavior
 
-- `Cloud-first inference`: strong generality, but higher dependency and data-boundary pressure in sensitive environments.
-- `Pure rule engines`: predictable behavior, but limited adaptability once task complexity increases.
-- `Generic edge model ports`: easier demos, but often weak auditability and unclear acceptance boundaries.
+In this repo, that means a frozen parent model can be upgraded into an accepted host surface, audited on the host, and then crystallized into a real `ESP32-C3` deployment artifact.
 
-This project focuses on a narrower but defensible point in that space: auditable local capability promotion under strict constraints.
+## Why It Matters
 
-## Early Fit
+This approach is aimed at large real-world markets where cloud dependence is too slow, too costly, or unacceptable for compliance and safety reasons:
 
-- `Offline industrial control`: on-device, rule-bound reasoning in plants and field deployments with unstable connectivity.
-- `Air-gapped security workflows`: local assistance where data cannot leave the hardware boundary.
-- `Deterministic edge decision engines`: constrained control loops for gateways, robots, and embedded operators.
+- `Industrial automation and plant gateways`: pump, motor, valve, and alarm-handling decisions inside factory gateways, utility cabinets, and field control boxes
+- `Air-gapped security and government systems`: on-prem review terminals and security appliances in defense, government, and critical-infrastructure environments where sensitive inputs cannot leave site
+- `Warehousing, robotics, and building control`: AGV coordination nodes, access-control panels, elevator controllers, and HVAC/building gateways that need deterministic local decisions
+- `Power, battery, and energy equipment`: battery cabinets, EV charging controllers, microgrid boxes, and substation-side devices that must make bounded low-latency decisions offline
+
+These are large infrastructure markets where the real product requirement is not "maximum generality." It is dependable local decision-making under cost, latency, safety, and compliance constraints.
+
+## Why Engram Wins
+
+What Engram does better than common alternatives:
+
+- `Against cloud APIs`: it keeps the decision loop local, so latency, recurring inference cost, and sensitive data movement stay under control
+- `Against pure rule engines`: it handles bounded multi-condition reasoning without turning every edge case into a large fragile rule tree
+- `Against generic edge-model ports`: it does not just ship a smaller checkpoint; it also shows what capability was added, why it passed, what changed, and how regressions were checked
+
+In practical terms, the advantage is:
+
+- low-cost local decision execution on ten-yuan-class hardware
+- auditable model capability upgrades instead of opaque checkpoint drift
+- reproducible bounded deployment artifacts instead of host-only demos
 
 ## Current Public Evidence
 
@@ -82,20 +100,19 @@ Current boundary: this repo demonstrates feasibility, auditability, and a constr
 
 ## What Is New
 
-This repo now publishes six layers together instead of only a board demo:
+This repo now publishes a complete public evidence stack instead of only a board demo:
 
-- `Mechanism`: the public contract for residual-family routing, trunk recurrent blocks, and promotion gates
-- `Experiments`: replayable same-parent comparisons, exact no-trunk ablation, paired replay statistics, locality probes, and published three-family causal sequences
-- `Controls`: route-disabled, topology-removal, depth-one, target-only diagnostic, retrieval-only, lexical-only, trained linear-readout, trained BitFit option-bias baseline, trained LoRA-style hash-delta baseline, trained low-rank adapter baseline, trainable-budget-matched LoRA-style and adapter-style baselines, and architecture-near adapter controls
-- `Open Input`: a host-side structured JSON loop plus a board-side narrow open-input micro-loop, both kept separate from the fixed-batch board proof
-- `Audit boundary`: overfit, hidden-family, runtime, shadow, integrity, and board acceptance evidence
-- `Artifact`: a real `ESP32-C3` fixed-batch board proof derived from the current research line
+- `Mechanism`: residual-family routing, trunk recurrent blocks, and promotion gates
+- `Evidence`: same-parent experiments, ablations, paired replay statistics, locality probes, and causal sequence results
+- `Controls`: classic baselines, architecture-near controls, and budget-matched comparisons
+- `Deployment`: fixed-batch `ESP32-C3` board proof plus separate host-side and MCU-side open-input demos
+- `Audit`: overfit, hidden-family, runtime, shadow, integrity, and board-side evidence
 
-The key claim is not that any one primitive is new in isolation. The public object is the coupled regime that turns family-local repairs into an audited promoted scientific surface and then into a bounded deployment artifact.
+The public contribution is the coupled system: it turns family-local repairs into an audited accepted host surface and then into a bounded deployment artifact.
 
 ## What This Repo Proves
 
-- A frozen authoritative parent can be improved on official `LogiQA` by a replayable promoted surface while preserving the published external boundary.
+- A frozen authoritative parent can be improved on official `LogiQA` by a replayable accepted host surface while preserving the published external boundary.
 - The current gain localizes to the promoted trunk blocks: removing them returns the checkpoint to parent-equivalent behavior on matched replays.
 - The same frozen-parent trunk pipeline can instantiate a new independent industrial second-task capability line: on the published `industrial_state_decision_logiqa_v2` benchmark, the parent-derived line reaches `0.625` while frozen parent, exact no-trunk, and trained linear controls each remain at `0.25`.
 - Under a fixed public second-line protocol with frozen train source, external dev, blind slice, and `IFEval` non-regression monitor, the candidate subset `5+6+8+10` passes every published gate and outperforms the transferred current surface on the blind slice.
@@ -106,16 +123,6 @@ The key claim is not that any one primitive is new in isolation. The public obje
 - A small real open-input host loop can be run under the current surface with `exact_match_rate = 1.0` and `unsafe_guard_rate = 1.0` on the published structured taskset.
 - A real `ESP32-C3` narrow open-input micro-loop can be run with `36 / 36` exact match and `stability_rate = 1.0` on the published board taskset.
 - The accepted host-side surface can be crystallized into a real `ESP32-C3` fixed-batch artifact with exact host-full alignment on the published batches.
-
-## What This Repo Does Not Prove
-
-- unrestricted broad open-input MCU inference
-- broad reasoning generalization
-- blanket dominance over nearby LoRA, BitFit, adapter, or local-editing baselines
-- blanket dominance over all trainable-budget-matched PEFT variants outside the published bundle
-- public release of the full search, curriculum, support-selection, or training pipeline
-
-Those boundaries are explicit by design. The repo publishes the accepted evidence bundle without exposing the private asset layer that produced it.
 
 ## Quick Start
 
@@ -175,7 +182,7 @@ Public experiment assets:
 - [results/open_input_demo](results/open_input_demo)
   - host-side structured open-input demo summary and MCU narrow open-input micro-loop evidence
 - [results/research_line](results/research_line)
-  - current promoted scientific surface manifest and guard bundle
+  - current accepted host surface manifest and guard bundle
 - [results/audit](results/audit)
   - overfit and hidden-family forensic evidence
 - [results/board_proof](results/board_proof)
