@@ -132,7 +132,7 @@ This checks:
 
 Use:
 
-- [../results/research_line/current_scientific_surface_manifest.json](../results/research_line/current_scientific_surface_manifest.json)
+- [../results/research_line/current_host_surface_manifest.json](../results/research_line/current_host_surface_manifest.json)
 - [../results/experiments/main_table.json](../results/experiments/main_table.json)
 - [../results/experiments/ablations.json](../results/experiments/ablations.json)
 
@@ -141,7 +141,7 @@ This lets you compare:
 - frozen parent
 - exact no-trunk ablation
 - same-parent contextual surfaces
-- current host-side promoted scientific surface
+- current host-side accepted surface
 - board proof line
 
 ## 10. Verify File Integrity
