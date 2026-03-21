@@ -1,6 +1,6 @@
 # Method Contract
 
-This repository publishes the public contract for a constrained capability-promotion regime. It does not publish the private frontier search or full training stack.
+This repository publishes the public contract for a constrained auditable capability-upgrade workflow. It does not publish the private frontier search or full training stack.
 
 ## Object Of Study
 
@@ -108,10 +108,11 @@ A local repair counts only if it survives a coupled acceptance predicate. Public
 - runtime and shadow cleanliness
 - overfit and hidden-family boundary disclosure
 
-The public repo also documents a stricter internal scientific contract:
+The public repo also documents a stricter internal mainline:
 
-- the formal mainline requires `logiqa + gsm8k + ifbench`
-- external dev and external blind are treated as required multi-route gates, not optional side receipts
+- the formal mainline monitors multiple benchmark routes rather than one benchmark only
+- in the current public line, that includes `LogiQA`, `GSM8K`, and a narrow instruction-following benchmark
+- external dev and external blind are treated as required gates, not optional side receipts
 
 See:
 
