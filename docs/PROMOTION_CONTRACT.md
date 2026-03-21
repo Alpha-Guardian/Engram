@@ -1,6 +1,6 @@
 # Promotion Contract
 
-This page explains the public acceptance predicate for promoted repairs.
+This page explains the public acceptance rule for promoted repairs.
 
 ## Core Idea
 
@@ -27,8 +27,8 @@ Current public reference:
 
 Sources:
 
-- [../results/research_line/current_scientific_surface_reference_status.json](../results/research_line/current_scientific_surface_reference_status.json)
-- [../results/research_line/current_scientific_surface_guard_bundle_status.json](../results/research_line/current_scientific_surface_guard_bundle_status.json)
+- [../results/research_line/current_host_surface_reference_status.json](../results/research_line/current_host_surface_reference_status.json)
+- [../results/research_line/current_host_surface_guard_bundle_status.json](../results/research_line/current_host_surface_guard_bundle_status.json)
 
 ## Publicly Relevant Gate Layers
 
@@ -36,15 +36,15 @@ Sources:
 
 All public gains are read against the same authoritative parent boundary.
 
-### 2. Strict Multi-Route Scientific Gate
+### 2. Strict Multi-Route Acceptance Gate
 
-The formal mainline behind the current surface is not a single-benchmark contract. It requires:
+The formal mainline behind the current surface is not a single-benchmark contract. It requires multiple benchmark routes, including:
 
-- `logiqa`
-- `gsm8k`
-- `ifbench`
+- `LogiQA`
+- `GSM8K`
+- a narrow instruction-following benchmark
 
-This matters because the promoted surface is not supposed to be interpreted as one benchmark hack.
+This matters because the accepted host surface is not supposed to be interpreted as a one-benchmark trick.
 
 ### 3. External Dev And External Blind
 
@@ -68,7 +68,7 @@ Even after a surface is published, the repo keeps negative evidence visible:
 - `blind_remainder = 0.448133`
 - hidden-family `0 / 85`
 
-## Why The Public Guard Bundle Says `promotion_recommended = false`
+## Why The Public Guard Bundle Is Conservative
 
 The public guard bundle is intentionally conservative:
 
@@ -79,7 +79,7 @@ This is not a contradiction. It means the public wrappers reproduce the accepted
 
 See:
 
-- [../results/research_line/current_scientific_surface_guard_bundle_status.json](../results/research_line/current_scientific_surface_guard_bundle_status.json)
+- [../results/research_line/current_host_surface_guard_bundle_status.json](../results/research_line/current_host_surface_guard_bundle_status.json)
 
 ## What Is Not Published
 
