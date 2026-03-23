@@ -6,6 +6,37 @@ Engram is a low-cost offline edge intelligence stack for scenarios where importa
 
 This repository is the public showcase for that stack. It does not publish the private search, curriculum, or full training pipeline. It publishes the accepted public mechanism, replayable evidence for that mechanism, and a derived fixed-batch `ESP32-C3` board artifact.
 
+## External Discussion
+
+Engram has started to attract public attention from engineers working close to the Google and Espressif ecosystems around edge inference, language runtimes, and constrained-device deployment. The items below are all linked to public issue discussions. They show engineering interest and recognition, not a formal partnership or official endorsement.
+
+- **Google DeepMind engineer and `gemma.cpp` co-creator Jan Wassenberg**
+  He said that what amazed him most was that anything LLM-like could run on a single-core `160 MHz` CPU.
+
+  <details>
+  <summary>Source: <a href="https://github.com/google/gemma.cpp/issues/875#issuecomment-4097879728">gemma.cpp issue thread</a> · Screenshot</summary>
+  <br>
+  <img src="docs/assets/external-feedback/jan_crop_final.png" alt="Jan Wassenberg public feedback screenshot" width="760">
+  </details>
+
+- **Google AI Edge / MediaPipe issue assignee HarishPermal**
+  He said that achieving these results on `ESP32-C3` with an approximately `1.3MB` footprint was very impressive, and that he was escalating the project to the LiteRT and MediaPipe teams for review.
+
+  <details>
+  <summary>Source: <a href="https://github.com/google-ai-edge/mediapipe/issues/6253#issuecomment-4105713500">MediaPipe issue thread</a> · Screenshot</summary>
+  <br>
+  <img src="docs/assets/external-feedback/harish_crop_final.png" alt="HarishPermal public feedback screenshot" width="760">
+  </details>
+
+- **Espressif engineer and ESP-DL collaborator Sun Xiang Yu**
+  He said that Engram was a very interesting project, and that its compressed, table-driven language runtime approach on `ESP32-C3` was inspiring for resource-constrained MCUs.
+
+  <details>
+  <summary>Source: <a href="https://github.com/espressif/esp-dl/issues/289#issuecomment-4079345100">ESP-DL issue thread</a> · Screenshot</summary>
+  <br>
+  <img src="docs/assets/external-feedback/sun_card_final.png" alt="Sun Xiang Yu public feedback screenshot" width="760">
+  </details>
+
 ## What It Is
 
 Most edge AI deployments still face the same bad choice:
@@ -60,7 +91,7 @@ In practical terms, the advantage is:
 - Board-side comparator bundle is now public: frozen parent reaches `194 / 642 = 0.302181`, trained linear baseline reaches `192 / 642 = 0.299065`, and both keep `host_full_match = 642 / 642`.
 - Open-input is separated from board-proof claim: published `ESP32-C3` narrow micro-loop reaches `36 / 36` exact match with stability `1.0`.
 
-Current boundary: this repo demonstrates feasibility, auditability, and a constrained deployment path. It does not claim broad general reasoning on MCU hardware.
+Current boundary: this repo demonstrates feasibility, auditability, and a constrained deployment path. It does not claim broad unseen-family generalization or broad general reasoning on MCU hardware.
 
 ## At A Glance
 
@@ -80,7 +111,6 @@ Current boundary: this repo demonstrates feasibility, auditability, and a constr
 | Paired official delta | `+0.088785`, exact McNemar `p = 7.658840702050266e-12` |
 | Current block inventory | `75` trunk recurrent blocks = `72` `option_latent_v2` + `3` `pair_score` |
 | Current retrieval footprint | `11,325` exemplars, `8192` GPU hash dim |
-| Hidden-family boundary | `0 / 85` |
 | Public board proof | `ESP32-C3`, `249 / 642 = 0.3878504672897196`, `host_full_match = 642 / 642` |
 | Public board comparators | frozen parent `194 / 642 = 0.302181`, trained linear baseline `192 / 642 = 0.299065`, both `host_full_match = 642 / 642` |
 | Public MCU open-input micro-loop | `ESP32-C3`, `36 / 36 exact match`, `stability = 1.0` |
@@ -95,6 +125,7 @@ Current boundary: this repo demonstrates feasibility, auditability, and a constr
 - [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md)
 - [docs/TRUST_AND_AUDIT.md](docs/TRUST_AND_AUDIT.md)
 - [docs/BOARD_METRICS.md](docs/BOARD_METRICS.md)
+- [docs/BOARD_POWER_ENERGY.md](docs/BOARD_POWER_ENERGY.md)
 - [docs/OPEN_INPUT_DEMO.md](docs/OPEN_INPUT_DEMO.md)
 - [docs/OPEN_INPUT_ROADMAP.md](docs/OPEN_INPUT_ROADMAP.md)
 
@@ -106,7 +137,7 @@ This repo now publishes a complete public evidence stack instead of only a board
 - `Evidence`: same-parent experiments, ablations, paired replay statistics, locality probes, and causal sequence results
 - `Controls`: classic baselines, architecture-near controls, and budget-matched comparisons
 - `Deployment`: fixed-batch `ESP32-C3` board proof plus separate host-side and MCU-side open-input demos
-- `Audit`: overfit, hidden-family, runtime, shadow, integrity, and board-side evidence
+- `Audit`: overlap-controlled holdout, runtime, shadow, integrity, and board-side evidence
 
 The public contribution is the coupled system: it turns family-local repairs into an audited accepted host surface and then into a bounded deployment artifact.
 
@@ -147,6 +178,13 @@ py scripts/flash_open_input_firmware.py COM3
 py scripts/run_mcu_open_input_demo.py --port COM3
 ```
 
+Board power/energy extension:
+
+```bash
+python3 scripts/run_power_phase.py --label mcu_open_input_36cmd --output results/board_power/mcu_open_input_36cmd_phase.json -- py scripts/run_mcu_open_input_demo.py --port COM3
+python3 scripts/summarize_power_csv.py --csv path/to/logger_export.csv --label mcu_open_input_36cmd --start-s 20.10 --end-s 24.05 --output results/board_power/mcu_open_input_36cmd_power.json
+```
+
 Public-bundle verification:
 
 ```bash
@@ -184,7 +222,7 @@ Public experiment assets:
 - [results/research_line](results/research_line)
   - current accepted host surface manifest and guard bundle
 - [results/audit](results/audit)
-  - overfit and hidden-family forensic evidence
+  - overfit and release-boundary evidence
 - [results/board_proof](results/board_proof)
   - `ESP32-C3` board summary, acceptance, and raw batch reports
 - [firmware](firmware)

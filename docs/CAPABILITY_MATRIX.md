@@ -6,7 +6,7 @@ This repo deliberately separates four layers.
 |---|---|---|---|
 | Method contract | the accepted public mechanism | frozen parent boundary, routed family-local repair, trunk block semantics, promotion contract | private discovery pipeline, full training moat |
 | Experiment bundle | replayable evidence for the current surface | exact no-trunk ablation, same-parent slices, paired replay stats, locality probes | complete classic PEFT comparator coverage, full ablation grid |
-| Audit boundary | trust and negative evidence | no obvious text overlap, external non-regression, holdout2, hidden-family disclosure | broad hidden-family generalization |
+| Audit boundary | trust and negative evidence | no obvious text overlap, external non-regression, holdout2, release-boundary disclosure | broad unseen-family generalization or broad reasoning transfer |
 | Board artifact | derived `ESP32-C3` proof | flash-resident fixed-batch execution, raw board readback, exact host-full alignment | unrestricted open-input MCU inference |
 
 ## Current Values
@@ -30,13 +30,13 @@ Sources:
 - `external_dev = 0.308908`
 - `external_blind = 0.425072`
 - clean `holdout2 = 0.400000`
-- hidden-family `0 / 85`
+- additional raw release-boundary audits are available under [../results/audit](../results/audit)
 
 Sources:
 
 - [../results/research_line/current_host_surface_reference_status.json](../results/research_line/current_host_surface_reference_status.json)
 - [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
-- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit](../results/audit)
 
 ### Board Layer
 

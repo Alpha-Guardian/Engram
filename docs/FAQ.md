@@ -164,7 +164,7 @@ What is still not claimed:
 
 - blanket superiority over every nearby PEFT design
 - transformer-module canonical LoRA superiority, because this parent is not a standard transformer PEFT target
-- broad hidden-family generalization
+- broad unseen-family generalization
 
 See:
 
@@ -182,12 +182,10 @@ The current public evidence supports:
 
 It does not support:
 
-- strong hidden-family generalization
+- broad unseen-family generalization
 - proof of broad reasoning transfer
 
-The hidden-family forensic audit remains:
-
-- `0 / 85`
+Additional release-boundary audit artifacts remain available in raw form under [../results/audit](../results/audit).
 
 ## Is There Now Any True Open-Input Demo?
 

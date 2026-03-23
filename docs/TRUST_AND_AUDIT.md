@@ -126,26 +126,26 @@ Source:
 
 - [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
 
-## 7. Hidden-Family Forensic Audit
+## 7. Additional Release-Boundary Audit
 
 Goal:
 
-- test whether current gains generalize beyond the visible residual families that drive the public surface gains
+- keep the release boundary explicit beyond the main replay and overlap-controlled holdout results
 
-Current result:
+Current public note:
 
-- hidden-family holdout rows: `85`
-- current surface: `0 / 85`
-- freeze and nearby prior surfaces: also `0 / 85`
+- the repository also publishes additional raw release-boundary audit artifacts under [../results/audit](../results/audit)
+- these files are useful for forensic inspection and claim-boundary review
+- they should not be read as evidence of broad unseen-family generalization
 
 Interpretation:
 
 - the public line does not show obvious external collapse
-- it also does not yet show strong hidden-family generalization
+- the public claim remains intentionally narrower than broad reasoning generalization
 
 Source:
 
-- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit](../results/audit)
 
 ## 8. Board-Proof Acceptance
 
@@ -171,4 +171,4 @@ The strongest honest public statement is:
 - the repo contains a real accepted host surface with replayable evidence
 - the gain localizes to the promoted trunk blocks under the exact public ablation
 - a real `ESP32-C3` artifact reproduces the published host-full fixed batches
-- hidden-family generalization remains weak and is published rather than hidden
+- the repo keeps additional release-boundary audit artifacts available without turning them into a broader generalization claim

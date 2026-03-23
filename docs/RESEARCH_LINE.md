@@ -92,7 +92,7 @@ The host-side research line is where the public method claim lives:
 - the exact no-trunk ablation is measured here
 - paired replay statistics are measured here
 - locality probes are measured here
-- overfit and hidden-family boundaries are measured here
+- overfit and release-boundary audits are measured here
 
 See:
 
@@ -125,6 +125,6 @@ The public research line should not be misread as:
 
 - a release of the private training stack
 - proof of unrestricted on-device open-input reasoning
-- proof of broad hidden-family generalization
+- proof of broad unseen-family generalization
 
 Those non-claims remain explicit in the repo because they are part of the trust boundary.

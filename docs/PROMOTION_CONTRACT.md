@@ -12,7 +12,7 @@ Publicly visible parts of that contract include:
 - external non-regression
 - leakage and deep-pretrain audit status
 - runtime and shadow cleanliness
-- overfit and hidden-family boundary disclosure
+- overfit and release-boundary disclosure
 
 ## Current Public Surface Status
 
@@ -60,13 +60,13 @@ The public bundle exposes the resulting status, including:
 - structured execution pass
 - research runtime ready
 
-### 5. Overfit And Hidden-Family Boundary
+### 5. Overfit And Release-Boundary Disclosure
 
-Even after a surface is published, the repo keeps negative evidence visible:
+Even after a surface is published, the repo keeps boundary-setting evidence visible:
 
 - clean `holdout2 = 0.400000`
 - `blind_remainder = 0.448133`
-- hidden-family `0 / 85`
+- additional raw release-boundary audits are available under [../results/audit](../results/audit)
 
 ## Why The Public Guard Bundle Is Conservative
 

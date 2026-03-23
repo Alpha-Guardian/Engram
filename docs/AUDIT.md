@@ -43,7 +43,7 @@ That includes:
 - integrity
 - stack check
 - overfit audit
-- hidden-family forensic audit
+- additional raw release-boundary audits
 
 ## Current audit conclusion
 
@@ -52,6 +52,6 @@ The strongest honest current conclusion is:
 - no obvious external collapse
 - no obvious text-level overlap contamination in the clean holdout path
 - board proof is real and auditable
-- hidden-family generalization remains weak
+- the repo does not claim broad unseen-family generalization
 
-That last point is not hidden. It is published in the forensic audit.
+Additional release-boundary audit artifacts remain available in raw form under [../results/audit](../results/audit).

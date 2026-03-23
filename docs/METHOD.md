@@ -32,7 +32,7 @@ Why that matters:
 - gain is always measured relative to the frozen parent
 - locality probes compare candidate behavior against the frozen parent
 - the exact no-trunk ablation is interpreted as a return to the frozen parent boundary
-- hidden-family forensic results are also evaluated against the frozen parent
+- additional release-boundary audits are also interpreted against the frozen parent boundary
 
 The parent row is published in:
 
@@ -106,7 +106,7 @@ A local repair counts only if it survives a coupled acceptance predicate. Public
 - external non-regression
 - leakage and deep-pretrain audit status
 - runtime and shadow cleanliness
-- overfit and hidden-family boundary disclosure
+- overfit and release-boundary disclosure
 
 The public repo also documents a stricter internal mainline:
 

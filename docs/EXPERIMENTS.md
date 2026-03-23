@@ -345,23 +345,23 @@ Source:
 
 - [../results/experiments/locality_probes.json](../results/experiments/locality_probes.json)
 
-## Negative Evidence Preserved In Public
+## Boundary Evidence Preserved In Public
 
 Current public negative boundary:
 
 - clean `holdout2 = 0.400000`
 - `blind_remainder = 0.448133`
-- hidden-family `0 / 85`
+- additional raw release-boundary audits are available under [../results/audit](../results/audit)
 
 Interpretation:
 
 - the public line is bounded and specialized
-- it should not be sold as broad hidden-family reasoning generalization
+- it should not be sold as broad unseen-family reasoning generalization
 
 Sources:
 
 - [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
-- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit](../results/audit)
 
 ## Comparator Coverage Boundary
 

@@ -49,7 +49,7 @@ Boundary layer:
 
 - [TRUST_AND_AUDIT.md](TRUST_AND_AUDIT.md)
 - [../results/audit/current_host_surface_overfit_audit_status.json](../results/audit/current_host_surface_overfit_audit_status.json)
-- [../results/audit/current_host_surface_hidden_family_forensic_audit_status.json](../results/audit/current_host_surface_hidden_family_forensic_audit_status.json)
+- [../results/audit](../results/audit)
 
 Artifact layer:
 
